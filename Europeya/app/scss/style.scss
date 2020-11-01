@@ -1,0 +1,1059 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+
+.header{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  margin-top: -132px;
+  box-shadow: 0px 4px 4px rgba(139, 152, 167, 0.25);
+  &-top{
+    background-color: #ffffff;
+  }
+  &-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 13px 0;
+
+  }
+  &-bottom{
+    background: #EEF1F3;
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      align-items: center;
+    }
+  }
+  &__logo{
+    line-height: 0;
+    a{
+      line-height: 0;
+    }
+  }
+  &__number{
+    font-size: 20px;
+    line-height: 25px;
+    color: $grey-main;
+    margin-left: 32px;
+  }
+  &__taxi {
+    margin-right: auto;
+  }
+  &__phone, &__taxi {
+    display: flex;
+    margin-left: 32px;
+    a {
+      color: #7C8793;
+      display: inline-flex;
+    }
+    &:hover{
+      a {
+        color: $green-main;
+        transition: all 0.5s;
+      }
+      .taxi-icon path{
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+      .taxi-icon-item circle{
+        stroke: $green-main;
+        transition: all 0.5s;
+      }
+      .phone-icon path{
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+      .phone-icon-item circle{
+        stroke: $green-main;
+        transition: all 0.5s;
+      }
+    }
+    &:focus{
+      a {
+        color: $green-focus;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .phone-icon, .taxi-icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+  }
+  &__login{
+    line-height: 0;
+  }
+  .login-link{
+    width: 18px;
+    height: 18px;
+    &:hover{
+      .login-icon path{
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+    }
+    &:active{
+      .login-icon path{
+        fill: $green-focus;
+      }
+    }
+  }
+  &__burger{
+    margin-left: 32px;
+    line-height: 0;
+    a {
+      line-height: 0;
+    }
+  }
+
+  &__menu {
+    .menu{
+      display: flex;
+      &-nav-item{
+        color: $grey-main;
+        margin-right: 44px;
+        &:hover{
+          color: $green-main;
+          transition: all 0.5s;
+        }
+        &:active{
+          color: $green-focus;
+        }
+      }
+    }
+  }
+}
+.header-mini{
+  box-shadow: none;
+  .header-bottom{
+    display: none;
+  }
+}
+
+#banner{
+  position: relative;
+  margin-top: 132px;
+
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 30px);
+    li{
+      button{
+        width: 12px;
+        height: 12px;
+        background: #E6EAF0;
+        border-radius: 50%;
+        text-indent: -9999px;
+        border: none;
+        margin: 0 4px;
+        cursor: pointer;
+      }
+    }
+    li.slick-active{
+      button{
+        background: #B8BDCE;
+      }
+    }
+  }
+}
+.banner-main__slide{
+  height: 720px;
+}
+.slide-wrapper{
+  display: flex;
+  align-items: center;
+  height: 720px;
+}
+.slide__text{
+  margin-bottom: 72px;
+  max-width: 750px;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+  text-shadow: 2px 0px 4px rgba(38, 44, 64, 0.25), 0px 2px 4px rgba(38, 44, 64, 0.25);
+}
+.banner-arrows{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  position: absolute;
+  bottom: 56px;
+  z-index: 5;
+  &__left{
+    left: calc(50% - 48px);
+    background: url(../img/arrow-left.svg) no-repeat center;
+  }
+  &__right{
+    right: calc(50% - 48px);
+    background: url(../img/arrow-right.svg) no-repeat center;
+  }
+  &:hover{
+    border: 1px solid $green-main;
+    background-color: $green-main;
+    transition: all 0.5s;
+  }
+  &:active{
+    border: 1px solid $green-focus;
+    background-color: $green-focus;
+  }
+
+}
+
+
+#selection{
+  padding: 43px 0 40px 0;
+  background-color: #EEF1F3;
+
+  /* Style the tab */
+  .tabs {
+    overflow: hidden;
+    margin-bottom: 36px;
+    button {
+      color: #596069;
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0;
+      margin-right: 44px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      &:hover {
+        color: $green-main;
+        transition: all 0.5s;
+      }
+      &:active{
+        color: $green-focus;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  /* Create an active/current tablink class */
+  .tabs button.active {
+    color: $grey-main;
+    &:after{
+      content: '';
+      height: 3px;
+      width: 100%;
+      background-color: $green-main;
+      display: block;
+      margin-top: 8px;
+    }
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+  /* Fade in Tabs*/
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+  .filters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-field{
+      margin-bottom: 35px;
+      &__btn{
+        display: flex;
+        align-items: flex-end;
+      }
+      &__link-clear{
+        margin-right: 24px;
+      }
+      &-lnk {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
+      &-clear{
+        margin-left: auto;
+      }
+      &-checkers{
+        width: 100%;
+        margin-bottom: 13px;
+      }
+    }
+    &-field__title{
+      margin-bottom: 8px;
+    }
+  }
+
+  .filter__checkbox-big{
+    margin-left: 25px;
+  }
+  /* для элемента input c type="checkbox" */
+  .checkbox-big__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label, связанного с .checkbox-big__input */
+  .checkbox-big__label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    width: 35px;
+    height: 42px;
+    position: relative;
+    z-index: 0;
+    margin-right: 29px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  /* создание в label псевдоэлемента before со следующими стилями */
+  .checkbox-big__label::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #B8BDCE;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    z-index: -1;
+    margin-right: 8px;
+  }
+  /* стили при наведении курсора на checkbox */
+  .checkbox-big__label:hover::before {
+    border-color: $green-main;
+    transition: all 0.5s;
+  }
+  /* стили для активного чекбокса (при нажатии на него) */
+  .checkbox-big__input:not(:disabled):active+.checkbox-big__label::before {
+    background-color: $green-main;
+    border-color: $green-main;
+  }
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .checkbox-big__input:checked+.checkbox-big__label{
+    color: #ffffff;
+    &::before {
+      border-color: $green-main;
+      background-color: $green-main;
+    }
+  }
+
+
+  .filter__range-num{
+    display: flex;
+    align-items: center;
+    padding: 7px 16px;
+    width: 264px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #B8BDCE;
+    border-radius: 2px;
+    outline: none;
+    &:hover{
+      border: 1px solid $green-main;
+      transition: all 0.5s;
+    }
+    label{
+      margin-right: 12px;
+    }
+    input{
+      -moz-appearance: textfield;
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+      &::placeholder{
+        color: #CFD1D7;
+      }
+      color: $green-main;
+      width: 70px;
+      border: none;
+      outline: none;
+    }
+  }
+  .range-num__min{
+    width: 110px;
+    border-right: 1px solid #B8BDCE;
+    margin-right: 16px;
+  }
+
+  .filter__focused{
+    box-shadow: 0px 2px 4px rgba(53, 144, 136, 0.25), 2px 0px 4px rgba(53, 144, 136, 0.25);
+    border: 1px solid $green-main
+  }
+
+
+  /* для элемента input c type="checkbox" */
+  .checkbox-main__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label, связанного с .custom-checkbox */
+  .checkbox-main__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 24px;
+  }
+  /* создание в label псевдоэлемента before со следующими стилями */
+  .checkbox-main__input+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1.5px solid #B8BDCE;
+    border-radius: 2px;
+    margin-right: 8px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на checkbox */
+  .checkbox-main__input:not(:disabled):not(:checked)+label:hover::before {
+    border: 1.5px solid $green-main;
+    transition: all 0.5s;
+  }
+  /* стили для активного чекбокса (при нажатии на него) */
+  .checkbox-main__input:not(:disabled):active+label::before {
+    background-color: $green-focus;
+    border-color: $green-focus;
+    transition: all 0.5s;
+  }
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .checkbox-main__input:checked+label::before {
+    background-color: $green-main;
+    border-color: $green-main;
+    background-image: url(../img/arr-down-main.svg);
+    transition: all 0.5s;
+  }
+
+}
+
+
+#districts{
+  padding-top: 40px;
+  .districts-map{
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+#popular{
+  padding: 72px 0;
+
+  .popular-projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .projects__card{
+    width: 360px;
+    height: 544px;
+    border: 1px solid #E6EAF0;
+    border-radius: 2px;
+    margin-bottom: 32px;
+    position: relative;
+    &:hover{
+      box-shadow: 0px 4px 4px rgba(139, 152, 167, 0.25);
+      transform: translateY(-4px);
+      transition: all 0.5s;
+    }
+  }
+  .card-head{
+    height: 200px;
+    position: relative;
+    &__link{
+      height: 200px;
+      width: 100%;
+      margin-bottom: -4px;
+      &:active .projects__card {
+        box-shadow: 0px 4px 4px rgba(53, 144, 136, 0.25);
+      }
+    }
+    &__type{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      padding: 4.7px 18.5px;
+    }
+    .type-comfort{
+      background: #66BA47;
+    }
+    .type-business{
+      background: #3697C4;
+    }
+    .type-premium{
+      background: #FE7725;
+    }
+    &__favorites{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+
+  @keyframes favme-anime {
+    0%   {
+      opacity: 1;
+      width: 0px;
+      height: 0px;
+    }
+    25%	 {
+      opacity:.6;
+      color: #FFF;
+      width: 23px;
+      height: 21px;
+    }
+    75%	 {
+      opacity:.6;
+      color: #FFF;
+      width: 27px;
+      height: 25px;
+    }
+    100% {
+      opacity: 1;
+      width: 25px;
+      height: 23px;
+    }
+  }
+  @keyframes favme-hover {
+    from {
+      width: 27px;
+      height: 25px;
+    }
+    80% {
+      width: 25px;
+      height: 23px;
+    }
+  }
+  .favme {
+    display:block;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all .2s ease;
+    margin: 0;
+    &.active path{
+      fill: #FFD62F;
+      stroke: #FFD62F;
+    }
+    &:hover path{
+      fill: #FFE682;
+      transition: all 0.3s;
+      animation: favme-hover .3s infinite alternate;
+    }
+    &:hover {
+      animation: favme-hover .3s infinite alternate;
+    }
+    &.is_animating {
+      animation: favme-anime .3s;
+    }
+  }
+
+  .card-content{
+    padding: 16px 20px 24px 20px;
+    &__title{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      color: #596069;
+      margin-bottom: 8px;
+    }
+    &__deadline{
+      color: $grey-light;
+      margin-bottom: 12px;
+    }
+    &__desc{
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 16px;
+    }
+
+    .variety-list-item{
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        color: $grey-light;
+      }
+      span{
+        color: $green-main;
+      }
+    }
+  }
+
+  .card-link-btn{
+    color: #7C8793;
+    background: #E6EAF0;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    &:hover{
+      color: $green-main;
+      transition: all 0.5s;
+    }
+    &:active{
+      color: $green-focus;
+      transition: all 0.5s;
+    }
+  }
+
+  .load-more__btn{
+    width: 100%;
+    text-align: center;
+    background: #E6EAF0;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #7C8793;
+    padding: 23px;
+    &:hover{
+      color: $green-main;
+      transition: all 0.5s;
+    }
+    &:active{
+      color: $green-focus;
+      transition: all 0.5s;
+    }
+  }
+
+}
+
+
+#call {
+  background-color: #EEF1F3;
+  padding: 33px 0 44px 0;
+  .call-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .call-content__title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .call-content__text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6C7682;
+  }
+}
+
+
+#mortgage{
+  padding: 72px 0;
+
+  .mortgage-wrapper{
+    background-image: url(../img/mortgage-bg.jpg);
+    position: relative;
+    width: 100%;
+    height: 683px;
+  }
+  .mortgage-calc{
+    position: absolute;
+    width: 432px;
+    height: 595px;
+    left: 48px;
+    top: 44px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    padding: 32px 36px 30px 36px;
+    &__title{
+      margin-bottom: 16px;
+    }
+    &__text{
+      margin-bottom: 32px;
+    }
+    &__calc{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: $grey-light;
+        display: block;
+        margin-bottom: 5px;
+      }
+      output {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: $green-main;
+      }
+    }
+    .calc__price{
+      margin-bottom: 32px;
+      width: 100%;
+    }
+    .calc__payment{
+      width: 216px;
+      margin-bottom: 44px;
+      .payment-percent{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #B8BDCE;
+        float: right;
+      }
+    }
+    .calc__term{
+      width: 108px;
+    }
+    .calc__programs{
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    .calc__total{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      color: #0580B7;
+      width: 100%;
+      margin-bottom: 36px;
+    }
+    .calc__apply{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .calc__advance{
+      width: 100%;
+      text-align: center;
+      .advance-link{
+        color: #CFD1D7;
+        &:hover{
+          color: $green-main;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+
+}
+
+
+#advantages{
+  background-image: url(../img/advantages-logo.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #EEF1F3;
+  padding: 44px 0 84px;
+  .section-title{
+    margin-bottom: 56px;
+  }
+  .advantages-list{
+    display: flex;
+    justify-content: space-around;
+    &-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .advantage-logo{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 24px;
+  }
+  .advantage-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #6C7682;
+    text-align: center;
+  }
+}
+
+
+#promotions {
+  padding: 72px 0 68px 0;
+
+  .promotions-title{
+    margin-bottom: 28px;
+  }
+
+  .promotions-arrows{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #B8BDCE;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: calc(50% - 24px);
+    &__left{
+      background-image: url(../img/arr-left.svg);
+      left: -84px;
+    }
+    &__right{
+      background-image: url(../img/arr-right.svg);
+      right: -84px;
+    }
+    &:hover{
+      background-color: $green-main;
+      transition: all 0.5s;
+    }
+    &:active{
+      background-color: $green-focus;
+      transition: all 0.5s;
+    }
+  }
+  .slick-disabled{
+    cursor: default;
+    background-color: #E6EAF0;
+    &:hover{
+      background-color: #E6EAF0;
+    }
+  }
+  .action-wrapper{
+    width: 552px;
+    height: 276px;
+    background: #FFFFFF;
+    border: 1px solid #E6EAF0;
+    border-radius: 2px;
+    display: flex;
+    outline: none;
+    margin: 4px;
+    overflow: hidden;
+    &:hover{
+      box-shadow: 0px 4px 4px rgba(139, 152, 167, 0.25);
+      transform: translateY(-4px);
+      transition: all 0.4s;
+    }
+    &:active{
+      box-shadow: 0px 4px 4px rgba(53, 144, 136, 0.25);
+      transform: translateY(-4px);
+      transition: all 0.4s;
+    }
+  }
+  .action-content{
+    padding: 32px 36px 60px 36px;
+    color: $grey-main;
+    position: relative;
+    &__title{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    &__date{
+      color: $grey-light;
+      position: absolute;
+      left: 32px;
+      bottom: 32px;
+    }
+  }
+}
+
+
+.footer{
+  padding: 36px 0 44px 0;
+  background-color: #EEF1F3;
+}
+
+
+/* Кнопка меню */
+.navBurger {
+  width: 24px;
+  height: 19px;
+  background: #596069;
+  border-radius: 2px;
+  cursor: pointer;
+  background-clip: content-box;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    padding-right: 8px;
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    background-color: $green-main;
+    transition: all 0.25s ease-in-out;
+    &:before, &:after{
+      background: $green-main;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+  &:active {
+    &:before, &:after{
+      background: $green-focus;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}
+.navBurger:before,
+.navBurger:after {
+  background: #596069;
+  border-radius: 2px;
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  right: 0;
+  will-change: rotate;
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+  &:hover {
+    background: $green-main;
+  }
+  &:active {
+    background: $green-focus;
+  }
+}
+.navBurger:before {
+  top: -10px;
+}
+.navBurger:after {
+  bottom: -10px;
+  width: 100%;
+}
+.navBurger.active {
+  background: transparent;
+  background-clip: content-box;
+}
+.navBurger.active:before {
+  transform: rotate(135deg);
+  top: 0;
+  background: #515151;
+  width: 110%;
+}
+.navBurger.active:after {
+  bottom: 0;
+  transform: rotate(-135deg);
+  background: #515151;
+  width: 110%;
+}
+
+.overlay {
+  position: fixed;
+  background: #ffffff;
+  top: 64px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform-origin: right top;
+  transform: scale(0);
+  /*visibility: hidden;*/			/*скрывать меню*/
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+  .mega-menu {
+    background: url(../img/menu-logo.png) no-repeat bottom right;
+  }
+  .mega-menu__social {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-soc{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+.overlay-container{
+  position: relative;
+  width: 100%;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  overflow-y: auto;
+}
+
+.overlayMenu {
+  position: absolute;
+  margin-top: 37px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.locked {
+  overflow: hidden;
+  .banner-arrows {
+    z-index: auto;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+
+@import "media";

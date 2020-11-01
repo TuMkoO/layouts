@@ -1,0 +1,387 @@
+@media screen and (max-width: 1330px){
+  #promotions {
+    .promotions-arrows__right {
+      right: -40px;
+    }
+    .promotions-arrows__left{
+      left: -40px;
+    }
+  }
+
+}
+@media screen and (max-width: 1225px) {
+  .promotions-content{
+    .container{
+      padding: 0;
+    }
+    .slick-slide{
+      width: auto!important;
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1140px){
+  #popular .popular-projects {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header-bottom-wrapper{
+    height: 68px;
+    justify-content: center;
+    .btn {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mega-menu{
+    flex-wrap: wrap;
+  }
+  .mega-menu-wrapper{
+    width: 50%;
+  }
+  .mega-menu__social{
+    position: static;
+    margin-top: 50px;
+  }
+
+  .footer{
+    .social-links{
+      justify-content: start !important;
+    }
+    .social-links-item{
+      margin-right: 12px;
+    }
+  }
+}
+@media screen and (max-width: 896px) {
+  .header{
+    margin-top: -64px;
+  }
+  #banner{
+    margin-top: 64px;
+  }
+  .header__phone{
+    font-size: 0;
+    margin-left: auto;
+  }
+  .header__taxi{
+    font-size: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-bottom{
+    display: none;
+  }
+
+  #call {
+    .call-wrapper{
+      flex-direction: column;
+    }
+    .call-content{
+      margin-bottom: 32px;
+    }
+  }
+}
+@media screen and (max-width: 776px) {
+  #promotions{
+    padding: 56px 0;
+  }
+  #advantages{
+    padding: 36px 0 43px
+  }
+  #banner{
+    .banner-main__slide{
+      max-height: calc(100vh - 64px);
+    }
+    .slide-wrapper{
+      max-height: calc(100vh - 64px);
+    }
+    .slide__text {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    .btn-slide{
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      &:hover{
+        border: 1px solid $green-main;
+        background-color: $green-main;
+      }
+    }
+  }
+
+
+  #selection .tabs button {
+    margin-right: 32px;
+    height: 34px;
+  }
+
+  .load-more__btn{
+    width: 360px !important;
+  }
+
+  #promotions {
+    .action-wrapper {
+      width: 400px;
+    }
+    .action-img{
+      display: none;
+    }
+  }
+
+}
+@media screen and (max-width: 650px) {
+  .header__number{
+    display: none;
+  }
+  .filters-field-btn{
+    width: 100%;
+  }
+  .filters-field-lnk{
+    .link-dotted {
+      margin-bottom: 36px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #popular {
+    .section-header{
+      flex-direction: column;
+    }
+    .section-link{
+      margin-bottom: 32px;
+    }
+    .popular-title{
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .section-link{
+      width: 100%;
+    }
+  }
+  #promotions {
+    .section-header{
+      flex-direction: column;
+    }
+    .section-link{
+      margin-bottom: 32px;
+    }
+    .promotions-title{
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .section-link{
+      width: 100%;
+    }
+    .action-wrapper {
+      width: 275px;
+      height: 220px;
+    }
+    .action-content {
+      padding: 24px 28px 40px 28px;
+    }
+    .action-content__title{
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 16px
+    }
+    .action-content__text,
+    .action-content__date{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .action-content__date{
+      left: 24px;
+      bottom: 24px;
+    }
+  }
+  #call {
+    .btn-call{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  #advantages {
+    .section-title{
+      margin-bottom: 44px;
+    }
+    .advantages-list{
+      flex-direction: column;
+      align-items: start;
+      &-item{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 44px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      .advantage-logo{
+        margin-bottom: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  #mortgage{
+    padding-bottom: 0;
+    .mortgage-wrapper{
+      background-image: none;
+      height: auto;
+    }
+    .mortgage-calc{
+      margin: 0 auto;
+      position: static;
+      margin-bottom: 26px;
+    }
+  }
+
+  .overlay{
+    .mega-menu__social{
+      margin-top: 44px;
+      padding: 0 20px;
+    }
+    .social-links{
+      padding: 0 44px;
+    }
+    .btn-soc{
+      background: transparent;
+      &:hover{
+        background: $green-main;
+      }
+    }
+  }
+  .overlayMenu{
+    margin: 0;
+    .container{
+      padding: 0;
+    }
+  }
+  .footer{
+    padding-top: 0;
+    .container{
+      padding: 0;
+    }
+    .btn-soc{
+      width: 100%;
+      text-align: center;
+    }
+    .mega-menu__social{
+      padding: 0 20px;
+    }
+    .social-links{
+      padding: 0 44px;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+    .social-links-item{
+      margin: 0;
+    }
+  }
+  .mega-menu{
+    border-top: 1px solid #B8BDCE;
+  }
+  .mega-menu-wrapper{
+    width: 100%;
+  }
+  .mega-menu__title{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-main;
+    padding: 15px 20px 17px 20px;
+  }
+  .mega-menu__icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid #B8BDCE;
+    text-align: right;
+    padding: 15px 20px 17px 20px;
+  }
+  .mega-menu__list{
+    display: none;
+    background: #ffffff;
+    border-bottom: 1px solid #B8BDCE;
+    a {
+      width: 100%;
+    }
+  }
+  .mega-menu__item{
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-main;
+    margin: 0;
+  }
+
+  .modal-content{
+    padding: 24px 20px 36px 20px;
+  }
+  .close{
+    top: -20px;
+    right: -10px;
+  }
+  .modal-title{
+    margin-bottom: 28px;
+  }
+  .modal-form__field{
+    margin-bottom: 28px;
+  }
+  .modal-form__btn {
+    margin-bottom: 34px;
+  }
+
+  .wrapper-open .mega-menu__icon {
+    svg {
+      transform: rotate(90deg);
+      transition: ease-in 0.15s;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 476px){
+  #mortgage{
+    .mortgage-calc{
+      width: 100%;
+      .calc__payment{
+        width: 70%;
+      }
+      .calc__term {
+        width: 25%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #banner{
+    .banner-main__slide{
+      height: 450px;
+    }
+    .slide-wrapper{
+      height: 450px;
+    }
+  }
+  .filters-field__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .modal-dialog{
+    width: 100% !important;
+  }
+}

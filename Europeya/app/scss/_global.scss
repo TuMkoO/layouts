@@ -1,0 +1,780 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'PT Root UI';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #ffffff;
+  color: $grey-main;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+[hidden] {
+  display: none !important;
+}
+.hidden {
+  display: none;
+}
+
+.btn{
+  background-color: $green-main;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  &-slide{
+    padding: 17px 32.5px;
+  }
+  &-selection{
+    padding: 11px 52px;
+  }
+  &-call{
+    border: none;
+    padding: 17px 72px 17px 71px;
+  }
+  &-calc{
+    width: 100%;
+    text-align: center;
+    padding: 17px 0;
+    border: none;
+  }
+  &-soc{
+    border: 1px solid $green-main;
+    background-color: #EEF1F3;
+    border-radius: 2px;
+    color: $green-main;
+    padding: 17px 73px;
+    font-size: 16px;
+    line-height: 20px;
+    &:hover{
+      background-color: $green-main;
+      transition: all 0.5s;
+      color: #ffffff;
+    }
+    &:active{
+      background-color: $green-focus;
+      color: #ffffff;
+    }
+  }
+  &-modal{
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 17px 0;
+  }
+  &:hover{
+    background-color: $green-hover;
+    transition: all 0.5s;
+  }
+  &:active{
+    background-color: $green-focus;
+  }
+}
+
+.link-dotted {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C8793;
+  border-bottom: 1px dashed #7C8793;
+  padding: 0;
+  outline: none;
+  &:hover{
+    color: $green-main;
+    border-bottom: none;
+    transition: all 0.5s;
+  }
+  &:active {
+    color: $green-focus;
+    border-bottom: none;
+    transition: all 0.5s;
+  }
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  margin: 0 0 32px 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  &:before{
+    content: '';
+    height: 12px;
+    width: 12px;
+    background: url(../img/title-vector.svg);
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+  &:after{
+    content: '';
+    height: 12px;
+    width: 12px;
+    background: url(../img/title-vector.svg);
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+  }
+}
+
+
+.section-link {
+  a{
+    color: $grey-light;
+    &:hover{
+      color: $green-main;
+      transition: all 0.5s;
+      path{
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+    }
+    &:active{
+      color: $green-focus;
+      transition: all 0.5s;
+      path{
+        fill: $green-focus;
+        transition: all 0.5s;
+      }
+    }
+  }
+  &__icon{
+    margin-left: 8px;
+    position: relative;
+    top: 3px;
+  }
+}
+
+
+.mega-menu {
+  display: flex;
+  height: 100%;
+  &-wrapper{
+    position: relative;
+    width: 25%;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $grey-light;
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__item{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $grey-main;
+    &:hover{
+      color: $green-main;
+      transition: all 0.5s;
+    }
+    &:active{
+      color: $green-focus;
+    }
+  }
+  &__icon{
+    display: none;
+    cursor: pointer;
+  }
+  &__social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .social-links{
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      width: 40px;
+      height: 40px;
+      border: 1px solid #8B98A7;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        border: 1px solid $green-main;
+        transition: all 0.5s;
+      }
+      &:hover path {
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+      &:hover .zen{
+        fill: #EEF1F3;
+      }
+      &:active{
+        border: 1px solid $green-focus;
+        transition: all 0.5s;
+      }
+      &:active path{
+        fill: $green-focus;
+        transition: all 0.5s;
+      }
+      &:active .zen{
+        fill: #EEF1F3;
+      }
+    }
+  }
+}
+
+
+/* Кастомный input, select */
+.fs-wrap {
+  cursor: pointer;
+  width: 264px;
+  height: 42px;
+  border: 1px solid #B8BDCE;
+  border-radius: 2px;
+  outline: none;
+  &:hover {
+    border: 1px solid $green-main;
+    transition: all 0.5s;
+    .fs-arrow {
+      path {
+        fill: $green-main;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.fs-label-wrap {
+  position: relative;
+  background-color: #fff;
+  cursor: default;
+  height: 40px;
+}
+
+.fs-label-wrap,
+.fs-dropdown {
+  user-select: none;
+}
+
+.fs-label-wrap .fs-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px 15px;
+  span {
+    display: inline-block;
+    padding-top: 2px;
+    margin-top: -2px;
+    background-color: $green-main;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.fs-arrow {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  margin: auto;
+  transition: ease-in 0.15s;
+}
+
+.fs-open .fs-arrow {
+  path{
+    fill: $green-main;
+  }
+  transform: rotate(-180deg);
+}
+.fs-open{
+  position: relative;
+  border: 1px solid $green-main;
+  box-shadow: 0px 2px 4px rgba(53, 144, 136, 0.25), 2px 0px 4px rgba(53, 144, 136, 0.25);
+}
+
+.fs-dropdown {
+  position: absolute;
+  left: -1px;
+  background-color: #fff;
+  border: 1px solid $green-main;
+  box-shadow: 0px 2px 4px rgba(53, 144, 136, 0.25), 2px 0px 4px rgba(53, 144, 136, 0.25);
+  width: 264px;
+  margin-top: 0px;
+  z-index: 1000;
+}
+
+.fs-dropdown .fs-options {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.fs-search input {
+  box-shadow: none !important;
+  outline: none;
+  width: 100%;
+  border: 1px solid #B8BDCE;
+  border-radius: 2px;
+  height: 42px;
+  padding: 0 12px;
+}
+
+.fs-option{
+  &:hover{
+    background-color: #F7FAFC;
+  }
+}
+
+.fs-option,
+.fs-optgroup-label {
+  cursor: default;
+  padding: 11px 0;
+  &:last-child{
+    margin-bottom: 4px;
+  }
+}
+
+.fs-option:last-child {
+  border-bottom: none;
+}
+
+.fs-search {
+  margin-bottom: 3px;
+  padding: 3px 4px;
+  display: none;
+}
+
+.multiple{
+  .fs-search {
+    display: block;
+  }
+}
+
+.fs-no-results {
+  padding: 6px 8px;
+}
+
+.fs-option {
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.fs-option.disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.fs-option.hl {
+  background-color: #f5f5f5;
+}
+.fs-option-label{
+  margin-left: 15px;
+}
+.fs-wrap.multiple .fs-option {
+  position: relative;
+  padding-left: 29px;
+}
+
+.fs-wrap.multiple .fs-checkbox {
+  position: absolute;
+  display: block;
+  width: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.fs-wrap.multiple .fs-option .fs-checkbox i {
+  position: absolute;
+  margin-left: 16px;
+  left: 0;
+  right: 0;
+  top: 12px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #B8BDCE;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.fs-wrap.multiple .fs-option.selected .fs-checkbox i {
+  border: 1px solid #B8BDCE;
+  border-radius: 2px;
+  background-image: url(../img/arr-ok.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fs-optgroup-label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+
+.rangeslider {
+  background: #E6EAF0;
+}
+.rangeslider, .rangeslider__fill{
+  box-shadow: none;
+  border-radius: 2px;
+}
+.rangeslider--horizontal {
+  height: 3px;
+  width: 100%;
+  margin-top: 14px;
+}
+.rangeslider__fill {
+  background-color: $green-main;
+  position: absolute;
+  border-radius: 2px;
+}
+.rangeslider__handle {
+  width: 19px;
+  height: 19px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(139, 152, 167, 0.25), 2px 0px 4px rgba(139, 152, 167, 0.25);
+  border: none;
+  background-image: none;
+  &:after{
+    display: none;
+  }
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+  height: 3px;
+  border-radius: 2px;
+}
+
+
+/* свойства модального окна по умолчанию */
+.modal {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* цвет фона */
+  z-index: 1050;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  transition: opacity 400ms ease-in;
+  /* анимация перехода */
+  pointer-events: none;
+  /* элемент невидим для событий мыши */
+}
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: 375px;
+  margin: 10px auto;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+  }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  padding: 44px 48px;
+  outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+
+
+.modal-form{
+  &__field{
+    margin-bottom: 36px;
+    position: relative;
+    label{
+      margin-bottom: 8px;
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    input{
+      border: 1px solid #B8BDCE;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $grey-main;
+      padding: 11px 16px;
+      outline: none;
+      width: 100%;
+      &:hover{
+        border: 1px solid $green-main;
+        transition: all 0.5s;
+      }
+      &:focus{
+        border: 1px solid $green-main;
+        box-shadow: 0px 2px 4px rgba(53, 144, 136, 0.25), 2px 0px 4px rgba(53, 144, 136, 0.25);
+        transition: all 0.5s;
+      }
+      &::placeholder{
+        color: #CFD1D7;
+      }
+    }
+    .pass-control {
+      position: absolute;
+      top: 42px;
+      right: 16px;
+      display: inline-block;
+      width: 18px;
+      height: 14px;
+      &:hover {
+        path {
+          fill: $green-main;
+          transition: all 0.5s;
+        }
+      }
+      &:active path{
+        fill: $green-focus;
+      }
+    }
+    .pass-control.view {
+      path {
+        fill: $green-main;
+      }
+    }
+
+    .fs-wrap{
+      width: 100%;
+    }
+    .filters-field__title{
+      margin-bottom: 8px;
+    }
+    .fs-dropdown{
+      width: calc(100% + 2px);
+    }
+
+    textarea {
+      height: 102px;
+      border: 1px solid #B8BDCE;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $grey-main;
+      padding: 11px 16px;
+      outline: none;
+      width: 100%;
+      resize: vertical;
+      &:hover{
+        border: 1px solid $green-main;
+        transition: all 0.5s;
+      }
+      &:focus{
+        border: 1px solid $green-main;
+        box-shadow: 0px 2px 4px rgba(53, 144, 136, 0.25), 2px 0px 4px rgba(53, 144, 136, 0.25);
+        transition: all 0.5s;
+      }
+      &::placeholder{
+        color: #CFD1D7;
+      }
+
+    }
+
+  }
+  &__btn{
+    margin-top: 44px;
+  }
+  &__hr{
+    margin: 36px auto 25px auto;
+    text-align: center;
+    position: relative;
+    color: #E6EAF0;
+    &:before{
+      content: '';
+      width: 158px;
+      height: 1px;
+      background-color: #E6EAF0;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: calc(50% + 2px);
+    }
+    &:after{
+      content: '';
+      width: 158px;
+      height: 1px;
+      background-color: #E6EAF0;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(50% + 2px);
+    }
+
+  }
+  &__auth{
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+    }
+    .auth-register{
+      color: #0580B7;
+      &:hover{
+        color: #0696D7;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+      &:active{
+        color: #3DA8D8;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+    }
+    .auth-recovery{
+      color: #7C8793;
+      &:hover{
+        color: $green-main;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+      &:active{
+        color: $green-focus;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+    }
+  }
+  &__text-content{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 24px;
+    color: $grey-light;
+    a {
+      color: #0580B7;
+      text-decoration: underline;
+      &:hover{
+        color: $green-main;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .modal__error {
+    color: $red-error;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 4px;
+    display: none;
+  }
+  input:valid:not(:placeholder-shown) {
+    border-color: $green-main;
+  }
+
+  input:invalid:not(:placeholder-shown) + .modal__error {
+    display: block;
+  }
+}
