@@ -48,6 +48,7 @@
                 <path d="M2 0.8V5.2C2 5.64 2.36 6 2.8 6H3.2C3.64 6 4 5.64 4 5.2V2.4C4 2.18 4.18 2 4.4 2H15.6C15.82 2 16 2.18 16 2.4V15.6C16 15.82 15.82 16 15.6 16H4.4C4.18 16 4 15.82 4 15.6V12.8C4 12.36 3.64 12 3.2 12H2.8C2.36 12 2 12.36 2 12.8V17.2C2 17.64 2.36 18 2.8 18H17.2C17.64 18 18 17.64 18 17.2V0.8C18 0.36 17.64 0 17.2 0H2.8C2.36 0 2 0.36 2 0.8Z" fill="#8B98A7"/>
               </svg>
             </a>
+
           </div>
           <div class="header__burger">
             <div class="navBurger" role="navigation" id="navToggle"></div>
@@ -124,12 +125,15 @@
     <div class="container">
       <h1 class="section-title">Подбор недвижимости</h1>
       <div class="selection__tabs">
+
+        <!-- Tab links -->
         <div class="tabs">
           <button class="tabs__link" onclick="openTab(event, 'apartments')" id="defaultOpen">Квартиры</button>
           <button class="tabs__link" onclick="openTab(event, 'houses')">Дома</button>
           <button class="tabs__link" onclick="openTab(event, 'immovables')">Коммерческая недвижимость</button>
           <button class="tabs__link" onclick="openTab(event, 'lands')">Земельные участки</button>
         </div>
+        <!-- Tab content -->
         <div id="apartments" class="tabcontent">
           <form class="filters" action="">
             <div class="filters-field">
@@ -180,6 +184,7 @@
             <div class="filters-field filters-field__btn selection-extended">
               <a href="#" class="btn btn-selection">Показать планировки</a>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Стадия строительства</div>
               <div class="filters-field__filter">
@@ -192,6 +197,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Проект</div>
               <div class="filters-field__filter">
@@ -211,6 +217,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Этаж</div>
               <div class="filters-field__filter">
@@ -226,6 +233,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Класс жилья</div>
               <div class="filters-field__filter">
@@ -238,6 +246,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Отделка</div>
               <div class="filters-field__filter">
@@ -250,6 +259,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-checkers selection-extended" hidden>
               <div class="filters-field__filter">
                 <div class="filter__checkbox-main">
@@ -264,9 +274,11 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-lnk">
               <input type="button" value="Ещё парметры" class="link-dotted selection-more">
             </div>
+
             <div class="filters-field filters-field-lnk filters-field-clear selection-extended" hidden>
               <div class="filters-field__link-clear">
                 <input type="button" value="Очистить фильтр" class="link-dotted">
@@ -277,6 +289,7 @@
                 <a href="#" class="btn btn-selection">Показать планировки</a>
               </div>
             </div>
+
           </form>
         </div>
         <div id="houses" class="tabcontent">
@@ -329,6 +342,7 @@
             <div class="filters-field filters-field__btn selection-extended">
               <a href="#" class="btn btn-selection">Показать планировки</a>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Стадия строительства</div>
               <div class="filters-field__filter">
@@ -341,6 +355,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Проект</div>
               <div class="filters-field__filter">
@@ -360,6 +375,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Этаж</div>
               <div class="filters-field__filter">
@@ -375,6 +391,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Класс жилья</div>
               <div class="filters-field__filter">
@@ -387,6 +404,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Отделка</div>
               <div class="filters-field__filter">
@@ -399,6 +417,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-checkers selection-extended" hidden>
               <div class="filters-field__filter">
                 <div class="filter__checkbox-main">
@@ -413,9 +432,11 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-lnk">
               <input type="button" value="Ещё парметры" class="link-dotted selection-more">
             </div>
+
             <div class="filters-field filters-field-lnk filters-field-clear selection-extended" hidden>
               <div class="filters-field__link-clear">
                 <input type="button" value="Очистить фильтр" class="link-dotted">
@@ -426,6 +447,7 @@
                 <a href="#" class="btn btn-selection">Показать планировки</a>
               </div>
             </div>
+
           </form>
         </div>
         <div id="immovables" class="tabcontent">
@@ -478,6 +500,7 @@
             <div class="filters-field filters-field__btn selection-extended">
               <a href="#" class="btn btn-selection">Показать планировки</a>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Стадия строительства</div>
               <div class="filters-field__filter">
@@ -490,6 +513,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Проект</div>
               <div class="filters-field__filter">
@@ -509,6 +533,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Этаж</div>
               <div class="filters-field__filter">
@@ -524,6 +549,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Класс жилья</div>
               <div class="filters-field__filter">
@@ -536,6 +562,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Отделка</div>
               <div class="filters-field__filter">
@@ -548,6 +575,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-checkers selection-extended" hidden>
               <div class="filters-field__filter">
                 <div class="filter__checkbox-main">
@@ -562,9 +590,11 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-lnk">
               <input type="button" value="Ещё парметры" class="link-dotted selection-more">
             </div>
+
             <div class="filters-field filters-field-lnk filters-field-clear selection-extended" hidden>
               <div class="filters-field__link-clear">
                 <input type="button" value="Очистить фильтр" class="link-dotted">
@@ -575,6 +605,7 @@
                 <a href="#" class="btn btn-selection">Показать планировки</a>
               </div>
             </div>
+
           </form>
         </div>
         <div id="lands" class="tabcontent">
@@ -627,6 +658,7 @@
             <div class="filters-field filters-field__btn selection-extended">
               <a href="#" class="btn btn-selection">Показать планировки</a>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Стадия строительства</div>
               <div class="filters-field__filter">
@@ -639,6 +671,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Проект</div>
               <div class="filters-field__filter">
@@ -658,6 +691,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Этаж</div>
               <div class="filters-field__filter">
@@ -673,6 +707,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Класс жилья</div>
               <div class="filters-field__filter">
@@ -685,6 +720,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field selection-extended" hidden>
               <div class="filters-field__title">Отделка</div>
               <div class="filters-field__filter">
@@ -697,6 +733,7 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-checkers selection-extended" hidden>
               <div class="filters-field__filter">
                 <div class="filter__checkbox-main">
@@ -711,9 +748,11 @@
                 </div>
               </div>
             </div>
+
             <div class="filters-field filters-field-lnk">
               <input type="button" value="Ещё парметры" class="link-dotted selection-more">
             </div>
+
             <div class="filters-field filters-field-lnk filters-field-clear selection-extended" hidden>
               <div class="filters-field__link-clear">
                 <input type="button" value="Очистить фильтр" class="link-dotted">
@@ -724,6 +763,7 @@
                 <a href="#" class="btn btn-selection">Показать планировки</a>
               </div>
             </div>
+
           </form>
         </div>
       </div>
@@ -739,6 +779,7 @@
   </section>
   <section id="popular">
     <div class="container">
+
       <div class=" section-header">
         <div class="popular-title">
           <div class="section-title">Популярные проекты</div>
@@ -753,7 +794,10 @@
           </a>
         </div>
       </div>
+
+
       <div class="popular-projects">
+
         <div class="projects__card">
           <div class="card-head">
             <a href="#" class="card-head__link" style="background-image: url(img/project1.png)">
@@ -1377,6 +1421,7 @@
           </div>
           <a href="#" class="card-link-btn">Смотреть 146 квартир</a>
         </div>
+
       </div>
     </div>
   </section>
@@ -1448,6 +1493,7 @@
             <div class="calc__apply"><a class="btn btn-calc" href="#mortgageModal">Подать заявку</a></div>
             <div class="calc__advance"><a href="#" class="advance-link">Предварительный расчет</a></div>
           </div>
+
         </div>
       </div>
     </div>
@@ -1476,6 +1522,7 @@
     </div>
   </section>
   <section id="promotions">
+
       <div class="promotions-header">
         <div class="container">
           <div class="section-header">
@@ -1542,6 +1589,7 @@
           </div>
         </div>
       </div>
+
   </section>
   <footer class="footer">
     <div class="container">
@@ -1679,6 +1727,7 @@
       </div>
     </div>
   </footer>
+
   <div id="loginModal" class="modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -2005,6 +2054,7 @@
       </div>
     </div>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

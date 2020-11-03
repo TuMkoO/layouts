@@ -136,6 +136,11 @@ $(function(){
           $("body").toggleClass("locked");
           $("header").toggleClass("header-mini");
       });
+      // $('.overlay').click(function() {
+      //     $(this).removeClass('open');
+      //     $('.navBurger').removeClass('active');
+      //     $("body").removeClass("locked");
+      // });
       $('.main-menu__item').click(function() {
           $('.overlay').removeClass('open');
           $('.navBurger').removeClass('active');
