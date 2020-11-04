@@ -3,6 +3,8 @@ html, css, scss , bootstrap, javascript, jquery, adaptive, responsive
 <br>
 https://tumkoo.github.io/layouts/
 <br>
+https://tumkoo.github.io/layouts/Europeya
+<br>
 https://tumkoo.github.io/layouts/Acrostia
 <br>
 https://tumkoo.github.io/layouts/PremiumEcommerceebsite
