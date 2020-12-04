@@ -7,30 +7,93 @@ $(function(){
   // Phone country select
   $(function(){
     $('.country-code').selectpicker({
+      liveSearch: true,
+      noneResultsText: 'По вашему запросу не найдено'
+    });
+  });
+
+  $(function(){
+    $('.maker').selectpicker({
+      liveSearch: true,
+      noneResultsText: 'По вашему запросу не найдено'
+    });
+  });
+
+  $(function(){
+    $('.rogue').selectpicker({
       liveSearch: true
     });
   });
 
   //Year range picker
-  $('#sel1').change(function() {
-    const min = +$(this).val();
-
-    $('#sel2')
-        .val((i, v) => Math.max(v, min))
-        .children()
-        .show()
-        .filter((i, n) => +n.value < min)
-        .hide();
-  }).change();
+  // $('#sel1').change(function() {
+  //   const min = +$(this).val();
+  //
+  //   $('#sel2')
+  //       .val((i, v) => Math.max(v, min))
+  //       .children()
+  //       .show()
+  //       .filter((i, n) => +n.value < min)
+  //       .hide();
+  // }).change();
   // Вывод итогового значения Year range picker
   $('#year-submit').click(function () {
-    let minYear = $('#sel1').val();
-    let maxYear = $('#sel2').val();
+    let minYear = $('#val-year1').val();
+    let maxYear = $('#val-year2').val();
     $( "#valYear" ).text( minYear + '-' + maxYear );
 
-    $(this).parents('.range-year').find('.dropdown-toggle').dropdown('toggle')
+    $(this).parents('.range-year').find('.dropdown-toggle').dropdown('toggle');
+
+    $('body').removeClass('noscroll');
 
   });
+
+
+  //
+  const years = {};
+  const $bounds = $('[data-bound]')
+    .on('input', 'input', e => update({ [e.delegateTarget.dataset.bound]: +e.target.value }))
+    .on('click', '.years-item', e => update({ [e.delegateTarget.dataset.bound]: +e.target.dataset.year }));
+
+  function setActiveYear($el, year) {
+    $el
+      .find('input')
+      .val(year)
+      .end()
+      .find('.years-item')
+      .removeClass('active')
+      .filter((i, n) => +n.dataset.year === year)
+      .addClass('active');
+  }
+
+  function update(data) {
+    Object.assign(years, data);
+
+    $bounds.each((i, n) => {
+      const $items = $('.years-item', n);
+      const min = +$items.first().data('year');
+      const max = +$items.last().data('year');
+      years[n.dataset.bound] = Math.min(max, Math.max(min, years[n.dataset.bound]));
+    });
+
+    years.max = Math.max(years.min, years.max);
+
+    $bounds
+      .each((i, n) => setActiveYear($(n), years[n.dataset.bound]))
+      .filter((i, n) => n.dataset.bound === 'max')
+      .find('.years-item')
+      .show()
+      .filter((i, n) => +n.dataset.year < years.min)
+      .hide();
+  }
+
+  update({ min: 2017, max: 2019 });
+
+
+
+
+
+
 
   //Не закрывать Dropdown с классом .noclose
   $(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPropagation() });
@@ -41,34 +104,34 @@ $(function(){
     $('#hlogo').toggleClass('col-xs-3 hidden-xs');
     $('#hnav').toggleClass('col-xs-3 hidden-xs');
     $('#hsearch').toggleClass('col-xs-6 col-xs-12');
-  })
+  });
   $('#hsearch-input').blur(function () {
     $('#hlogo').toggleClass('col-xs-3 hidden-xs');
     $('#hnav').toggleClass('col-xs-3 hidden-xs');
     $('#hsearch').toggleClass('col-xs-6 col-xs-12');
-  })
+  });
 
   //Filter select
-  $('.maker').select2({
-    placeholder: 'Maker',
-    templateResult: formatState,
-    // allowClear: true
-  });
-
-  $('.rogue').select2({
-    placeholder: 'Rogue',
-  });
-
-  function formatState (state) {
-    if (!state.id) {
-      return state.text;
-    }
-    var digits = '555';
-    var $state = $(
-      '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
-    );
-    return $state;
-  };
+  // $('.maker').select2({
+  //   placeholder: 'Maker',
+  //   templateResult: formatState,
+  //   // allowClear: true
+  // });
+  //
+  // $('.rogue').select2({
+  //   placeholder: 'Rogue',
+  // });
+  //
+  // function formatState (state) {
+  //   if (!state.id) {
+  //     return state.text;
+  //   }
+  //   var digits = '555';
+  //   var $state = $(
+  //     '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
+  //   );
+  //   return $state;
+  // };
 
 
   // Favorite Button
@@ -83,6 +146,35 @@ $(function(){
   $(".favme").on('animationend', function(){
     $(this).toggleClass('is_animating');
   });
+
+
+  // Добавление удаление класса для body
+  $('.dropdown-backdrop').on('click', function () {
+    $('body').removeClass('noscroll');
+  });
+  $(".range-year-container").on('click', function () {
+    $('body').addClass('noscroll');
+  });
+  $('.range-year').on('hidden.bs.dropdown', function () {
+    $('body').removeClass('noscroll');
+  });
+  $('.maker-container').on('hidden.bs.dropdown', function () {
+    $('body').removeClass('noscroll');
+  });
+  $('.rogue-container').on('hidden.bs.dropdown', function () {
+    $('body').removeClass('noscroll');
+  });
+  $('.maker-container').on('shown.bs.dropdown', function () {
+    $('body').addClass('noscroll');
+  });
+  $('.rogue-container').on('shown.bs.dropdown', function () {
+    $('body').addClass('noscroll');
+  });
+
+
+
+
+
 
 
 });
@@ -121,75 +213,9 @@ $('body').on('click', '.pass-control-3', function(){
   return false;
 });
 
-//Проверка совпадения паролей
-// $('#auth-pass-3').change(function() {
-//   let pass = $("#auth-pass-2").val();
-//   let pass_rep = $("#auth-pass-3").val();
-//
-//   console.log(pass);
-//   console.log(pass_rep);
-//
-//   if (pass !== pass_rep && pass_rep !== pass) {
-//     // $("#auth-pass-3").css('border', 'red 1px solid');
-//     $('#auth-pass-3-text').html('Пароли не совпадают');
-//   }
-// });
-
-
-// var min_length = 6;//минимальная длина пароля
-// function passValid (form, pass1, pass12, submit)//проверка длины пароля
-// {
-//   PASS12 = document.getElementById(pass12);//индикатор длины пароля
-//   PASS1count = document.forms[form].pass1.value.length;//количество символов в пароле
-//   MARG_LEFT = 10*PASS1count-100;//высчитываем смещение индикатора в зависимости от количества символов в пароле
-//   if(MARG_LEFT<0)//если индикатор не полностью выдвинут, тогда выдвигаем
-//   {
-//     PASS12.style.marginLeft=MARG_LEFT+"px";
-//   }
-//   if(MARG_LEFT>=0)//если индикатор полностью выдвинут, тогда не выдвигаем
-//   {
-//     PASS12.style.marginLeft="0px";
-//   }
-// //задаем цвет индикатора в зависимости от количества символов
-//   if(PASS1count<4){PASS12.style.background="#f00";}
-//   else if((PASS1count>=4) && (PASS1count<6)){PASS12.style.background="#FF9F00";}
-//   else if((PASS1count>=6) && (PASS1count<8)){PASS12.style.background="#CBFE01";}
-//   else if((PASS1count>=8)){PASS12.style.background="#0EFE01";}
-// }
-//
-// function isRavno(form, pass1, pass2, pass22, submit)//сравниваем пароли
-// {
-//   PASS1=document.forms[form].pass1.value;//первый пароль
-//   PASS1count=document.forms[form].pass1.value.length;//количество символов в 1 пароле
-//   PASS2=document.forms[form].pass2.value;//второй пароль
-//   PASS22=document.getElementById(pass22);//индикатор совпадения паролей
-//   SUBMIT=document.forms[form].submit; //кнопка отправки формы
-//   if(PASS1==PASS2)//если совпадают формируем индикатор совпадения паролей
-//   {
-//     PASS22.style.border="1px solid #446B01";
-//     PASS22.style.background="#E0FFB3";
-//     PASS22.style.color="#558701";
-//     PASS22.innerHTML="Пароли совпадают";
-//
-// //если количество символов в пароле больше или равно минимальной длине, делаем кнопку отправки активной
-//     if(PASS1count>=min_length)
-//       SUBMIT.disabled=0;
-//   }
-//   else //если не совпадают формируем индикатор совпадения паролей
-//   {
-//     PASS22.style.border="1px solid #A40004";
-//     PASS22.style.background="#FFD7E9";
-//     PASS22.style.color="#D5172B";
-//     PASS22.innerHTML="Пароли не совпадают";
-//     SUBMIT.disabled=1;// делаем кнопку отправки не активной
-//   }
-// }
-
 
 $("#auth-pass-3").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
 
-  // var value_input1 = $("#auth-pass-2").val(); // Получаем содержимое 1-го поля
-  // var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
   var value_input1 = $("#auth-pass-2"); // Получаем содержимое 1-го поля
   var value_input2 = $("#auth-pass-3"); // Получаем содержимое 2-го поля
 
@@ -218,24 +244,6 @@ $('.code-field__input').keyup(function(){
 });
 
 
-
-
-//
-// var phoneUtil = libphonenumber.PhoneNumberUtil.getInstance();
-// var PNF = libphonenumber.PhoneNumberFormat;
-// var phoneNumber = phoneUtil.parseAndKeepRawInput('0990525110', 'UA');
-//
-// console.log(phoneUtil.format(phoneNumber, PNF.E164));
-// // Result from isValidNumber().
-// console.log(phoneUtil.isValidNumber(phoneNumber));
-//
-// // Format number in the international format.
-// console.log(phoneUtil.format(phoneNumber, PNF.INTERNATIONAL));
-//
-// const AsYouTypeFormatter = libphonenumber.AsYouTypeFormatter;
-// const formatter = new AsYouTypeFormatter('UA');
-
-
 // libphonenumber
 $(".phone-num").keyup(function () {
   var val_old = $(this).val();
@@ -262,8 +270,5 @@ $(".phone-num").keyup(function () {
   } else {
     $('.invalid-feedback-phone').css({'display':'block'})
   }
-
-
-
 
 });

@@ -59,28 +59,39 @@
       <div class="col-md-5 col-sm-5">
         <div class="search-auto">
           <form action="" class="search-auto__form">
-            <div class="form-field form-field-maker">
-              <select class="maker" name="" >
-                <option>
-                <option value="1">Acura</option>
-                <option value="2">Alfa Romeo</option>
-                <option value="3">Aston Martin</option>
-                <option value="4">Audi</option>
-                <option value="5">Bentley</option>
-                <option value="6">BMW</option>
-                <option value="7">Buick</option>
-                <option value="8">Cadillac</option>
-                <option value="9">Chevrolet</option>
-                <option value="10">Chrysler</option>
-              </select>
+            <div class="form-field form-field-maker" >
+              <div class="maker-container">
+                <select class="search-select maker" data-width="fit">
+                  <option value="0" data-hidden="true">Maker</option>
+                  <option value="1" data-content='Acura'>Acura</option>
+                  <option value="2" data-content='Alfa Romeo'>Alfa Romeo</option>
+                  <option value="3" data-content='Aston Martin'>Aston Martin</option>
+                  <option value="4" data-content='Audi'>Audi</option>
+                  <option value="5" data-content='Bentley'>Bentley</option>
+                  <option value="6" data-content='BMW'>BMW</option>
+                  <option value="7" data-content='Buick'>Buick</option>
+                  <option value="8" data-content='Cadillac'>Cadillac</option>
+                  <option value="9" data-content='Chevrolet'>Chevrolet</option>
+                  <option value="10" data-content='Chrysler'>Chrysler</option>
+                </select>
+              </div>
             </div>
             <div class="form-field form-field-rogue">
-              <select class="rogue" name="" >
-                <option>
-                <option value="1">Model 1</option>
-                <option value="2">Model 2</option>
-                <option value="3">Model 3</option>
-              </select>
+              <div class="rogue-container">
+                <select class="search-select rogue" data-width="fit">
+                  <option value="0" data-hidden="true">Rogue</option>
+                  <option value="1" data-content='Model 1'>Model 1</option>
+                  <option value="2" data-content='Model 2'>Model 2</option>
+                  <option value="3" data-content='Model 3'>Model 3</option>
+                  <option value="4" data-content='Model 4'>Model 4</option>
+                  <option value="5" data-content='Model 5'>Model 5</option>
+                  <option value="6" data-content='Model 6'>Model 6</option>
+                  <option value="7" data-content='Model 7'>Model 7</option>
+                  <option value="8" data-content='Model 8'>Model 8</option>
+                  <option value="9" data-content='Model 9'>Model 9</option>
+                  <option value="10" data-content='Model 10'>Model 10</option>
+                </select>
+              </div>
             </div>
             <div class="form-field form-field-year">
               <div class="dropdown range-year noclose">
@@ -91,25 +102,39 @@
                 </div>
                 <div class="dropdown-menu range-year-dropdown" aria-labelledby="dropdownYear">
                   <div class="year-change">
-                    <div class="year-list">
+                    <div class="year-list" data-bound="min">
                       <label>От</label>
-                      <select class="year-select" id="sel1" name="select" size="4" >
-                        <option value="2016">2016</option>
-                        <option value="2017" selected="selected">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                      </select>
+                      <input type="number" id="val-year1" value="2017" style="display: none">
+                      <ul class="years" id="sel1">
+                        <li class="years-item min-year" data-year="2010">2010</li>
+                        <li class="years-item min-year" data-year="2011">2011</li>
+                        <li class="years-item min-year" data-year="2012">2012</li>
+                        <li class="years-item min-year" data-year="2013">2013</li>
+                        <li class="years-item min-year" data-year="2014">2014</li>
+                        <li class="years-item min-year" data-year="2015">2015</li>
+                        <li class="years-item min-year" data-year="2016">2016</li>
+                        <li class="years-item min-year active" data-year="2017">2017</li>
+                        <li class="years-item min-year" data-year="2018">2018</li>
+                        <li class="years-item min-year" data-year="2019">2019</li>
+                        <li class="years-item min-year" data-year="2020">2020</li>
+                      </ul>
                     </div>
-                    <div class="year-list">
+                    <div class="year-list" data-bound="max">
                       <label>До</label>
-                      <select class="year-select" id="sel2" name="select" size="4" >
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019" selected="selected">2019</option>
-                        <option value="2020">2020</option>
-                      </select>
+                      <input type="number" id="val-year2" value="2019" style="display: none">
+                      <ul class="years" id="sel2">
+                        <li class="years-item min-year" data-year="2010">2010</li>
+                        <li class="years-item min-year" data-year="2011">2011</li>
+                        <li class="years-item min-year" data-year="2012">2012</li>
+                        <li class="years-item min-year" data-year="2013">2013</li>
+                        <li class="years-item min-year" data-year="2014">2014</li>
+                        <li class="years-item min-year" data-year="2015">2015</li>
+                        <li class="years-item max-year" data-year="2016">2016</li>
+                        <li class="years-item max-year" data-year="2017">2017</li>
+                        <li class="years-item max-year" data-year="2018">2018</li>
+                        <li class="years-item max-year active" data-year="2019">2019</li>
+                        <li class="years-item max-year" data-year="2020">2020</li>
+                      </ul>
                     </div>
                   </div>
                   <button class="auth-btn" id="year-submit" type="button">Выбрать</button>
