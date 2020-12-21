@@ -1,5 +1,78 @@
 $(function(){
 
+  //Галерея товаров
+  $('.gallery').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.gallery-nav'
+  });
+  $('.gallery-nav').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    infinite: false,
+    asNavFor: '.gallery',
+    arrows: true,
+    prevArrow: '<div class="glyphicon glyphicon-menu-left"></div>',
+    nextArrow: '<div class="glyphicon glyphicon-menu-right"></div>',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1219,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 8,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
+  });
+
+
+
   // Language select
   $(function(){
     $('.selectpicker').selectpicker();
@@ -25,17 +98,7 @@ $(function(){
     });
   });
 
-  //Year range picker
-  // $('#sel1').change(function() {
-  //   const min = +$(this).val();
-  //
-  //   $('#sel2')
-  //       .val((i, v) => Math.max(v, min))
-  //       .children()
-  //       .show()
-  //       .filter((i, n) => +n.value < min)
-  //       .hide();
-  // }).change();
+
   // Вывод итогового значения Year range picker
   $('#year-submit').click(function () {
     let minYear = $('#val-year1').val();
@@ -44,12 +107,12 @@ $(function(){
 
     $(this).parents('.range-year').find('.dropdown-toggle').dropdown('toggle');
 
-    $('body').removeClass('noscroll');
+    $('body').removeClass('modal-open');
 
   });
 
 
-  //
+  //Year range picker
   const years = {};
   const $bounds = $('[data-bound]')
     .on('input', 'input', e => update({ [e.delegateTarget.dataset.bound]: +e.target.value }))
@@ -111,28 +174,6 @@ $(function(){
     $('#hsearch').toggleClass('col-xs-6 col-xs-12');
   });
 
-  //Filter select
-  // $('.maker').select2({
-  //   placeholder: 'Maker',
-  //   templateResult: formatState,
-  //   // allowClear: true
-  // });
-  //
-  // $('.rogue').select2({
-  //   placeholder: 'Rogue',
-  // });
-  //
-  // function formatState (state) {
-  //   if (!state.id) {
-  //     return state.text;
-  //   }
-  //   var digits = '555';
-  //   var $state = $(
-  //     '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
-  //   );
-  //   return $state;
-  // };
-
 
   // Favorite Button
   $('.favme').click(function() {
@@ -150,28 +191,74 @@ $(function(){
 
   // Добавление удаление класса для body
   $('.dropdown-backdrop').on('click', function () {
-    $('body').removeClass('noscroll');
+    $('body').removeClass('modal-open');
   });
   $(".range-year-container").on('click', function () {
-    $('body').addClass('noscroll');
+    $('body').addClass('modal-open');
   });
   $('.range-year').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('noscroll');
+    $('body').removeClass('modal-open');
   });
   $('.maker-container').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('noscroll');
+    $('body').removeClass('modal-open');
   });
   $('.rogue-container').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('noscroll');
+    $('body').removeClass('modal-open');
   });
   $('.maker-container').on('shown.bs.dropdown', function () {
-    $('body').addClass('noscroll');
+    $('body').addClass('modal-open');
   });
   $('.rogue-container').on('shown.bs.dropdown', function () {
-    $('body').addClass('noscroll');
+    $('body').addClass('modal-open');
   });
 
 
+  //Datepicker
+  $(function () {
+    // инициализация
+    $("#datetimepicker1").datetimepicker({
+      locale: 'ru',
+      format: 'DD-MM-YYYY',
+      minDate: moment().set({ hour: 0, minute: 0, second: 0, millisecond: 0 }),
+    });
+    $("#datetimepicker2").datetimepicker({
+      locale: 'ru',
+      format: 'DD-MM-YYYY',
+      minDate: moment().set({ hour: 0, minute: 0, second: 0, millisecond: 0 }),
+    });
+    $("#datetimepicker1").on("dp.change", function (e) {
+      const date = e.date.set({ hour: 0, minute: 0, second: 0, millisecond: 0 });
+      $('#datetimepicker2').data("DateTimePicker").minDate(date);
+    });
+    $("#datetimepicker2").on("dp.change", function (e) {
+      const date = e.date.set({ hour: 0, minute: 0, second: 0, millisecond: 0 });
+      $('#datetimepicker1').data("DateTimePicker").maxDate(date);
+    });
+  });
+
+
+  // View All button
+  $('.view-all').click(function () {
+    $('.checkbox-list').toggleClass('open');
+    $('.view-all').hide();
+  });
+
+
+  //Копировать ссылку по клику
+  $('#ref-btn').click(function copytext() {
+    var $tmp = $("<textarea>");
+    $("body").append($tmp);
+    $tmp.val($('#ref-link').text()).select();
+    document.execCommand("copy");
+    $tmp.remove();
+  });
+
+
+  //
+  $('#animated-thumbnials').lightGallery({
+    thumbnail: true,
+    selector: '.gallery-item'
+  });
 
 
 
