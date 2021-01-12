@@ -74,10 +74,11 @@
           <div class="car-content car-content-right">
             <div class="car-content__add">
               <div class="car-fav">
-                <span class="favme"><span href="#" class="add-to">Add to watchlist</span></span>
+                <span class="favme aah-icon favme-car">
+                  <span href="#" class="add-to">Add to watchlist</span>
+                </span>
               </div>
-<!--              <a href="#" class="add-to"><span class="add-fav"></span>Add to watchlist</a>-->
-              <a href="#" class="add-to"><span class="add-share"></span></a>
+              <div class="car-share" data-toggle="modal" data-target="#share-modal" id="share-btn"><span class="aah-icon add-share"></span></div>
             </div>
 <!--            <div class="car-content__register">-->
 <!--              <div class="register">-->
@@ -182,47 +183,55 @@
               </div>
               <div class="details__services">
                 <div class="services-title">Services We Offer</div>
-                <div class="services-get">
-                  <div class="services-item">
-                    <a href="#" class="services-item-wrapper">
-                      <div class="report">
-                        <div class="report__title">Get History</div>
-                        <div class="report__logo">
-                          <img src="img/logo-aah.png" alt="">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-aah.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
                         </div>
-                        <div class="report__price">$4.00 <span>(per report)</span></div>
-                      </div>
-                    </a>
-                    <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
                   </div>
-                  <div class="services-item">
-                    <a href="#" class="services-item-wrapper">
-                      <div class="report">
-                        <div class="report__title">Get History</div>
-                        <div class="report__logo">
-                          <img src="img/logo-carfax.png" alt="">
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-carfax.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
                         </div>
-                        <div class="report__price">$4.00 <span>(per report)</span></div>
-                      </div>
-                    </a>
-                    <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
                   </div>
-                  <div class="services-item">
-                    <a href="#" class="services-item-wrapper">
-                      <div class="report">
-                        <div class="report__title">Get History</div>
-                        <div class="report__logo">
-                          <img src="img/logo-autocheck.png" alt="">
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-autocheck.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
                         </div>
-                        <div class="report__price">$4.00 <span>(per report)</span></div>
-                      </div>
-                    </a>
-                    <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
                   </div>
-                </div>
-                <div href="#" class="services-button services-item">
-                  <a href="#" class="services-item-wrapper" data-toggle="modal" data-target="#buy-report">Get detailed <span>vindecoder</span> report <div class="report__price">$4.00 <span>(per report)</span></div></a>
-                  <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span> See the Sample</a>
+                  <div class="col-md-12">
+                    <div href="#" class="services-button services-item">
+                      <a href="#" class="services-item-wrapper" data-toggle="modal" data-target="#buy-report">Get detailed <span>vindecoder</span> report <div class="report__price">$4.00 <span>(per report)</span></div></a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span> See the Sample</a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -388,13 +397,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -417,13 +424,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -446,13 +451,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -475,13 +478,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -504,13 +505,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -533,13 +532,11 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme"></span>
-                </div>
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
                 <a href="#" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
-                      <div class="car-date"><span></span>Jul 12 2020</div>
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
                       <div class="car-vin">
                         <div class="vin-code">1gcek14t74e239032</div>
                       </div>
@@ -612,8 +609,7 @@
     </div>
   </footer>
 
-
-<!--Buy report Modal-->
+  <!--Buy report Modal-->
   <div class="modal slide-up modal-main car-history-modal" id="buy-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -641,7 +637,24 @@
     </div>
   </div>
 
+  <!--Share Modal-->
+  <div class="modal slide-up modal-main share-modal" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" >Get full car history</h4>
+          <p>Service is provided by CARFAX's official reseller</p>
+        </div>
+        <div class="modal-body share-body">
+          <div class="share-container">
+            111
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
 
   <!-- Bottom Navigation -->
   <div class="bottom-navigation">
@@ -652,6 +665,7 @@
     </div>
   </div>
 
+  <!-- Modal Report -->
   <div class="modal slide-up modal-main get-report-modal" id="report-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -684,8 +698,6 @@
       </div>
     </div>
   </div>
-
-
 
   <!-- Modal -->
   <div class="modal right fade modal-user profile" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
@@ -798,11 +810,12 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
   <script src="js/libs.min.js"></script>
   <script src="js/moment-with-locales.min.js"></script>
   <script src="js/bootstrap-datetimepicker.min.js"></script>
-  <script src="js/lightgallery.min.js"></script>
+  <script src="js/lightgallery-all.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
 </body>
 </html>

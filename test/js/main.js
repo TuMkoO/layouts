@@ -1,5 +1,4 @@
 $(function(){
-
   //Галерея товаров
   $('.gallery').slick({
     slidesToShow: 1,
@@ -85,18 +84,71 @@ $(function(){
     });
   });
 
-  $(function(){
-    $('.maker').selectpicker({
-      liveSearch: true,
-      noneResultsText: 'По вашему запросу не найдено'
-    });
+  // Cars Select2
+  // $(".maker").select2({
+  //   placeholder: 'Maker',
+  //   templateResult: formatState,
+  // });
+  // $(".rogue").select2({
+  //   placeholder: 'Rogue'
+  // });
+  //
+  // function formatState (state) {
+  //   if (!state.id) {
+  //     return state.text;
+  //   }
+  //   var digits = '555';
+  //   var $state = $(
+  //     '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
+  //   );
+  //   return $state;
+  // }
+
+  // Открытие-Закрытие Select2
+  // $('.search-select').on('select2:open', function (e) {
+  //   console.log('opened');
+  // }).on('select2:closing', function(e) {
+  //   console.log('closing');
+  // });
+
+
+
+
+  // Открытие-закрытие select2 (добавить класс к body, изменить border)
+  $('.maker').on('select2:open', function (e) {
+    $('.form-field-maker .select2-selection').css({'border' : '1px solid #fc0'});
+    $('body').addClass('dropdown-open');
+
+    $(document.createElement('div'))
+      .addClass('select2-backdrop')
+      .insertAfter($('.select2-container--open'));
+
+  }).on('select2:closing', function(e) {
+    $('.form-field-maker .select2-selection').css({'border' : '1px solid #d3d3d3'});
+    $('body').removeClass('dropdown-open');
+    $('.select2-backdrop').remove();
+  });
+  $('.rogue').on('select2:open', function (e) {
+    $('.form-field-rogue .select2-selection').css({'border' : '1px solid #fc0'});
+    $('body').addClass('dropdown-open');
+
+    $(document.createElement('div'))
+      .addClass('select2-backdrop')
+      .insertAfter($('.select2-container--open'));
+  }).on('select2:closing', function(e) {
+    $('.form-field-rogue .select2-selection').css({'border' : '1px solid #d3d3d3'});
+    $('body').removeClass('dropdown-open');
+    $('.select2-backdrop').remove();
   });
 
-  $(function(){
-    $('.rogue').selectpicker({
-      liveSearch: true
-    });
+
+  //не закрывать dropdown при клике
+  $("body").on("click", ".select2-dropdown", function(e) {
+    e.stopPropagation();
   });
+
+
+
 
 
   // Вывод итогового значения Year range picker
@@ -152,7 +204,16 @@ $(function(){
 
   update({ min: 2017, max: 2019 });
 
-
+  //Backdrop для Year Range
+  $('.range-year').on('shown.bs.dropdown', function () {
+    $(document.createElement('div'))
+      .addClass('dropdown-backdrop custom-backdrop')
+      .insertAfter($('.range-year-container'))
+  });
+  $("body").on("click", ".custom-backdrop", function(e) {
+    $('body').removeClass('dropdown-open');
+    $('.custom-backdrop').remove();
+  });
 
 
 
@@ -175,9 +236,26 @@ $(function(){
   });
 
 
-  // Favorite Button
+  // Favourite Button
   $('.favme').click(function() {
     $(this).toggleClass('active');
+
+    // счетчик количества отчетов
+    let count = $('#fav-count').text();
+
+    if ( $(this).hasClass('active') ) {
+      $('#fav-count').text( +count + 1);
+      //Сообщение о добавлении в избранное
+      messageCreate ('Добавлено в избранное');
+    } else {
+      $('#fav-count').text(count - 1);
+      //Сообщение об удалении избранного
+      messageCreate ('Удалено из избранных');
+    }
+
+    //Проверка количества отчетов
+    checkCountFav();
+
   });
   /* when a user clicks, toggle the 'is-animating' class */
   $(".favme").on('click touchstart', function(){
@@ -188,29 +266,69 @@ $(function(){
     $(this).toggleClass('is_animating');
   });
 
+  // Favourite Button CarPage
+  $('.favme-car').click(function () {
+    if($(this).hasClass('active')) {
+      $('.add-to').text('Remove from list');
+    } else {
+      $('.add-to').text('Add to watchlist');
+    }
+  });
+
+  // //Создание System-message
+  // function messageCreate (text) {
+  //   $('#message-add-fav').remove();
+  //   $('<div class="system-message" id="message-add-fav">' +
+  //     '<div class="system-message__icon glyphicon glyphicon-ok"></div>' +
+  //     '<div class="system-message__text" id="add-fav-text">'+ text +'</div>' +
+  //     '</div>')
+  //     .insertAfter($('.modal'));
+  //
+  //   setTimeout(function () {
+  //     $('#message-add-fav').addClass('active');
+  //   }, 0);
+  //
+  //   setTimeout(function () {
+  //     $('#message-add-fav').removeClass('active');
+  //   }, 1000);
+  //
+  //   setTimeout(function () {
+  //     $('#message-add-fav').remove();
+  //   }, 1100);
+  // }
+
+  //Проверка количества избранных авто при загрузке страницы
+  $(document).ready(function() {
+    checkCountFav();
+    checkCountRep();
+  });
+
+  function checkCountFav () {
+    let favCount = $('#fav-count').text();
+    +favCount > 0 ? $('#fav-count').css({'display': 'block'}) : $('#fav-count').css({'display': 'none'});
+  }
+  function checkCountRep () {
+    let repCount = $('#rep-count').text();
+    +repCount > 0 ? $('#rep-count').css({'display': 'block'}) : $('#rep-count').css({'display': 'none'});
+  }
+
+
 
   // Добавление удаление класса для body
   $('.dropdown-backdrop').on('click', function () {
     $('body').removeClass('modal-open');
   });
   $(".range-year-container").on('click', function () {
-    $('body').addClass('modal-open');
+    $('body').addClass('dropdown-open');
   });
   $('.range-year').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('modal-open');
+    $('body').removeClass('dropdown-open');
+    console.log('hidden');
   });
-  $('.maker-container').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('modal-open');
-  });
-  $('.rogue-container').on('hidden.bs.dropdown', function () {
-    $('body').removeClass('modal-open');
-  });
-  $('.maker-container').on('shown.bs.dropdown', function () {
-    $('body').addClass('modal-open');
-  });
-  $('.rogue-container').on('shown.bs.dropdown', function () {
-    $('body').addClass('modal-open');
-  });
+
+
+
+
 
 
   //Datepicker
@@ -257,14 +375,37 @@ $(function(){
   //
   $('#animated-thumbnials').lightGallery({
     thumbnail: true,
-    selector: '.gallery-item'
+    selector: '.gallery-item',
+    zoom: true
   });
 
 
-
-
-
 });
+
+
+//Создание System-message
+function messageCreate (text) {
+  $('#message-add-fav').remove();
+  $('<div class="system-message" id="message-add-fav">' +
+    '<div class="system-message__icon glyphicon glyphicon-ok"></div>' +
+    '<div class="system-message__text" id="add-fav-text">'+ text +'</div>' +
+    '</div>')
+    .insertAfter($('.modal'));
+
+  setTimeout(function () {
+    $('#message-add-fav').addClass('active');
+  }, 0);
+
+  setTimeout(function () {
+    $('#message-add-fav').removeClass('active');
+  }, 1000);
+
+  setTimeout(function () {
+    $('#message-add-fav').remove();
+  }, 1100);
+}
+
+
 
 
 //Показать пароль на странице входа
@@ -359,3 +500,127 @@ $(".phone-num").keyup(function () {
   }
 
 });
+
+
+
+// For max-width: 475px
+var mediaQuery = window.matchMedia("screen and (max-width: 475px)");
+mediaQuery.addListener(mobile);
+mobile(mediaQuery);
+
+function mobile(mq) {
+  var windowSize = mq.matches;
+  if (windowSize) {
+    //закрывать dropdown при клике на select2-container (Используется в качестве backdrop)
+    $("body").on("click", ".select2-container", function() {
+      $(".maker").select2("close");
+      $(".rogue").select2("close");
+    });
+
+
+    //select2 with SlideDown
+    $(document).ready(function() {
+      init();
+    });
+
+    function init() {
+      $(".maker").select2({
+        placeholder: 'Maker',
+        templateResult: formatState,
+      });
+      $(".rogue").select2({
+        placeholder: 'Rogue',
+      });
+
+      $('.search-select').on('select2:open', function (e) {
+        $('.select2-dropdown').hide();
+        setTimeout(function() {
+          jQuery('.select2-dropdown').slideDown(200);
+        }, 0);
+      }).on('select2:closing', function(e) {
+        e.preventDefault();
+        setTimeout(function() {
+          jQuery('.select2-dropdown').slideUp(200, function() {
+            close();
+          });
+        }, 0);
+      });
+    }
+    function close() {
+      $('.search-select').select2('destroy');
+      init();
+    }
+
+
+  } else {
+
+    //select2 with SlideDown
+    $(document).ready(function() {
+      init();
+    });
+
+    function init() {
+      $(".maker").select2({
+        placeholder: 'Maker',
+        templateResult: formatState,
+      });
+      $(".rogue").select2({
+        placeholder: 'Rogue',
+      });
+
+      $('.search-select').on('select2:open', function (e) {
+        $('.select2-dropdown').hide();
+        setTimeout(function() {
+          jQuery('.select2-dropdown').slideDown(200);
+        }, 0);
+      }).on('select2:closing', function(e) {
+        e.preventDefault();
+        setTimeout(function() {
+          jQuery('.select2-dropdown').slideUp(200, function() {
+            close();
+          });
+        }, 0);
+      });
+    }
+    function close() {
+      $('.search-select').select2('destroy');
+      init();
+    }
+
+    $('#share-modal').on('shown.bs.modal', function () {
+      $('#share-modal').modal('hide');
+
+      //Скопировать текущую ссылку
+      function copyToClipboard() {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(location).prop('href')).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+      copyToClipboard();
+
+      messageCreate('Ссылка скопирована');
+
+    });
+
+  }
+
+}
+
+function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var digits = '555';
+  var $state = $(
+    '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
+  );
+  return $state;
+}
+
+
+
+
+
+
