@@ -26,7 +26,7 @@ async function testWebShare() {
 
   // const url_input = document.querySelector('#url');
   // const url = url_input.value;
-  const url = '123';
+  const url = '12300';
 
   try {
     await navigator.share({url});
