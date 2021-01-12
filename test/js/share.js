@@ -24,8 +24,9 @@ async function testWebShare() {
     return;
   }
 
-  const url_input = document.querySelector('#url');
-  const url = url_input.value;
+  // const url_input = document.querySelector('#url');
+  // const url = url_input.value;
+  const url = '123';
 
   try {
     await navigator.share({url});
@@ -37,7 +38,6 @@ async function testWebShare() {
 
 function onLoad() {
   document.querySelector('#share-btn').addEventListener('click', testWebShare);
-  document.querySelector('#share-btn').addEventListener('click', console.log('was press share'));
 
   if (navigator.share === undefined) {
     if (window.location.protocol === 'http:') {
