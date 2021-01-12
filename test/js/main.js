@@ -371,8 +371,22 @@ $(function(){
     $tmp.remove();
   });
 
+  $('#share-btn').click(function () {
 
-  //
+    //Скопировать текущую ссылку
+    function copyToClipboard() {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(location).prop('href')).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+    copyToClipboard();
+
+    messageCreate('Ссылка скопирована');
+  });
+
+  //Галерея
   $('#animated-thumbnials').lightGallery({
     thumbnail: true,
     selector: '.gallery-item',
@@ -587,22 +601,22 @@ function mobile(mq) {
       init();
     }
 
-    $('#share-modal').on('shown.bs.modal', function () {
-      $('#share-modal').modal('hide');
-
-      //Скопировать текущую ссылку
-      function copyToClipboard() {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(location).prop('href')).select();
-        document.execCommand("copy");
-        $temp.remove();
-      }
-      copyToClipboard();
-
-      messageCreate('Ссылка скопирована');
-
-    });
+    // $('#share-modal').on('shown.bs.modal', function () {
+    //   $('#share-modal').modal('hide');
+    //
+    //   //Скопировать текущую ссылку
+    //   function copyToClipboard() {
+    //     var $temp = $("<input>");
+    //     $("body").append($temp);
+    //     $temp.val($(location).prop('href')).select();
+    //     document.execCommand("copy");
+    //     $temp.remove();
+    //   }
+    //   copyToClipboard();
+    //
+    //   messageCreate('Ссылка скопирована');
+    //
+    // });
 
   }
 

@@ -18,6 +18,7 @@ function logError(message) {
 }
 
 async function testWebShare() {
+  console.log('was press share');
   if (navigator.share === undefined) {
     logError('Error: Unsupported feature: navigator.share()');
     return;
@@ -36,6 +37,7 @@ async function testWebShare() {
 
 function onLoad() {
   document.querySelector('#share-btn').addEventListener('click', testWebShare);
+  document.querySelector('#share-btn').addEventListener('click', console.log('was press share'));
 
   if (navigator.share === undefined) {
     if (window.location.protocol === 'http:') {
