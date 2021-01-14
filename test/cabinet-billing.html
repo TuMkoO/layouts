@@ -137,73 +137,151 @@
           <div class="cabinet-container">
             <div class="cabinet-title">Биллинг и подписки</div>
             <div class="cabinet-content">
-
               <div class="cabinet-billing">
+                <!-- Nav tabs -->
+                <div class="billing-switch">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab-month" aria-controls="tab-month" role="tab" data-toggle="tab">1 месяц</a></li>
+                    <li role="presentation"><a href="#tab-year" aria-controls="tab-year" role="tab" data-toggle="tab">1 год <span>(-20%)</span></a></li>
+                  </ul>
+                </div>
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="subscription subscription-item">
-                      <div class="subscribe cabinet-box">
-                        <div class="subscribe-header">
-                          <div class="subscribe__title">Базовый <span class="aah-icon subscribe-icon-basic"></span></div>
-                          <div class="subscribe__price">БЕСПЛАТНО</div>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-month">
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">Базовый <span class="aah-icon subscribe-icon-basic"></span></div>
+                              <div class="subscribe__price">БЕСПЛАТНО</div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="subscribe-body">
-                          <div class="subscribe-container">
-                            <ul class="subscribe-list">
-                              <li class="subscribe-list-item">Неограниченное количество поисков</li>
-                              <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
-                              <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
-                            </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box active">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">ВАША ПОДПИСКА - МЕСЯЦ <span class="aah-icon subscribe-icon-month"></span></div>
+                              <div class="subscribe__price">20$ <span>в месяц</span></div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                              <div class="subscribe-btn-container">
+                                <button class="subscribe-btn">Продлить подписку</button>
+                                <span class="subscribe-active">Активна до 26.01.2020</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">Подписка - ГОД <span class="aah-icon subscribe-icon-year"></span></div>
+                              <div class="subscribe__price">100$ <span>в год</span></div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                              <div class="subscribe-btn-container">
+                                <button class="subscribe-btn">Оплатить подписку</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-year">
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">Базовый 2 <span class="aah-icon subscribe-icon-basic"></span></div>
+                              <div class="subscribe__price">БЕСПЛАТНО</div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box active">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">ВАША ПОДПИСКА - МЕСЯЦ 2 <span class="aah-icon subscribe-icon-month"></span></div>
+                              <div class="subscribe__price">20$ <span>в месяц</span></div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                              <div class="subscribe-btn-container">
+                                <button class="subscribe-btn">Продлить подписку</button>
+                                <span class="subscribe-active">Активна до 26.01.2020</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="subscription subscription-item">
+                          <div class="subscribe cabinet-box">
+                            <div class="subscribe-header">
+                              <div class="subscribe__title">Подписка - ГОД 2 <span class="aah-icon subscribe-icon-year"></span></div>
+                              <div class="subscribe__price">100$ <span>в год</span></div>
+                            </div>
+                            <div class="subscribe-body">
+                              <div class="subscribe-container">
+                                <ul class="subscribe-list">
+                                  <li class="subscribe-list-item">Неограниченное количество поисков</li>
+                                  <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
+                                  <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
+                                </ul>
+                              </div>
+                              <div class="subscribe-btn-container">
+                                <button class="subscribe-btn">Оплатить подписку</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="subscription subscription-item">
-                      <div class="subscribe cabinet-box active">
-                        <div class="subscribe-header">
-                          <div class="subscribe__title">ВАША ПОДПИСКА - МЕСЯЦ <span class="aah-icon subscribe-icon-month"></span></div>
-                          <div class="subscribe__price">20$ <span>в месяц</span></div>
-                        </div>
-                        <div class="subscribe-body">
-                          <div class="subscribe-container">
-                            <ul class="subscribe-list">
-                              <li class="subscribe-list-item">Неограниченное количество поисков</li>
-                              <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
-                              <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
-                            </ul>
-                          </div>
-                          <div class="subscribe-btn-container">
-                            <button class="subscribe-btn">Продлить подписку</button>
-                            <span class="subscribe-active">Активна до 26.01.2020</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="subscription subscription-item">
-                      <div class="subscribe cabinet-box">
-                        <div class="subscribe-header">
-                          <div class="subscribe__title">Подписка - ГОД <span class="aah-icon subscribe-icon-year"></span></div>
-                          <div class="subscribe__price">100$ <span>в год</span></div>
-                        </div>
-                        <div class="subscribe-body">
-                          <div class="subscribe-container">
-                            <ul class="subscribe-list">
-                              <li class="subscribe-list-item">Неограниченное количество поисков</li>
-                              <li class="subscribe-list-item">Поиск с главной страницы по лотам, проданным за последние 2 месяца</li>
-                              <li class="subscribe-list-item">Доступ к архиву данных за последние 2 года</li>
-                            </ul>
-                          </div>
-                          <div class="subscribe-btn-container">
-                            <button class="subscribe-btn">Оплатить подписку</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="col-md-12">
                     <div class="billing cabinet-box">
                       <div class="billing-header cabinet-box-header">

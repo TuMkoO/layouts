@@ -24,8 +24,6 @@ async function testWebShare() {
     return;
   }
 
-  // const url_input = document.querySelector('#url');
-  // const url = url_input.value;
   const url = $(location).prop('href');
 
   try {

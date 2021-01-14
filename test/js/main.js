@@ -1,74 +1,74 @@
 $(function(){
   //Галерея товаров
-  $('.gallery').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.gallery-nav'
-  });
-  $('.gallery-nav').slick({
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    infinite: false,
-    asNavFor: '.gallery',
-    arrows: true,
-    prevArrow: '<div class="glyphicon glyphicon-menu-left"></div>',
-    nextArrow: '<div class="glyphicon glyphicon-menu-right"></div>',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1219,
-        settings: {
-          slidesToShow: 6,
-        }
-      },
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 5,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 8,
-        }
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 6,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 5,
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 425,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 350,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-    ]
-  });
+  // $('.gallery').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   fade: true,
+  //   asNavFor: '.gallery-nav'
+  // });
+  // $('.gallery-nav').slick({
+  //   slidesToShow: 7,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+  //   asNavFor: '.gallery',
+  //   arrows: true,
+  //   prevArrow: '<div class="glyphicon glyphicon-menu-left"></div>',
+  //   nextArrow: '<div class="glyphicon glyphicon-menu-right"></div>',
+  //   dots: false,
+  //   centerMode: false,
+  //   focusOnSelect: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1219,
+  //       settings: {
+  //         slidesToShow: 6,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 1199,
+  //       settings: {
+  //         slidesToShow: 5,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 8,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 700,
+  //       settings: {
+  //         slidesToShow: 6,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 5,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 500,
+  //       settings: {
+  //         slidesToShow: 4,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 425,
+  //       settings: {
+  //         slidesToShow: 3,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 350,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       }
+  //     },
+  //   ]
+  // });
 
 
 
@@ -77,12 +77,12 @@ $(function(){
     $('.selectpicker').selectpicker();
   });
   // Phone country select
-  $(function(){
-    $('.country-code').selectpicker({
-      liveSearch: true,
-      noneResultsText: 'По вашему запросу не найдено'
-    });
-  });
+  // $(function(){
+  //   $('.country-code').selectpicker({
+  //     liveSearch: true,
+  //     noneResultsText: 'По вашему запросу не найдено'
+  //   });
+  // });
 
   // Cars Select2
   // $(".maker").select2({
@@ -387,11 +387,11 @@ $(function(){
   });
 
   //Галерея
-  $('#animated-thumbnials').lightGallery({
-    thumbnail: true,
-    selector: '.gallery-item',
-    zoom: true
-  });
+  // $('#animated-thumbnials').lightGallery({
+  //   thumbnail: true,
+  //   selector: '.gallery-item',
+  //   zoom: true
+  // });
 
 
 });
@@ -632,6 +632,63 @@ function formatState (state) {
   );
   return $state;
 }
+
+
+
+
+
+
+
+
+// Phone country field
+
+var input = document.querySelector("#phone"),
+    errorMsg = document.querySelector("#error-msg"),
+    validMsg = document.querySelector("#valid-msg");
+
+// here, the index maps to the error code returned from getValidationError - see readme
+var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+// initialise plugin
+var iti = window.intlTelInput(input, {
+  initialCountry: "ua",
+  // dropdownContainer: "body",
+  utilsScript: "js/utils.js?1603274336113"
+});
+
+var reset = function() {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+
+// on blur: validate
+input.addEventListener('blur', function() {
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+    } else {
+      input.classList.add("error");
+      var errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+    }
+  }
+});
+
+// on keyup / change flag: reset
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+
+// Добавить/удалить класс при открытии/закрытии для анимации
+input.addEventListener("open:countrydropdown", function() {
+  document.body.classList.add("iti-mobile-opened");
+});
+input.addEventListener("close:countrydropdown", function() {
+  document.body.classList.remove("iti-mobile-opened");
+});
 
 
 

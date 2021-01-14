@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Car</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
   <link rel="stylesheet" href="css/lightgallery.min.css" />
+  <link rel="stylesheet" href="css/fotorama.css">
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Car</title>
 </head>
 <body>
   <header class="header">
@@ -89,83 +91,102 @@
 <!--            </div>-->
 
             <div class="car-content__gallery">
-              <div class="gallery" id="animated-thumbnials">
-                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>
+              <div class="fotorama"
+                   data-nav="thumbs"
+                   data-arrows="false"
+                   data-click="false"
+                   data-allowfullscreen="true"
+                   data-swipe="true"
+              >
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
               </div>
-              <div class="gallery-nav-wrapper">
+<!--              <div class="gallery-nav-access access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>-->
+<!--              <div class="gallery" id="animated-thumbnials">-->
+<!--                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>-->
+<!--                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>-->
+<!--              </div>-->
+<!--              <div class="gallery-nav-wrapper">-->
 <!--                <div class="gallery-nav-access access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>-->
-                <div class="gallery-nav">
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product1-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product1-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product2-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product2-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product3-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product3-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product4-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product4-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product5-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product5-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
+<!--                <div class="gallery-nav">-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product1-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product1-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product2-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product2-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product3-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product3-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product4-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product4-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product5-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="gallery-nav-item">-->
+<!--                    <div class="thumb-wrapper">-->
+<!--                      <div class="thumb-bg"></div>-->
+<!--                      <img src="img/products/product5-thumb.jpg" alt="">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
             </div>
 
           </div>
@@ -184,7 +205,7 @@
               <div class="details__services">
                 <div class="services-title">Services We Offer</div>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <div class="services-item">
                       <a href="#" class="services-item-wrapper">
                         <div class="report">
@@ -198,7 +219,7 @@
                       <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <div class="services-item">
                       <a href="#" class="services-item-wrapper">
                         <div class="report">
@@ -212,7 +233,7 @@
                       <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <div class="services-item">
                       <a href="#" class="services-item-wrapper">
                         <div class="report">
@@ -226,7 +247,7 @@
                       <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
                     </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12 col-sm-12">
                     <div href="#" class="services-button services-item">
                       <a href="#" class="services-item-wrapper" data-toggle="modal" data-target="#buy-report">Get detailed <span>vindecoder</span> report <div class="report__price">$4.00 <span>(per report)</span></div></a>
                       <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span> See the Sample</a>
@@ -265,7 +286,7 @@
                 </div>
                 <div class="info-table-field">
                   <div class="table-text">Seller</div>
-                  <div class="table-value"><div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div></div>
+                  <div class="table-value"><strong>INSURANCE COMPANY</strong></div>
                 </div>
                 <div class="info-table-field">
                   <div class="table-text">Location</div>
@@ -637,25 +658,6 @@
     </div>
   </div>
 
-  <!--Share Modal-->
-  <div class="modal slide-up modal-main share-modal" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" >Get full car history</h4>
-          <p>Service is provided by CARFAX's official reseller</p>
-        </div>
-        <div class="modal-body share-body">
-          <div class="share-container">
-            111
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <!-- Bottom Navigation -->
   <div class="bottom-navigation">
     <div class="bottom-navigation-container">
@@ -750,12 +752,15 @@
                 <div class="auth-title">Создать аккаунт</div>
                 <form action="" class="auth-form">
                   <div class="auth-form-field">
-                    <select class="country-code" data-width="fit">
-                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>
-                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>
-                    </select>
-                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>
-                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>
+<!--                    <select class="country-code" data-width="fit">-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>-->
+<!--                    </select>-->
+<!--                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>-->
+<!--                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>-->
+                    <input id="phone" type="tel" required>
+                    <span id="valid-msg" class="hide"></span>
+                    <span id="error-msg" class="hide"></span>
                   </div>
                   <div class="auth-form-field">
                     <input type="email" placeholder="Введите Email" required>
@@ -815,6 +820,8 @@
   <script src="js/bootstrap-datetimepicker.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/select2.full.min.js"></script>
+  <script src="js/fotorama.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/share.js"></script>
 </body>

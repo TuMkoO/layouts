@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Catalog</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Catalog</title>
 </head>
 <body>
   <header class="header">
@@ -428,12 +430,15 @@
                 <div class="auth-title">Создать аккаунт</div>
                 <form action="" class="auth-form">
                   <div class="auth-form-field">
-                    <select class="country-code" data-width="fit">
-                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>
-                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>
-                    </select>
-                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>
-                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>
+<!--                    <select class="country-code" data-width="fit">-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>-->
+<!--                    </select>-->
+<!--                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>-->
+<!--                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>-->
+                    <input id="phone" type="tel" required>
+                    <span id="valid-msg" class="hide"></span>
+                    <span id="error-msg" class="hide"></span>
                   </div>
                   <div class="auth-form-field">
                     <input type="email" placeholder="Введите Email" required>
@@ -493,6 +498,7 @@
   <script src="js/bootstrap-datetimepicker.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/select2.full.min.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

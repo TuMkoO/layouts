@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Car</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
   <link rel="stylesheet" href="css/lightgallery.min.css" />
+  <link rel="stylesheet" href="css/fotorama.css" />
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Car</title>
 </head>
 <body>
   <header class="header">
@@ -74,89 +76,33 @@
           <div class="car-content car-content-right">
             <div class="car-content__add">
               <div class="car-fav">
-                <span class="favme"><span href="#" class="add-to">Add to watchlist</span></span>
+                <span class="favme aah-icon favme-car">
+                  <span href="#" class="add-to">Add to watchlist</span>
+                </span>
               </div>
-              <a href="#" class="add-to"><span class="add-share"></span></a>
+              <div class="car-share" id="share-btn"><span class="aah-icon add-share"></span></div>
             </div>
 
             <div class="car-content__gallery">
-              <div class="gallery" id="animated-thumbnials">
-                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product1-690.jpg"><img src="img/products/product1-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product2-690.jpg"><img src="img/products/product2-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product3-690.jpg"><img src="img/products/product3-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product4-690.jpg"><img src="img/products/product4-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>
-                <div class="gallery-item" data-src="img/products/product5-690.jpg"><img src="img/products/product5-690.jpg" alt=""></div>
+              <div class="fotorama"
+                   data-nav="thumbs"
+                   data-arrows="false"
+                   data-click="false"
+                   data-allowfullscreen="false"
+                   data-swipe="false"
+              >
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
               </div>
-              <div class="gallery-nav-wrapper">
-                <div class="gallery-nav-access access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
-                <div class="gallery-nav">
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product1-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product1-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product2-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product2-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product3-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product3-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product4-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product4-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product5-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="gallery-nav-item">
-                    <div class="thumb-wrapper">
-                      <div class="thumb-bg"></div>
-                      <img src="img/products/product5-thumb.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="gallery-nav-access access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
             </div>
 
           </div>
@@ -342,37 +288,39 @@
           <div class="car-content car-content-right">
             <div class="car-content__history">
               <div class="history-title">Vehicle Sales History (2)</div>
-              <!--              <div class="history-access"><div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div></div>-->
-
-              <div class="history-table-wrapper">
-                <table class="table history-table">
-                  <thead>
-                  <tr>
-                    <th>Auction</th>
-                    <th>Date</th>
-                    <th>Lot#</th>
-                    <th>Final Bid</th>
-                    <th>Status</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td><span class="auction auction-red">IAAI</span></td>
-                    <td><span class="date">2009/12/30</span></td>
-                    <td><span class="lot-num">40248870</span></td>
-                    <td><span class="bid-price">$7,700.00</span></td>
-                    <td><span class="status status-red">Sold</span></td>
-                  </tr>
-                  <tr>
-                    <td><span class="auction auction-blue">Copart</span></td>
-                    <td><span class="date">2009/12/30</span></td>
-                    <td><span class="lot-num">40248870</span></td>
-                    <td><span class="bid-price">$7,700.00</span></td>
-                    <td><span class="status status-yellow">Pending</span></td>
-                  </tr>
-                  </tbody>
-                </table>
+              <div class="history-access">
+                <div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
               </div>
+
+<!--              <div class="history-table-wrapper">-->
+<!--                <table class="table history-table">-->
+<!--                  <thead>-->
+<!--                  <tr>-->
+<!--                    <th>Auction</th>-->
+<!--                    <th>Date</th>-->
+<!--                    <th>Lot#</th>-->
+<!--                    <th>Final Bid</th>-->
+<!--                    <th>Status</th>-->
+<!--                  </tr>-->
+<!--                  </thead>-->
+<!--                  <tbody>-->
+<!--                  <tr>-->
+<!--                    <td><span class="auction auction-red">IAAI</span></td>-->
+<!--                    <td><span class="date">2009/12/30</span></td>-->
+<!--                    <td><span class="lot-num">40248870</span></td>-->
+<!--                    <td><span class="bid-price">$7,700.00</span></td>-->
+<!--                    <td><span class="status status-red">Sold</span></td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td><span class="auction auction-blue">Copart</span></td>-->
+<!--                    <td><span class="date">2009/12/30</span></td>-->
+<!--                    <td><span class="lot-num">40248870</span></td>-->
+<!--                    <td><span class="bid-price">$7,700.00</span></td>-->
+<!--                    <td><span class="status status-yellow">Pending</span></td>-->
+<!--                  </tr>-->
+<!--                  </tbody>-->
+<!--                </table>-->
+<!--              </div>-->
 
             </div>
           </div>
@@ -725,12 +673,15 @@
                 <div class="auth-title">Создать аккаунт</div>
                 <form action="" class="auth-form">
                   <div class="auth-form-field">
-                    <select class="country-code" data-width="fit">
-                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>
-                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>
-                    </select>
-                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>
-                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>
+<!--                    <select class="country-code" data-width="fit">-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>-->
+<!--                    </select>-->
+<!--                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>-->
+<!--                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>-->
+                    <input id="phone" type="tel" required>
+                    <span id="valid-msg" class="hide"></span>
+                    <span id="error-msg" class="hide"></span>
                   </div>
                   <div class="auth-form-field">
                     <input type="email" placeholder="Введите Email" required>
@@ -790,6 +741,9 @@
   <script src="js/bootstrap-datetimepicker.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/select2.full.min.js"></script>
+  <script src="js/fotorama.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
 </body>
 </html>
