@@ -1,117 +1,9 @@
 $(function(){
-  //Галерея товаров
-  // $('.gallery').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: true,
-  //   asNavFor: '.gallery-nav'
-  // });
-  // $('.gallery-nav').slick({
-  //   slidesToShow: 7,
-  //   slidesToScroll: 1,
-  //   infinite: false,
-  //   asNavFor: '.gallery',
-  //   arrows: true,
-  //   prevArrow: '<div class="glyphicon glyphicon-menu-left"></div>',
-  //   nextArrow: '<div class="glyphicon glyphicon-menu-right"></div>',
-  //   dots: false,
-  //   centerMode: false,
-  //   focusOnSelect: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1219,
-  //       settings: {
-  //         slidesToShow: 6,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1199,
-  //       settings: {
-  //         slidesToShow: 5,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 992,
-  //       settings: {
-  //         slidesToShow: 8,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 700,
-  //       settings: {
-  //         slidesToShow: 6,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 5,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 500,
-  //       settings: {
-  //         slidesToShow: 4,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 425,
-  //       settings: {
-  //         slidesToShow: 3,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 350,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       }
-  //     },
-  //   ]
-  // });
-
-
 
   // Language select
   $(function(){
     $('.selectpicker').selectpicker();
   });
-  // Phone country select
-  // $(function(){
-  //   $('.country-code').selectpicker({
-  //     liveSearch: true,
-  //     noneResultsText: 'По вашему запросу не найдено'
-  //   });
-  // });
-
-  // Cars Select2
-  // $(".maker").select2({
-  //   placeholder: 'Maker',
-  //   templateResult: formatState,
-  // });
-  // $(".rogue").select2({
-  //   placeholder: 'Rogue'
-  // });
-  //
-  // function formatState (state) {
-  //   if (!state.id) {
-  //     return state.text;
-  //   }
-  //   var digits = '555';
-  //   var $state = $(
-  //     '<div>' + state.text + '<span class="cars-list-count">' + digits + '</span>' + '</div>'
-  //   );
-  //   return $state;
-  // }
-
-  // Открытие-Закрытие Select2
-  // $('.search-select').on('select2:open', function (e) {
-  //   console.log('opened');
-  // }).on('select2:closing', function(e) {
-  //   console.log('closing');
-  // });
-
-
 
 
   // Открытие-закрытие select2 (добавить класс к body, изменить border)
@@ -148,7 +40,14 @@ $(function(){
   });
 
 
-
+  //Отображение placeholder в Select2
+  $('body').on('input keyup', '.select2-search__field', function() {
+    if ( $('.select2-search__field').val().length > 0 ) {
+      $('.select2-search__field').css({'background': '#ffffff'});
+    } else {
+      $('.select2-search__field').css({'background': 'transparent'});
+    }
+  });
 
 
   // Вывод итогового значения Year range picker
@@ -216,9 +115,6 @@ $(function(){
   });
 
 
-
-
-
   //Не закрывать Dropdown с классом .noclose
   $(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPropagation() });
 
@@ -275,27 +171,6 @@ $(function(){
     }
   });
 
-  // //Создание System-message
-  // function messageCreate (text) {
-  //   $('#message-add-fav').remove();
-  //   $('<div class="system-message" id="message-add-fav">' +
-  //     '<div class="system-message__icon glyphicon glyphicon-ok"></div>' +
-  //     '<div class="system-message__text" id="add-fav-text">'+ text +'</div>' +
-  //     '</div>')
-  //     .insertAfter($('.modal'));
-  //
-  //   setTimeout(function () {
-  //     $('#message-add-fav').addClass('active');
-  //   }, 0);
-  //
-  //   setTimeout(function () {
-  //     $('#message-add-fav').removeClass('active');
-  //   }, 1000);
-  //
-  //   setTimeout(function () {
-  //     $('#message-add-fav').remove();
-  //   }, 1100);
-  // }
 
   //Проверка количества избранных авто при загрузке страницы
   $(document).ready(function() {
@@ -325,10 +200,6 @@ $(function(){
     $('body').removeClass('dropdown-open');
     console.log('hidden');
   });
-
-
-
-
 
 
   //Datepicker
@@ -385,13 +256,6 @@ $(function(){
 
     messageCreate('Ссылка скопирована');
   });
-
-  //Галерея
-  // $('#animated-thumbnials').lightGallery({
-  //   thumbnail: true,
-  //   selector: '.gallery-item',
-  //   zoom: true
-  // });
 
 
 });
@@ -486,37 +350,6 @@ $('.code-field__input').keyup(function(){
 });
 
 
-// libphonenumber
-$(".phone-num").keyup(function () {
-  var val_old = $(this).val();
-
-  let code = $(".country-code").children(".selectpicker").children(".filter-option").children(".flag-icon").data("code");
-  console.log(code);
-
-  var phoneUtil = libphonenumber.PhoneNumberUtil.getInstance();
-  var PNF = libphonenumber.PhoneNumberFormat;
-  var phoneNumber = phoneUtil.parseAndKeepRawInput(val_old, code);
-
-  console.log(phoneUtil.format(phoneNumber, PNF.E164));
-  // Result from isValidNumber().
-  console.log(phoneUtil.isValidNumber(phoneNumber));
-  // Format number in the international format.
-  console.log(phoneUtil.format(phoneNumber, PNF.INTERNATIONAL));
-
-  // var newString = new libphonenumber.AsYouType('UA').input(val_old);
-  var newString = phoneUtil.format(phoneNumber, PNF.INTERNATIONAL);
-  $(this).focus().val('').val(newString);
-
-  if (phoneUtil.isValidNumber(phoneNumber)) {
-    $('.invalid-feedback-phone').css({'display':'none'})
-  } else {
-    $('.invalid-feedback-phone').css({'display':'block'})
-  }
-
-});
-
-
-
 // For max-width: 475px
 var mediaQuery = window.matchMedia("screen and (max-width: 475px)");
 mediaQuery.addListener(mobile);
@@ -531,7 +364,6 @@ function mobile(mq) {
       $(".rogue").select2("close");
     });
 
-
     //select2 with SlideDown
     $(document).ready(function() {
       init();
@@ -600,23 +432,6 @@ function mobile(mq) {
       $('.search-select').select2('destroy');
       init();
     }
-
-    // $('#share-modal').on('shown.bs.modal', function () {
-    //   $('#share-modal').modal('hide');
-    //
-    //   //Скопировать текущую ссылку
-    //   function copyToClipboard() {
-    //     var $temp = $("<input>");
-    //     $("body").append($temp);
-    //     $temp.val($(location).prop('href')).select();
-    //     document.execCommand("copy");
-    //     $temp.remove();
-    //   }
-    //   copyToClipboard();
-    //
-    //   messageCreate('Ссылка скопирована');
-    //
-    // });
 
   }
 
@@ -636,12 +451,7 @@ function formatState (state) {
 
 
 
-
-
-
-
 // Phone country field
-
 var input = document.querySelector("#phone"),
     errorMsg = document.querySelector("#error-msg"),
     validMsg = document.querySelector("#valid-msg");
@@ -652,8 +462,11 @@ var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long
 // initialise plugin
 var iti = window.intlTelInput(input, {
   initialCountry: "ua",
-  // dropdownContainer: "body",
-  utilsScript: "js/utils.js?1603274336113"
+  customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+    return "+" + selectedCountryData.dialCode;
+  },
+  nationalMode: false,
+  utilsScript: "js/utils.js"
 });
 
 var reset = function() {
