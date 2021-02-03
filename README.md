@@ -5,7 +5,7 @@ https://tumkoo.github.io/layouts/
 <br>
 https://tumkoo.github.io/layouts/Europeya
 <br>
-https://tumkoo.github.io/layouts/AutoSiteDealer
+https://tumkoo.github.io/layouts/aDealer
 <br>
 https://tumkoo.github.io/layouts/Carvertical
 <br>
