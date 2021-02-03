@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" href="css/fotorama.css" />
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Car</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="header-wrapper">
+          <div class="header-content">
+            <div class="row">
+              <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3">
+                <div class="logo">
+                  <a href="#" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+                  <a href="#" class="logo-link logo-mobile">A<span>A</span>H</a>
+                </div>
+              </div>
+              <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6">
+                <div class="search">
+                  <form class="search-form" action="" method="">
+                    <input type="search" class="search-input" id="hsearch-input" placeholder="Поиск по VIN, Lot #, Stock #" autocomplete="off">
+                    <button type="submit" class="search-btn" value="">
+                  </form>
+                </div>
+              </div>
+              <div id="hnav" class="col-md-3 col-sm-3 col-xs-3">
+                <div class="user-nav">
+                  <div class="nav__lang">
+                    <select class="selectpicker" data-width="fit">
+                      <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                      <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                    </select>
+                  </div>
+
+                  <div class="nav__auth">
+                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Вход</a>
+                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Регистрация</a>
+                    <a href="#" class="auth-link-mobile" data-toggle="modal" data-target="#profileModal">
+                      <span class="aah-icon auth-icon"></span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="car">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-header car-breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list-item"><a href="/">AutoSiteDealer</a></li>
+              <li class="breadcrumbs-list-item"><a href="cabinet-invite.html">Кабинет</a></li>
+              <li class="breadcrumbs-list-item">Мои отчеты</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-push-6">
+          <div class="car-content car-content-right">
+            <div class="car-content__add">
+              <div class="car-fav">
+                <span class="favme aah-icon favme-car">
+                  <span href="#" class="add-to">Add to watchlist</span>
+                </span>
+              </div>
+              <div class="car-share" id="share-btn"><span class="aah-icon add-share"></span></div>
+            </div>
+
+            <div class="car-content__gallery">
+              <div class="fotorama"
+                   data-nav="thumbs"
+                   data-arrows="false"
+                   data-click="false"
+                   data-allowfullscreen="false"
+                   data-swipe="false"
+              >
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
+                <a href="img/products/product1-690.jpg" data-full="img/products/product1.jpg"><img src="img/products/product1-thumb.jpg"></a>
+                <a href="img/products/product2-690.jpg" data-full="img/products/product2.jpg"><img src="img/products/product2-thumb.jpg"></a>
+                <a href="img/products/product3-690.jpg" data-full="img/products/product3.jpg"><img src="img/products/product3-thumb.jpg"></a>
+                <a href="img/products/product4-690.jpg" data-full="img/products/product4.jpg"><img src="img/products/product4-thumb.jpg"></a>
+                <a href="img/products/product5-690.jpg" data-full="img/products/product5.jpg"><img src="img/products/product5-thumb.jpg"></a>
+              </div>
+              <div class="gallery-nav-access access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <div class="car-content">
+            <div class="car-content__details">
+              <div class="details__title">
+                <h1>2018 NISSAN ALTIMA ALTIMA 2.5, 1N4AL3AP4JC158856</h1>
+                <div class="bid">
+                  Final Bid:
+                  <div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
+                </div>
+              </div>
+              <div class="details__services">
+                <div class="services-title">Services We Offer</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-aah.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
+                        </div>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-carfax.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
+                        </div>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="services-item">
+                      <a href="#" class="services-item-wrapper">
+                        <div class="report">
+                          <div class="report__title">Get History</div>
+                          <div class="report__logo">
+                            <img src="img/logo-autocheck.png" alt="">
+                          </div>
+                          <div class="report__price">$4.00 <span>(per report)</span></div>
+                        </div>
+                      </a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span>See the Sample</a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div href="#" class="services-button services-item">
+                      <a href="#" class="services-item-wrapper" data-toggle="modal" data-target="#buy-report">Get detailed <span>vindecoder</span> report <div class="report__price">$4.00 <span>(per report)</span></div></a>
+                      <a href="#" class="services-item-sample"><span class="aah-icon eye-icon"></span> See the Sample</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="car-content car-content-guest">
+            <div class="car-content__details">
+              <div class="details__info-table">
+                <div class="info-table-field">
+                  <div class="table-title">Basic Information</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Lot</div>
+                  <div class="table-value"><span>copart</span> #40248870</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Auction Date</div>
+                  <div class="table-value">2020/08/05, Wednesday</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">VIN</div>
+                  <div class="table-value"><strong>JHMZC5F17JC011202</strong></div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Title State/Type</div>
+                  <div class="table-value">IL SC</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Seller</div>
+                  <div class="table-value"><div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div></div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Location</div>
+                  <div class="table-value">Eldridge</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Retail Value</div>
+                  <div class="table-value">$21,588.00</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Repair Value</div>
+                  <div class="table-value">$21,588.00</div>
+                </div>
+              </div>
+              <div class="details__info-table">
+                <div class="info-table-field">
+                  <div class="table-title">Accident Information</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Loss</div>
+                  <div class="table-value">Collision</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Damage</div>
+                  <div class="table-value">Front End, Minor dent/scratches</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Run and Drive</div>
+                  <div class="table-value"><strong>Yes</strong></div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Starts</div>
+                  <div class="table-value">Car Starts</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Keys</div>
+                  <div class="table-value"><strong>Yes</strong></div>
+                </div>
+              </div>
+              <div class="details__info-table">
+                <div class="info-table-field">
+                  <div class="table-title">Vehicle Details</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Brand</div>
+                  <div class="table-value">HONDA</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Model</div>
+                  <div class="table-value">CLARITY</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Series</div>
+                  <div class="table-value">CLARITY</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Year</div>
+                  <div class="table-value">2018</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Body style</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Color</div>
+                  <div class="table-value">Green</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Engine</div>
+                  <div class="table-value">1.5L4</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Transmission</div>
+                  <div class="table-value">AUTOMATIC</div>
+                </div>
+                <div class="info-table-field">
+                  <div class="table-text">Drive</div>
+                  <div class="table-value">Front-wheel Drive</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="car-content car-content-right">
+            <div class="car-content__history">
+              <div class="history-title">Vehicle Sales History (2)</div>
+              <div class="history-access">
+                <div class="access-plan access-denied"><span class="aah-icon access-denied-icon"></span> Upgrade plan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vehicles vehicles-single-row">
+    <div class=" container-fluid">
+      <div class="car-list">
+        <div class="row">
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
+            <div class="car-list-item">
+              <div class="car-container">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="#" class="car-link">
+                  <div class="car-wrapper">
+                    <div class="car-img">
+                      <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                      <div class="car-vin">
+                        <div class="vin-code">1gcek14t74e239032</div>
+                      </div>
+                      <img src="img/car-photo.jpg" alt="">
+                    </div>
+                    <div class="car-desc-wrapper">
+                      <div class="car-desc car-desc__ml">35,000ml</div>
+                      <div class="car-desc car-desc__year">2004</div>
+                      <div class="car-desc car-desc__transmission">Automatic</div>
+                    </div>
+                    <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                    <div class="car-text">Lot number: <span>45022660</span></div>
+                    <div class="car-text">Damage: <span>ALL OVER</span></div>
+                    <div class="car-text">Auction: <span>Copart</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-role="footer" data-position="fixed">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="footer-info">
+              <div class="footer-info__logo">
+                <div class="logo"><a href="#" class="logo-link">Auto<span>Site</span>Dealer</a></div>
+              </div>
+              <div class="footer-info__text">Email: <a href="#">info@site.com</a></div>
+              <div class="footer-info__text">Telegram: <a href="#">@site</a></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+
+            <div class="footer__contact">
+              <div class="contact-title">Contact Us</div>
+              <form action="" class="contact-form">
+                <div class="contact-form__field">
+                  <label>Name</label>
+                  <input type="text">
+                </div>
+                <div class="contact-form__field">
+                  <label>Email address</label>
+                  <input type="email">
+                </div>
+                <div class="contact-form__field">
+                  <label>Your message</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contact-form__field">
+                  <button class="btn-send">Send message</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="col-md-2 col-md-offset-2 col-sm-12">
+            <div class="footer__total">
+              <div class="total-counter">15,065,421</div>
+              <div class="total-title">Total Vehicles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!--Buy report Modal-->
+  <div class="modal slide-up modal-main car-history-modal" id="buy-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" >Get full car history</h4>
+          <p>Service is provided by CARFAX's official reseller</p>
+        </div>
+        <div class="modal-body car-history-body">
+          <div class="car-history-container">
+            <div class="car-value">
+              <img src="img/products/product1-thumb.jpg" alt="">
+              <span>23 records we found</span>
+            </div>
+            <div class="car-report">
+              <img src="img/logo-carfax.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-invite auth-btn">Buy report</button>
+          <button class="car-history-btn btn-see"><span class="aah-icon eye-icon"></span> See sample</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-navigation">
+    <div class="bottom-navigation-container">
+      <button type="button" class="btn-bottom-nav" data-toggle="modal" data-target="#report-1">Report 1</button>
+      <button type="button" class="btn-bottom-nav" data-toggle="modal" data-target="#report-1">Report 2</button>
+      <button type="button" class="btn-bottom-nav" data-toggle="modal" data-target="#report-1">Report 3</button>
+    </div>
+  </div>
+
+  <div class="modal slide-up modal-main get-report-modal" id="report-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header get-report-header">
+          <img src="img/logo-carfax.png" alt="">
+          <h4 class="get-report-title" id="myModalLabel">Get Carfax Report</h4>
+        </div>
+        <div class="modal-body get-report-body">
+          <div class="get-report-container">
+            <form action="" class="get-report-form">
+              <div class="get-report-form__field">
+                <input class="" type="email" placeholder="Email">
+                <span class="aah-icon field-email"></span>
+              </div>
+              <div class="get-report-form__field">
+                <input class="" type="text" placeholder="Vin">
+                <span class="aah-icon field-vin"></span>
+              </div>
+
+              <button type="submit" class="btn-dark-blue get-report-btn">
+                Pay For This Carfax Report
+                <span>($7.00 once)</span>
+              </button>
+              <div class="get-report-view">
+                <a href="#" class=""><span class="view-icon"></span> View example report</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal right fade modal-user profile" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+  <!--Вход-регистрация-->
+        <div class="modal-header modal-header-auth">
+          <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="aah-icon close-icon"></span>
+          </button>
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#login">Вход</a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#register">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-body modal-body-auth">
+          <div class="tab-content">
+            <div class="tab-pane active" id="login">
+              <div class="auth-container">
+                <div class="auth-title">Войти в аккаунт</div>
+                <form action="" class="auth-form">
+                  <div class="auth-form-field">
+                    <input type="text" placeholder="Email или номер телефона" required>
+                    <div class="invalid-feedback">Введите email</div>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="password" id="auth-pass" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                    <div class="invalid-feedback">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
+                    <a href="#" class="pass-control pass-control-1">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="auth-form-field">
+                    <button class="auth-btn" type="submit">Войти</button>
+                  </div>
+                </form>
+                <div class="auth-remember"><a href="#" class="auth-remember__link">Забыли пароль?</a></div>
+                <div class="auth-fb"><a href="#" class="auth-btn auth-btn-fb">Войти с Facebook</a></div>
+              </div>
+            </div>
+            <div class="tab-pane" id="register">
+              <div class="auth-container">
+                <div class="auth-title">Создать аккаунт</div>
+                <form action="" class="auth-form">
+                  <div class="auth-form-field">
+<!--                    <select class="country-code" data-width="fit">-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ua flag-icon-squared" data-code="UA"></span> +380 Ukraine (Украина)'>+380</option>-->
+<!--                      <option data-content='<span class="flag-icon flag-icon-ru flag-icon-squared" data-code="RU"></span> +7 Russia (Россия)'>Rus</option>-->
+<!--                    </select>-->
+<!--                    <input type="tel" class="phone-num" placeholder="Введите номер телефона" required>-->
+<!--                    <div class="invalid-feedback-phone">Введите корректный номер телефона</div>-->
+                    <input id="phone" type="tel" required>
+                    <span id="valid-msg" class="hide"></span>
+                    <span id="error-msg" class="hide"></span>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="email" placeholder="Введите Email" required>
+                    <div class="invalid-feedback">Введите email</div>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="text" placeholder="Имя" required>
+                    <div class="invalid-feedback">Введите имя</div>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="text" placeholder="Фамилия" required>
+                    <div class="invalid-feedback">Введите фамилию</div>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="password" id="auth-pass-2" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                    <div class="invalid-feedback">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
+                    <a href="#" class="pass-control pass-control-2">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="auth-form-field">
+                    <input type="password" id="auth-pass-3" placeholder="Повторите пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                    <div class="invalid-feedback" id="auth-pass-3-text">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
+                    <a href="#" class="pass-control pass-control-3">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="auth-form-field">
+                    <label class="auth-form-field__label-chbox">
+                      <input class="check-box" type="checkbox">
+                      <span class="check-style"></span>
+                      Соглашаюсь с <a href="#">Условиями</a> и <a href="#">политикой конфиденциальности</a>
+                    </label>
+                  </div>
+                  <div class="auth-form-field">
+                    <button class="auth-btn" type="submit" onclick="">Зарегистрироваться</button>
+                  </div>
+                </form>
+                <div class="auth-fb"><a href="#" class="auth-btn auth-btn-fb fb-reg">Зарегистрироваться через Facebook</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/fotorama.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
+</body>
+</html>
