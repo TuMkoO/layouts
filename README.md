@@ -5,6 +5,10 @@ https://tumkoo.github.io/layouts/
 <br>
 https://tumkoo.github.io/layouts/Europeya
 <br>
+https://tumkoo.github.io/layouts/AutoSiteDealer
+<br>
+https://tumkoo.github.io/layouts/Carvertical
+<br>
 https://tumkoo.github.io/layouts/Acrostia
 <br>
 https://tumkoo.github.io/layouts/PremiumEcommerceebsite
