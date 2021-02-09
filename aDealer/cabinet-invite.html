@@ -18,8 +18,8 @@
             <div class="row">
               <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3">
                 <div class="logo">
-                  <a href="/" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
-                  <a href="/" class="logo-link logo-mobile">A<span>A</span>H</a>
+                  <a href="index.html" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+                  <a href="index.html" class="logo-link logo-mobile">A<span>A</span>H</a>
                 </div>
               </div>
               <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6">
@@ -38,15 +38,91 @@
                       <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
                     </select>
                   </div>
-
-                  <div class="nav__auth">
-                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Вход</a>
-                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Регистрация</a>
-                    <a href="#" class="auth-link-mobile" data-toggle="modal" data-target="#profileModal">
-                      <span class="aah-icon auth-icon"></span>
+                  <div class="nav__fav">
+                    <div class="dropdown">
+                      <a href="#" class="fav-link" id="favDropdown" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="aah-icon fav-icon"></span>
+                        <span class="count" id="fav-count">0</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="favDropdown">
+                        <div class="dropdown-container">
+                          <div class="drop__car">
+                            <div class="car-container">
+                              <div class="car-fav"><span class="favme aah-icon"></span></div>
+                              <a href="#" class="car-link">
+                                <div class="car-wrapper">
+                                  <div class="car-img">
+                                    <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                                    <div class="car-vin">
+                                      <div class="vin-code">1gcek14t74e239032</div>
+                                    </div>
+                                    <img src="img/car-photo.jpg" alt="">
+                                  </div>
+                                  <div class="car-desc-wrapper">
+                                    <div class="car-desc car-desc__ml">35,000ml</div>
+                                    <div class="car-desc car-desc__year">2004</div>
+                                    <div class="car-desc car-desc__transmission">Automatic</div>
+                                  </div>
+                                  <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                                  <div class="car-text">Lot number: <span>45022660</span></div>
+                                  <div class="car-text">Damage: <span>ALL OVER</span></div>
+                                  <div class="car-text">Auction: <span>Copart</span></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="drop__link">
+                            <a href="#" class="link-all">Просмотреть все избранные авто</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav__reports">
+                    <div class="dropdown">
+                      <a href="#" class="reports-link" id="reportsDropdown" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="aah-icon reports-icon"></span>
+                        <span class="count" id="rep-count">99</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                        <div class="dropdown-container">
+                          <div class="drop__car">
+                            <div class="car-container">
+                              <div class="car-fav"><span class="favme aah-icon"></span></div>
+                              <a href="#" class="car-link">
+                                <div class="car-wrapper">
+                                  <div class="car-img">
+                                    <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                                    <div class="car-vin">
+                                      <div class="vin-code">1gcek14t74e239032</div>
+                                    </div>
+                                    <img src="img/car-photo.jpg" alt="">
+                                  </div>
+                                  <div class="car-desc-wrapper">
+                                    <div class="car-desc car-desc__ml">35,000ml</div>
+                                    <div class="car-desc car-desc__year">2004</div>
+                                    <div class="car-desc car-desc__transmission">Automatic</div>
+                                  </div>
+                                  <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                                  <div class="car-text">Lot number: <span>45022660</span></div>
+                                  <div class="car-text">Damage: <span>ALL OVER</span></div>
+                                  <div class="car-text">Auction: <span>Copart</span></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="drop__link">
+                            <a href="#" class="link-all">Просмотреть все Ваши отчёты</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav__profile">
+                    <a href="#" class="profile-link" data-toggle="modal" data-target="#profileModal">
+                      <span class="aah-icon profile-icon"></span>
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -63,7 +139,7 @@
         <div class="col-md-12">
           <div class="content-header">
             <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list-item"><a href="/">AutoSiteDealer</a></li>
+              <li class="breadcrumbs-list-item"><a href="index.html">AutoSiteDealer</a></li>
               <li class="breadcrumbs-list-item"><a href="cabinet-invite.html">Кабинет</a></li>
               <li class="breadcrumbs-list-item">Мои отчеты</li>
             </ul>
@@ -324,7 +400,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="footer-info">
               <div class="footer-info__logo">
-                <div class="logo"><a href="#" class="logo-link">Auto<span>Site</span>Dealer</a></div>
+                <div class="logo"><a href="index.html" class="logo-link">Auto<span>Site</span>Dealer</a></div>
               </div>
               <div class="footer-info__text">Email: <a href="#">info@site.com</a></div>
               <div class="footer-info__text">Telegram: <a href="#">@site</a></div>

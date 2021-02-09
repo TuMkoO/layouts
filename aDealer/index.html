@@ -7,7 +7,6 @@
   <title>AutoSiteDealer</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/select2.min.css">
-  <link rel="stylesheet" href="css/intlTelInput.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,8 +18,8 @@
             <div class="row">
               <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3">
                 <div class="logo">
-                  <a href="#" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
-                  <a href="#" class="logo-link logo-mobile">A<span>A</span>H</a>
+                  <a href="index.html" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+                  <a href="index.html" class="logo-link logo-mobile">A<span>A</span>H</a>
                 </div>
               </div>
               <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6">
@@ -39,15 +38,91 @@
                       <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
                     </select>
                   </div>
-
-                  <div class="nav__auth">
-                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Вход</a>
-                    <a href="#" class="auth-link" data-toggle="modal" data-target="#profileModal">Регистрация</a>
-                    <a href="#" class="auth-link-mobile" data-toggle="modal" data-target="#profileModal">
-                      <span class="aah-icon auth-icon"></span>
+                  <div class="nav__fav">
+                    <div class="dropdown">
+                      <a href="#" class="fav-link" id="favDropdown" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="aah-icon fav-icon"></span>
+                        <span class="count" id="fav-count">0</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="favDropdown">
+                        <div class="dropdown-container">
+                          <div class="drop__car">
+                            <div class="car-container">
+                              <div class="car-fav"><span class="favme aah-icon"></span></div>
+                              <a href="#" class="car-link">
+                                <div class="car-wrapper">
+                                  <div class="car-img">
+                                    <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                                    <div class="car-vin">
+                                      <div class="vin-code">1gcek14t74e239032</div>
+                                    </div>
+                                    <img src="img/car-photo.jpg" alt="">
+                                  </div>
+                                  <div class="car-desc-wrapper">
+                                    <div class="car-desc car-desc__ml">35,000ml</div>
+                                    <div class="car-desc car-desc__year">2004</div>
+                                    <div class="car-desc car-desc__transmission">Automatic</div>
+                                  </div>
+                                  <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                                  <div class="car-text">Lot number: <span>45022660</span></div>
+                                  <div class="car-text">Damage: <span>ALL OVER</span></div>
+                                  <div class="car-text">Auction: <span>Copart</span></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="drop__link">
+                            <a href="#" class="link-all">Просмотреть все избранные авто</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav__reports">
+                    <div class="dropdown">
+                      <a href="#" class="reports-link" id="reportsDropdown" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="aah-icon reports-icon"></span>
+                        <span class="count" id="rep-count">99</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                        <div class="dropdown-container">
+                          <div class="drop__car">
+                            <div class="car-container">
+                              <div class="car-fav"><span class="favme aah-icon"></span></div>
+                              <a href="#" class="car-link">
+                                <div class="car-wrapper">
+                                  <div class="car-img">
+                                    <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
+                                    <div class="car-vin">
+                                      <div class="vin-code">1gcek14t74e239032</div>
+                                    </div>
+                                    <img src="img/car-photo.jpg" alt="">
+                                  </div>
+                                  <div class="car-desc-wrapper">
+                                    <div class="car-desc car-desc__ml">35,000ml</div>
+                                    <div class="car-desc car-desc__year">2004</div>
+                                    <div class="car-desc car-desc__transmission">Automatic</div>
+                                  </div>
+                                  <h3 class="car-name">Chevrolet Cruze Lt</h3>
+                                  <div class="car-text">Lot number: <span>45022660</span></div>
+                                  <div class="car-text">Damage: <span>ALL OVER</span></div>
+                                  <div class="car-text">Auction: <span>Copart</span></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="drop__link">
+                            <a href="#" class="link-all">Просмотреть все Ваши отчёты</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav__profile">
+                    <a href="#" class="profile-link" data-toggle="modal" data-target="#profileModal">
+                      <span class="aah-icon profile-icon"></span>
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -65,7 +140,7 @@
             <div class="form-field form-field-maker" >
               <div class="maker-container">
                 <select class="search-select maker" data-width="fit">
-                  <option></option>
+                  <option value="0" data-hidden="true">Maker</option>
                   <option value="1" data-content='Acura'>Acura</option>
                   <option value="2" data-content='Alfa Romeo'>Alfa Romeo</option>
                   <option value="3" data-content='Aston Martin'>Aston Martin</option>
@@ -82,7 +157,7 @@
             <div class="form-field form-field-rogue">
               <div class="rogue-container">
                 <select class="search-select rogue" data-width="fit">
-                  <option></option>
+                  <option value="0" data-hidden="true">Rogue</option>
                   <option value="1" data-content='Model 1'>Model 1</option>
                   <option value="2" data-content='Model 2'>Model 2</option>
                   <option value="3" data-content='Model 3'>Model 3</option>
@@ -156,7 +231,7 @@
                 IAAI
               </label>
             </div>
-            <button type="submit" class="btn-search btn-invite"><span class="aah-icon"></span> Search from 19 523 214 vehicles</button>
+            <button type="submit" class="btn-search btn-invite">Search from 19 523 214 vehicles</button>
           </form>
         </div>
       </div>
@@ -181,10 +256,8 @@
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-xs-6 col-12">
             <div class="car-list-item">
               <div class="car-container">
-                <div class="car-fav">
-                  <span class="favme aah-icon"></span>
-                </div>
-                <a href="#" class="car-link">
+                <div class="car-fav"><span class="favme aah-icon"></span></div>
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -211,7 +284,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -238,7 +311,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -265,7 +338,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -292,7 +365,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -319,7 +392,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -346,7 +419,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -373,7 +446,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -400,7 +473,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -427,7 +500,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -454,7 +527,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -481,7 +554,7 @@
             <div class="car-list-item">
               <div class="car-container">
                 <div class="car-fav"><span class="favme aah-icon"></span></div>
-                <a href="#" class="car-link">
+                <a href="car.html" class="car-link">
                   <div class="car-wrapper">
                     <div class="car-img">
                       <div class="car-date"><span class="aah-icon"></span>Jul 12 2020</div>
@@ -802,7 +875,7 @@
             </div>
           </div>
           <div class="col-12 text-center">
-            <a href="#" class="btn-main-list">All Makes <span class="glyphicon glyphicon-arrow-right"></span></a>
+            <a href="catalog.html" class="btn-main-list">All Makes <span class="main-list-arrow"></span></a>
           </div>
         </div>
       </div>
@@ -1010,21 +1083,21 @@
             </div>
           </div>
           <div class="col-12 text-center">
-            <a href="#" class="btn-main-list">All New Vehicles <span class="glyphicon glyphicon-arrow-right"></span></a>
+            <a href="catalog.html" class="btn-main-list">All New Vehicles <span class="main-list-arrow"></span></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer" data-role="footer" data-position="fixed">
+  <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <div class="footer-info">
               <div class="footer-info__logo">
-                <div class="logo"><a href="#" class="logo-link">Auto<span>Site</span>Dealer</a></div>
+                <div class="logo"><a href="index.html" class="logo-link">Auto<span>Site</span>Dealer</a></div>
               </div>
               <div class="footer-info__text">Email: <a href="#">info@site.com</a></div>
               <div class="footer-info__text">Telegram: <a href="#">@site</a></div>
@@ -1071,106 +1144,71 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-      <!--Вход-регистрация-->
-        <div class="modal-header modal-header-auth">
+        <!--Меню пользователя-->
+        <div class="modal-header">
           <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="aah-icon close-icon"></span>
           </button>
-          <ul class="nav nav-tabs">
-            <li class="active">
-              <a data-toggle="tab" href="#login">Вход</a>
-            </li>
-            <li>
-              <a data-toggle="tab" href="#register">Регистрация</a>
-            </li>
-          </ul>
+          <div class="modal-user-header__info">
+            <div class="user-logo">
+              <span class="icon-user aah-icon"></span>
+            </div>
+            <div class="user-info">
+              <h4 class="user-name">Игорь Шувалов</h4>
+              <span class="user-id">ID: 13807351</span>
+            </div>
+          </div>
         </div>
-        <div class="modal-body modal-body-auth">
-          <div class="tab-content">
-            <div class="tab-pane active" id="login">
-              <div class="auth-container">
-                <div class="auth-title">Войти в аккаунт</div>
-                <form action="" class="auth-form">
-                  <div class="auth-form-field">
-                    <input type="text" placeholder="Email или номер телефона" required>
-                    <div class="invalid-feedback">Введите email</div>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="password" id="auth-pass" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
-                    <div class="invalid-feedback">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
-                    <a href="#" class="pass-control pass-control-1">
-                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="auth-form-field">
-                    <button class="auth-btn" type="submit">Войти</button>
-                  </div>
-                </form>
-                <div class="auth-remember"><a href="#" class="auth-remember__link">Забыли пароль?</a></div>
-                <div class="auth-fb"><a href="#" class="auth-btn auth-btn-fb">Войти с Facebook</a></div>
-              </div>
-            </div>
-            <div class="tab-pane" id="register">
-              <div class="auth-container">
-                <div class="auth-title">Создать аккаунт</div>
-                <form action="" class="auth-form">
-                  <div class="auth-form-field">
-                    <input id="phone" type="tel" required>
-                    <span id="valid-msg" class="hide"></span>
-                    <span id="error-msg" class="hide"></span>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="email" placeholder="Введите Email" required>
-                    <div class="invalid-feedback">Введите email</div>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="text" placeholder="Имя" required>
-                    <div class="invalid-feedback">Введите имя</div>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="text" placeholder="Фамилия" required>
-                    <div class="invalid-feedback">Введите фамилию</div>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="password" id="auth-pass-2" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
-                    <div class="invalid-feedback">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
-                    <a href="#" class="pass-control pass-control-2">
-                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="auth-form-field">
-                    <input type="password" id="auth-pass-3" placeholder="Повторите пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
-                    <div class="invalid-feedback" id="auth-pass-3-text">Пароль должен осстоять не менее чем из 6 символов, содержать хотя бы одну прописную букву, одну строчную букву и хотя бы одну цифру</div>
-                    <a href="#" class="pass-control pass-control-3">
-                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6.86275C18 7.33333 17.82 7.76471 17.5199 8.05882C14.7391 10.7647 11.8583 12.1373 8.93748 12.1373C8.87747 12.1373 8.79744 12.1373 8.73743 12.1373C7.9372 12.1176 7.197 12 6.4768 11.8235L7.59711 10.7255C8.03723 10.8824 8.51737 10.9608 9.0175 10.9608C11.3181 10.9608 13.1987 9.11765 13.1987 6.86275C13.1987 6.37255 13.0986 5.90196 12.9586 5.4902L14.9391 3.54902C15.8194 4.13726 16.6996 4.84314 17.5599 5.68628C17.82 5.96078 18 6.39216 18 6.86275ZM8.9975 9.58824C10.5379 9.58824 11.7783 8.37255 11.7783 6.86275C11.7783 6.78431 11.7783 6.68628 11.7583 6.60784L8.73743 9.58824C8.81745 9.58824 8.91748 9.58824 8.9975 9.58824ZM15.9194 0.882353L2.61573 13.9216C2.5157 13.9804 2.41567 14 2.31564 14C2.1556 14 2.01556 13.9412 1.89553 13.8235C1.65546 13.5882 1.65546 13.2157 1.89553 13L4.07613 10.8627C2.45568 9.98039 1.19533 8.84314 0.435121 8.01961C-0.14504 7.41177 -0.14504 6.31373 0.435121 5.70588C1.83551 4.19608 4.79633 1.68627 8.73743 1.58824C10.0778 1.54902 11.4182 1.82353 12.7385 2.37255L14.9792 0.176471C15.2192 -0.0588235 15.5993 -0.0588235 15.8194 0.176471C16.0194 0.372549 16.0395 0.666667 15.9194 0.882353ZM8.01723 7C8.01723 6.96078 7.99722 6.90196 7.99722 6.86275C7.99722 6.64706 7.81717 6.47059 7.59711 6.47059C7.37705 6.47059 7.197 6.64706 7.197 6.86275C7.197 7.13726 7.25702 7.39216 7.37705 7.60784L8.01723 7ZM11.4982 3.58824C10.798 3.07843 9.93776 2.76471 8.9975 2.76471C6.69686 2.76471 4.81634 4.60784 4.81634 6.86275C4.81634 7.78431 5.13643 8.62745 5.65657 9.31373L6.65685 8.33333C6.37677 7.90196 6.21673 7.41177 6.21673 6.86275C6.21673 5.35294 7.45707 4.13726 8.9975 4.13726C9.55765 4.13726 10.0578 4.29412 10.4979 4.56863L11.4982 3.58824Z" fill="#B8BDCE"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="auth-form-field">
-                    <label class="auth-form-field__label-chbox">
-                      <input class="check-box" type="checkbox">
-                      <span class="check-style"></span>
-                      Соглашаюсь с <a href="#">Условиями</a> и <a href="#">политикой конфиденциальности</a>
-                    </label>
-                  </div>
-                  <div class="auth-form-field">
-                    <button class="auth-btn" type="submit" onclick="">Зарегистрироваться</button>
-                  </div>
-                </form>
-                <div class="auth-fb"><a href="#" class="auth-btn auth-btn-fb fb-reg">Зарегистрироваться через Facebook</a></div>
-              </div>
-            </div>
+        <div class="modal-body">
+          <div class="invite">
+            <div class="invite__text">Приглашай друзей и получай до 45% от их платежей</div>
+            <button class="btn-invite btn-main">Пригласить друзей</button>
+          </div>
+          <div class="profile-menu">
+            <ul class="menu">
+              <li class="menu-item__item">
+                <a href="#" class="menu-item__link item-buy">
+                  <span class="aah-icon buy-icon"></span>Купить подписку
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="cabinet-invite.html" class="menu-item__link item-subscription">
+                  <span class="aah-icon battery-icon"></span>Подписка до 12.04.2020
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="cabinet-favorites.html" class="menu-item__link">
+                  <span class="aah-icon fav-icon"></span>Избранные авто <span class="count">(0)</span>
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="cabinet-reports.html" class="menu-item__link">
+                  <span class="aah-icon pay-icon"></span>Мои отчеты <span class="count">(0)</span>
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="cabinet-billing.html" class="menu-item__link">
+                  <span class="aah-icon reports-icon"></span>Биллинг и подписки
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="cabinet-settings.html" class="menu-item__link">
+                  <span class="aah-icon settings-icon"></span>Настройки
+                </a>
+              </li>
+              <li class="menu-item__item">
+                <a href="index-guest.html" class="menu-item__link">
+                  <span class="aah-icon exit-icon"></span>Выход
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
       </div><!-- modal-content -->
     </div><!-- modal-dialog -->
   </div><!-- modal -->
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
