@@ -158,6 +158,53 @@
     /*----------------------------------------------------*/
     /*  Select2
     /*----------------------------------------------------*/
+
+
+    $('.select2-maker').select2({
+      placeholder: 'Select Maker',
+    });
+    $('.select2-model').select2({
+      placeholder: 'Select Model',
+    });
+    $('.select2-year-from').select2({
+      placeholder: 'Year From',
+    });
+    $('.select2-year-to').select2({
+      placeholder: 'Year To',
+    });
+    $('.select2-auction').select2({
+      placeholder: 'Auction',
+      closeOnSelect: false
+    });
+    $('.select2-seller-type').select2({
+      placeholder: 'Seller Type',
+      closeOnSelect: false
+    });
+    $('.select2-engine').select2({
+      placeholder: 'Engine',
+      closeOnSelect: false
+    });
+    $('.select2-fuel').select2({
+      placeholder: 'Fuel',
+      closeOnSelect: false
+    });
+    $('.select2-driveline').select2({
+      placeholder: 'Driveline',
+      closeOnSelect: false
+    });
+    $('.select2-transmission').select2({
+      placeholder: 'Transmission',
+      closeOnSelect: false
+    });
+    $('.select2-run-drive').select2({
+      placeholder: 'Run & Drive',
+      closeOnSelect: false
+    });
+    $('.select2-starts').select2({
+      placeholder: 'Starts',
+      closeOnSelect: false
+    });
+
     //Filters API
 
     $.getJSON('http://test.amidstyle.com/?type=brands', function(data) {
