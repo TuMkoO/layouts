@@ -1940,6 +1940,11 @@ span.blog-item-tag {
   background: transparent;
 }
 
+.select2-container--default .select2-dropdown--above .select2-search--dropdown .select2-search__field {
+  top: auto;
+  bottom: -50px;
+}
+
 body.select2-open .select2-container--default.select2-container--open .select2-selection--single .select2-selection__placeholder,
 body.select2-open .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b,
 body.select2-open .select2-container--default.select2-container--open .select2-selection--single .select2-selection__rendered {
