@@ -6251,6 +6251,7 @@ a.btn.btn-border:hover {
     display: block;
     width: 100%;
     height: 10%;
+    min-height: 50px;
   }
   .select2-close-btn {
     display: inline-block;
@@ -6273,6 +6274,8 @@ a.btn.btn-border:hover {
   }
   .select2-search.select2-search--dropdown {
     height: 10%;
+    padding: 0;
+    min-height: 60px;
   }
   .select2-results {
     max-height: 80%;
