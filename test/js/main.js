@@ -160,102 +160,44 @@
     /*----------------------------------------------------*/
 
 
-    $('.select2-maker').select2({
-      placeholder: 'Select Maker',
-    });
-    $('.select2-model').select2({
-      placeholder: 'Select Model',
-    });
-    $('.select2-year-from').select2({
-      placeholder: 'Year From',
-    });
-    $('.select2-year-to').select2({
-      placeholder: 'Year To',
-    });
-    $('.select2-auction').select2({
-      placeholder: 'Auction',
-      closeOnSelect: false
-    });
-    $('.select2-seller-type').select2({
-      placeholder: 'Seller Type',
-      closeOnSelect: false
-    });
-    $('.select2-engine').select2({
-      placeholder: 'Engine',
-      closeOnSelect: false
-    });
-    $('.select2-fuel').select2({
-      placeholder: 'Fuel',
-      closeOnSelect: false
-    });
-    $('.select2-driveline').select2({
-      placeholder: 'Driveline',
-      closeOnSelect: false
-    });
-    $('.select2-transmission').select2({
-      placeholder: 'Transmission',
-      closeOnSelect: false
-    });
-    $('.select2-run-drive').select2({
-      placeholder: 'Run & Drive',
-      closeOnSelect: false
-    });
-    $('.select2-starts').select2({
-      placeholder: 'Starts',
-      closeOnSelect: false
-    });
-
     //Filters API
 
-    $.getJSON('http://test.amidstyle.com/?type=brands', function(data) {
+    var currentYearFrom = null;
+    var currentYearTo = null;
+    var currentYears = [];
+
+    $.getJSON('https://test.amidstyle.com/?type=brands', function(data) {
       try {
         var brands = data.data.map(brand => `<option value="${brand.brand_id}">${brand.brand_name}</option>`);
         $(".select2-maker").html('<option></option>' + brands);
-        $('.select2-maker').select2({
-          placeholder: 'Select Maker',
-        });
-        $('.select2-model').select2({
-          placeholder: 'Select Model',
-        });
-        $('.select2-year-from').select2({
-          placeholder: 'Year From',
-        });
-        $('.select2-year-to').select2({
-          placeholder: 'Year To',
-        });
+        $('.select2-maker').select2();
+        $('.select2-model').select2();
+        $('.select2-year-from').select2();
+        $('.select2-year-to').select2();
         $('.select2-auction').select2({
-          placeholder: 'Auction',
           closeOnSelect: false
         });
         $('.select2-seller-type').select2({
-          placeholder: 'Seller Type',
           closeOnSelect: false
         });
         $('.select2-engine').select2({
-          placeholder: 'Engine',
           closeOnSelect: false
         });
         $('.select2-fuel').select2({
-          placeholder: 'Fuel',
           closeOnSelect: false
         });
         $('.select2-driveline').select2({
-          placeholder: 'Driveline',
           closeOnSelect: false
         });
         $('.select2-transmission').select2({
-          placeholder: 'Transmission',
           closeOnSelect: false
         });
         $('.select2-run-drive').select2({
-          placeholder: 'Run & Drive',
           closeOnSelect: false
         });
         $('.select2-starts').select2({
-          placeholder: 'Starts',
           closeOnSelect: false
         });
-
 
       } catch (e) {}
     });
@@ -267,12 +209,11 @@
       var brandVal = this.value;
 
       //получить список моделей
-      $.getJSON(`http://test.amidstyle.com/?type=models&brand_id=${brandVal}`, function(data) {
+      $.getJSON(`https://test.amidstyle.com/?type=models&brand_id=${brandVal}`, function(data) {
         try {
           //разблокировать выбор моделей
           if (data.data.length > 0) {
             $('.select2-model').select2({
-              placeholder: 'Select Model',
               disabled: false,
             });
           }
@@ -297,50 +238,40 @@
 
       //заблокировать поля года и остальных фильтров
       $('.select2-year-from').select2({
-        placeholder: 'Year From',
         disabled: true
       });
       $('.select2-year-to').select2({
-        placeholder: 'Year To',
         disabled: true
       });
       $('.select2-auction').select2({
-        placeholder: 'Auction',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-seller-type').select2({
-        placeholder: 'Seller Type',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-engine').select2({
-        placeholder: 'Engine',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-fuel').select2({
-        placeholder: 'Fuel',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-driveline').select2({
-        placeholder: 'Driveline',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-transmission').select2({
-        placeholder: 'Transmission',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-run-drive').select2({
-        placeholder: 'Run & Drive',
         disabled: true,
         closeOnSelect: false
       });
       $('.select2-starts').select2({
-        placeholder: 'Starts',
         disabled: true,
         closeOnSelect: false
       });
@@ -365,40 +296,42 @@
       $('.select2-starts').val(null).trigger('change');
 
       //получить список фильтров модели
-      $.getJSON(`http://test.amidstyle.com/?type=filters&model_id=${modelVal}`, function(data) {
+      $.getJSON(`https://test.amidstyle.com/?type=filters&model_id=${modelVal}`, function(data) {
         try {
-          console.log(data.data.years.length > 0);
+          // console.log(data.data.years.length > 0);
 
           //обновляем списки полей года
           if (data.data.years.length > 0) {
+
+            //Массив выбранных годов
+            currentYears = data.data.years;
+            // console.log(currentYears);
+
             //разблокировать выбор года
             $('.select2-year-from').select2({
-              placeholder: 'Year From',
               disabled: false,
             });
             $('.select2-year-to').select2({
-              placeholder: 'Year To',
               disabled: false,
             });
 
             //формируем список Year From
-            var yearsFrom = data.data.years.map(yearFrom => `<option value="${yearFrom}">${yearFrom}</option>`);
+            var yearsFrom = currentYears.map(yearFrom => `<option value="${yearFrom}">${yearFrom}</option>`);
             $(".select2-year-from").html('<option></option>' + yearsFrom);
             $('.select2-year-from').trigger('change');
 
+
             //формируем список Year To
-            var yearsTo = data.data.years.map(yearTo => `<option value="${yearTo}">${yearTo}</option>`);
+            var yearsTo = currentYears.map(yearTo => `<option value="${yearTo}">${yearTo}</option>`);
             $(".select2-year-to").html('<option></option>' + yearsTo);
             $('.select2-year-to').trigger('change');
 
           } else {
             //заблокировать выбор года
             $('.select2-year-from').select2({
-              placeholder: 'Year From',
               disabled: true,
             });
             $('.select2-year-to').select2({
-              placeholder: 'Year To',
               disabled: true,
             });
           }
@@ -407,7 +340,6 @@
           if (data.data.auctions.length > 0) {
             //разблокировать поле
             $('.select2-auction').select2({
-              placeholder: 'Auction',
               disabled: false,
               closeOnSelect: false
             });
@@ -418,7 +350,6 @@
           } else {
             //заблокировать поле
             $('.select2-auctions').select2({
-              placeholder: 'Auction',
               disabled: true,
               closeOnSelect: false
             });
@@ -427,7 +358,6 @@
           if (data.data.sellers.length > 0) {
             //разблокировать поле
             $('.select2-seller-type').select2({
-              placeholder: 'Seller Type',
               disabled: false,
               closeOnSelect: false
             });
@@ -438,7 +368,6 @@
           } else {
             //заблокировать поле
             $('.select2-seller-type').select2({
-              placeholder: 'Seller Type',
               disabled: true,
               closeOnSelect: false
             });
@@ -447,7 +376,6 @@
           if (data.data.engines.length > 0) {
             //разблокировать поле
             $('.select2-engine').select2({
-              placeholder: 'Engine',
               disabled: false,
               closeOnSelect: false
             });
@@ -458,7 +386,6 @@
           } else {
             //заблокировать поле
             $('.select2-engine').select2({
-              placeholder: 'Engine',
               disabled: true,
               closeOnSelect: false
             });
@@ -467,7 +394,6 @@
           if (data.data.fuels.length > 0) {
             //разблокировать поле
             $('.select2-fuel').select2({
-              placeholder: 'Fuel',
               disabled: false,
               closeOnSelect: false
             });
@@ -478,7 +404,6 @@
           } else {
             //заблокировать поле
             $('.select2-fuel').select2({
-              placeholder: 'Fuel',
               disabled: true,
               closeOnSelect: false
             });
@@ -487,7 +412,6 @@
           if (data.data.drives.length > 0) {
             //разблокировать поле
             $('.select2-driveline').select2({
-              placeholder: 'Driveline',
               disabled: false,
               closeOnSelect: false
             });
@@ -498,7 +422,6 @@
           } else {
             //заблокировать поле
             $('.select2-driveline').select2({
-              placeholder: 'Driveline',
               disabled: true,
               closeOnSelect: false
             });
@@ -507,7 +430,6 @@
           if (data.data.transmissions.length > 0) {
             //разблокировать поле
             $('.select2-transmission').select2({
-              placeholder: 'Transmission',
               disabled: false,
               closeOnSelect: false
             });
@@ -518,7 +440,6 @@
           } else {
             //заблокировать поле
             $('.select2-transmission').select2({
-              placeholder: 'Transmission',
               disabled: true,
               closeOnSelect: false
             });
@@ -527,7 +448,6 @@
           if (data.data.rundrive.length > 0) {
             //разблокировать поле
             $('.select2-run-drive').select2({
-              placeholder: 'Run & Drive',
               disabled: false,
               closeOnSelect: false
             });
@@ -538,7 +458,6 @@
           } else {
             //заблокировать поле
             $('.select2-run-drive').select2({
-              placeholder: 'Run & Drive',
               disabled: true,
               closeOnSelect: false
             });
@@ -547,7 +466,6 @@
           if (data.data.starts.length > 0) {
             //разблокировать поле
             $('.select2-starts').select2({
-              placeholder: 'Starts',
               disabled: false,
               closeOnSelect: false
             });
@@ -558,7 +476,6 @@
           } else {
             //заблокировать поле
             $('.select2-starts').select2({
-              placeholder: 'Starts',
               disabled: true,
               closeOnSelect: false
             });
@@ -570,6 +487,50 @@
 
     });
 
+    //Смена значения начального года
+    $('.select2-year-from').on('select2:select', function (e) {
+      //Значение выбранного минимального года
+      currentYearFrom = this.value;
+      // console.log(currentYearFrom);
+      currentYearTo = $('.select2-year-to').val();
+      // console.log(currentYearTo);
+
+      //сортируем список Year To
+      var yearsToUpdated = currentYears.filter(item => item >= currentYearFrom).map(yearToUpdated => `<option value="${yearToUpdated}">${yearToUpdated}</option>`);
+      $(".select2-year-to").html('<option></option>' + yearsToUpdated);
+      $('.select2-year-to').trigger('change');
+      if (+currentYearTo >= +currentYearFrom) {
+        $('.select2-year-to').val(currentYearTo);
+      } else if (+currentYearTo === 0) {
+        $('.select2-year-to').val(null);
+      } else {
+        $('.select2-year-to').val(currentYearFrom);
+      }
+
+    });
+
+    //Выбор конечно года
+    $('.select2-year-to').on('select2:select', function (e) {
+      currentYearTo = this.value;
+      currentYearFrom = $('.select2-year-from').val();
+      // console.log(currentYearFrom);
+
+      //сортируем список Year From
+      var yearsFromUpdated = currentYears.filter(item => item <= currentYearTo).map(yearFromUpdated => `<option value="${yearFromUpdated}">${yearFromUpdated}</option>`);
+      $(".select2-year-from").html('<option></option>' + yearsFromUpdated);
+      $('.select2-year-from').trigger('change');
+      if (+currentYearFrom >= +currentYearTo) {
+        $('.select2-year-from').val(currentYearTo);
+      } else if (+currentYearFrom === 0) {
+        $('.select2-year-from').val(Math.min.apply(Math, currentYears.filter(item => +item <= +currentYearTo).map(item => +item)));
+      } else {
+        $('.select2-year-from').val(currentYearFrom);
+      }
+
+    });
+
+
+    //
     function addSelect2(selector, applyBtn) {
       $(selector).on('select2:opening', function (e) {
         // e.preventDefault();
@@ -578,7 +539,7 @@
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
         $('.select2-dropdown.select2-dropdown--below').addClass('select2-wrapper');
-        $('.select2-wrapper').prepend('<div class="select2-close-btn">Назад</div>');
+        $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">Назад</a></div>');
         if(applyBtn) {
           $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">Применить</button></div>');
         }
@@ -591,14 +552,14 @@
 
       });
       $(selector).on('select2:closing', function (e) {
-        $('.select2-close-btn').remove();
+        $('.select2-close-wrapper').remove();
         if(applyBtn) {
           $('.select2-apply').remove();
         }
       });
       $(selector).on('select2:close', function (e) {
         $('body').removeClass('select2-open');
-        $('.select2-close-btn').remove();
+        $('.select2-close-wrapper').remove();
         if(applyBtn) {
           $('.select2-apply').remove();
         }

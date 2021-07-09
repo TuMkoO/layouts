@@ -966,6 +966,10 @@ main {
 /*----------------------------------- */
 /* Modal-main
 ------------------------------------- */
+.modal-main {
+  z-index: 3001;
+}
+
 .modal-main .modal-dialog {
   width: 500px;
 }
@@ -1136,6 +1140,10 @@ main {
 
 .modal-main form .btn:hover {
   color: #ffffff;
+}
+
+.modal-backdrop {
+  z-index: 3000;
 }
 
 .modal-open .header {
@@ -1838,12 +1846,13 @@ span.blog-item-tag {
 }
 
 .select2-container--default .select2-results__option--selected {
-  background-color: #ddd !important;
+  background-color: #f91942 !important;
+  color: #ffffff !important;
 }
 
 .select2-container--default .select2-results__option--selectable:hover {
   background-color: #ddd;
-  color: #888 !important;
+  color: #888;
 }
 
 .filters-field-icon .select2-container--default .select2-selection--single:after {
@@ -6315,6 +6324,9 @@ a.btn.btn-border:hover {
     position: static;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  }
+  .select2-container--default .select2-results__option--selectable:hover {
+    background-color: transparent;
   }
 }
 
