@@ -535,8 +535,11 @@
 
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
-        $('.select2-dropdown.select2-dropdown--below').addClass('select2-wrapper');
-        alert('open');
+        $('.select2-dropdown').addClass('select2-wrapper');
+        // alert('open');
+
+
+
         $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">Назад</a></div>');
         if(applyBtn) {
           $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">Применить</button></div>');

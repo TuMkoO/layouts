@@ -6288,7 +6288,7 @@ a.btn.btn-border:hover {
     min-height: 60px;
   }
   .select2-results {
-    max-height: 80%;
+    max-height: 75%;
     overflow-y: scroll;
     width: 100%;
   }
