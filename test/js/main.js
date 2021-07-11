@@ -491,9 +491,7 @@
     $('.select2-year-from').on('select2:select', function (e) {
       //Значение выбранного минимального года
       currentYearFrom = this.value;
-      // console.log(currentYearFrom);
       currentYearTo = $('.select2-year-to').val();
-      // console.log(currentYearTo);
 
       //сортируем список Year To
       var yearsToUpdated = currentYears.filter(item => item >= currentYearFrom).map(yearToUpdated => `<option value="${yearToUpdated}">${yearToUpdated}</option>`);
@@ -513,7 +511,6 @@
     $('.select2-year-to').on('select2:select', function (e) {
       currentYearTo = this.value;
       currentYearFrom = $('.select2-year-from').val();
-      // console.log(currentYearFrom);
 
       //сортируем список Year From
       var yearsFromUpdated = currentYears.filter(item => item <= currentYearTo).map(yearFromUpdated => `<option value="${yearFromUpdated}">${yearFromUpdated}</option>`);
@@ -530,15 +527,16 @@
     });
 
 
-    //
+    //Добавить кнопки Назад и Применить
     function addSelect2(selector, applyBtn) {
-      $(selector).on('select2:opening', function (e) {
-        // e.preventDefault();
-      });
+      // $(selector).on('select2:opening', function (e) {
+      //   e.preventDefault();
+      // });
 
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
         $('.select2-dropdown.select2-dropdown--below').addClass('select2-wrapper');
+        alert('open');
         $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">Назад</a></div>');
         if(applyBtn) {
           $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">Применить</button></div>');
@@ -577,97 +575,6 @@
     addSelect2('.select2-transmission', true);
     addSelect2('.select2-run-drive', true);
     addSelect2('.select2-starts', true);
-
-
-
-    //добавить класс к body при открытии селекта
-    // $('.select2-maker').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    //   $('.select2-dropdown.select2-dropdown--below').addClass('select2-wrapper');
-    //   // $('.select2-container--open .select2-dropdown.select2-dropdown--below').prepend('<div class="select2-close-btn"></div>');
-    // });
-    // $('.select2-maker').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-model').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    //   $('.select2-dropdown.select2-dropdown--below').addClass('select2-wrapper');
-    //   $('.select2-wrapper').prepend('<div class="select2-close-btn"></div>');
-    //   $('.select2-close-btn').on('click', function () {
-    //     $('.select2-model').select2('close');
-    //   });
-    // });
-    // $('.select2-model').on('select2:closing', function (e) {
-    //   $('.select2-close-btn').remove();
-    // });
-    // $('.select2-model').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    //   $('.select2-close-btn').remove();
-    // });
-
-
-    // $('.select2-year-from').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-year-from').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-year-to').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-year-to').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-auction').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-auction').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-seller-type').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-seller-type').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-engine').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-engine').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-fuel').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-fuel').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-driveline').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-driveline').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-transmission').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-transmission').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-run-drive').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-run-drive').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-    // $('.select2-starts').on('select2:open', function (e) {
-    //   $('body').addClass('select2-open');
-    // });
-    // $('.select2-starts').on('select2:close', function (e) {
-    //   $('body').removeClass('select2-open');
-    // });
-
-
 
 
     /*----------------------------------------------------*/
