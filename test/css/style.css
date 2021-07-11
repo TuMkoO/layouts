@@ -6288,12 +6288,13 @@ a.btn.btn-border:hover {
     min-height: 60px;
   }
   .select2-results {
-    max-height: 75%;
-    overflow-y: scroll;
+    max-height: 80%;
+    height: 80%;
     width: 100%;
   }
   .select2-container--default .select2-results > .select2-results__options {
     width: 100%;
+    max-height: 100%;
   }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
