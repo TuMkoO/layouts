@@ -6295,7 +6295,7 @@ a.btn.btn-border:hover {
   }
   .select2-container--default .select2-results > .select2-results__options {
     width: 100%;
-    max-height: 100%;
+    max-height: 500px;
   }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
