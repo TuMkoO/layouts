@@ -159,7 +159,6 @@
     /*  Select2
     /*----------------------------------------------------*/
 
-
     //Filters API
 
     var currentYearFrom = null;
@@ -298,14 +297,11 @@
       //получить список фильтров модели
       $.getJSON(`https://test.amidstyle.com/?type=filters&model_id=${modelVal}`, function(data) {
         try {
-          // console.log(data.data.years.length > 0);
-
           //обновляем списки полей года
           if (data.data.years.length > 0) {
 
             //Массив выбранных годов
             currentYears = data.data.years;
-            // console.log(currentYears);
 
             //разблокировать выбор года
             $('.select2-year-from').select2({
@@ -319,7 +315,6 @@
             var yearsFrom = currentYears.map(yearFrom => `<option value="${yearFrom}">${yearFrom}</option>`);
             $(".select2-year-from").html('<option></option>' + yearsFrom);
             $('.select2-year-from').trigger('change');
-
 
             //формируем список Year To
             var yearsTo = currentYears.map(yearTo => `<option value="${yearTo}">${yearTo}</option>`);
@@ -337,156 +332,41 @@
           }
 
           //обновляем остальные списки полей
-          if (data.data.auctions.length > 0) {
-            //разблокировать поле
-            $('.select2-auction').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var auctions = data.data.auctions.map(auction => `<option value="${auction}">${auction}</option>`);
-            $(".select2-auction").html('<option></option>' + auctions);
-            $('.select2-auction').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-auctions').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
+          function updateMultiSelectList(selector, selectList) {
+            if (data.data[selectList].length > 0) {
+              //разблокировать поле
+              $(selector).select2({
+                disabled: false,
+                closeOnSelect: false
+              });
+              //формируем список
+              var list = data.data[selectList].map(item => `<option value="${item}">${item}</option>`);
+              $(selector).html('<option></option>' + list);
+              $(selector).trigger('change');
+            } else {
+              //заблокировать поле
+              $(selector).select2({
+                disabled: true,
+                closeOnSelect: false
+              });
+            }
           }
 
-          if (data.data.sellers.length > 0) {
-            //разблокировать поле
-            $('.select2-seller-type').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var sellers = data.data.sellers.map(seller => `<option value="${seller}">${seller}</option>`);
-            $(".select2-seller-type").html('<option></option>' + sellers);
-            $('.select2-seller-type').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-seller-type').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.engines.length > 0) {
-            //разблокировать поле
-            $('.select2-engine').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var engines = data.data.engines.map(engine => `<option value="${engine}">${engine}</option>`);
-            $(".select2-engine").html('<option></option>' + engines);
-            $('.select2-engine').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-engine').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.fuels.length > 0) {
-            //разблокировать поле
-            $('.select2-fuel').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var fuels = data.data.fuels.map(fuel => `<option value="${fuel}">${fuel}</option>`);
-            $(".select2-fuel").html('<option></option>' + fuels);
-            $('.select2-fuel').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-fuel').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.drives.length > 0) {
-            //разблокировать поле
-            $('.select2-driveline').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var drives = data.data.drives.map(driveline => `<option value="${driveline}">${driveline}</option>`);
-            $(".select2-driveline").html('<option></option>' + drives);
-            $('.select2-driveline').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-driveline').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.transmissions.length > 0) {
-            //разблокировать поле
-            $('.select2-transmission').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var transmissions = data.data.transmissions.map(transmission => `<option value="${transmission}">${transmission}</option>`);
-            $(".select2-transmission").html('<option></option>' + transmissions);
-            $('.select2-transmission').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-transmission').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.rundrive.length > 0) {
-            //разблокировать поле
-            $('.select2-run-drive').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var rundrive = data.data.rundrive.map(rd => `<option value="${rd}">${rd}</option>`);
-            $(".select2-run-drive").html('<option></option>' + rundrive);
-            $('.select2-run-drive').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-run-drive').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
-          if (data.data.starts.length > 0) {
-            //разблокировать поле
-            $('.select2-starts').select2({
-              disabled: false,
-              closeOnSelect: false
-            });
-            //формируем список
-            var starts = data.data.starts.map(start => `<option value="${start}">${start}</option>`);
-            $(".select2-starts").html('<option></option>' + starts);
-            $('.select2-starts').trigger('change');
-          } else {
-            //заблокировать поле
-            $('.select2-starts').select2({
-              disabled: true,
-              closeOnSelect: false
-            });
-          }
-
+          updateMultiSelectList('.select2-auction', 'auctions');
+          updateMultiSelectList('.select2-seller-type', 'sellers');
+          updateMultiSelectList('.select2-engine', 'engines');
+          updateMultiSelectList('.select2-fuel', 'fuels');
+          updateMultiSelectList('.select2-driveline', 'drives');
+          updateMultiSelectList('.select2-transmission', 'transmissions');
+          updateMultiSelectList('.select2-run-drive', 'rundrive');
+          updateMultiSelectList('.select2-starts', 'starts');
 
         } catch (e) {}
       });
 
     });
 
+    //Range Year
     //Смена значения начального года
     $('.select2-year-from').on('select2:select', function (e) {
       //Значение выбранного минимального года
@@ -504,7 +384,6 @@
       } else {
         $('.select2-year-to').val(currentYearFrom);
       }
-
     });
 
     //Выбор конечно года
@@ -523,16 +402,11 @@
       } else {
         $('.select2-year-from').val(currentYearFrom);
       }
-
     });
 
 
     //Добавить кнопки Назад и Применить
     function addSelect2(selector, applyBtn) {
-      // $(selector).on('select2:opening', function (e) {
-      //   e.preventDefault();
-      // });
-
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
         $('.select2-dropdown').addClass('select2-wrapper');
