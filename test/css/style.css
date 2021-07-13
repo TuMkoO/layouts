@@ -6422,30 +6422,30 @@ a.btn.btn-border:hover {
 
 @media (max-width: 575px) and (max-height: 830px) {
   .select2-container--default .select2-results > .select2-results__options {
-    max-height: 600px;
+    max-height: 450px;
   }
 }
 
 @media (max-width: 575px) and (max-height: 815px) {
   .select2-container--default .select2-results > .select2-results__options {
-    max-height: 550px;
+    max-height: 400px;
   }
 }
 
 @media (max-width: 575px) and (max-height: 750px) {
   .select2-container--default .select2-results > .select2-results__options {
-    max-height: 500px;
+    max-height: 350px;
   }
 }
 
 @media (max-width: 575px) and (max-height: 680px) {
   .select2-container--default .select2-results > .select2-results__options {
-    max-height: 450px;
+    max-height: 300px;
   }
 }
 
 @media (max-width: 320px) and (max-height: 580px) {
   .select2-container--default .select2-results > .select2-results__options {
-    max-height: 360px;
+    max-height: 210px;
   }
 }
