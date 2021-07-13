@@ -6194,6 +6194,9 @@ a.btn.btn-border:hover {
 }
 
 @media (max-width: 575px) {
+  input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    font-size: 16px;
+  }
   .header {
     z-index: 1000;
   }
@@ -6245,7 +6248,7 @@ a.btn.btn-border:hover {
     padding-right: 0;
   }
   .select2-open {
-    overflow: hidden;
+    overflow: hidden !important;
   }
   .select2-container.select2-container--default.select2-container--open {
     top: 0 !important;
@@ -6333,6 +6336,9 @@ a.btn.btn-border:hover {
     position: static;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  }
+  .select2-container .select2-search--inline .select2-search__field {
+    font-size: 16px;
   }
   .select2-container--default .select2-results__option--selectable:hover {
     background-color: transparent;
