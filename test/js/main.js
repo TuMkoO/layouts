@@ -422,7 +422,11 @@
           $(selector).select2('close');
         });
 
-        // $('.select2-search__field').blur();
+        if ( $(window).width() < 575 ) {
+          $('.select2-search__field').blur();
+        }
+
+        //
         // $('.select2-close-btn').focus();
 
       });
