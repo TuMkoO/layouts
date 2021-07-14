@@ -6255,6 +6255,7 @@ a.btn.btn-border:hover {
     left: 0 !important;
     z-index: 2000;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     background-color: #FFFFFF;
     position: fixed !important;
@@ -6330,6 +6331,7 @@ a.btn.btn-border:hover {
   }
   .select2-container--open .select2-dropdown--below {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .select2-container--default .select2-search--dropdown .select2-search__field {
     border: 1px solid #dbdbdb;
