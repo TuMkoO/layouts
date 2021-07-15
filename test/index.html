@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Listeo 2021</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/iconsmind.css">
   <link rel="stylesheet" href="css/simple-line-icons.css">
@@ -92,28 +93,28 @@
         <div class="row">
           <div class="col-md-4">
             <div class="filters-field filters-field-icon">
-              <select class="select2-maker" name="maker" data-placeholder="Select Maker">
+              <select class="select2-maker" name="maker" data-placeholder="Select Maker" data-search-placeholder="Введите название" data-btn-back="Назад">
                 <option disabled selected>Select Maker</option>
               </select>
             </div>
           </div>
           <div class="col-md-4">
             <div class="filters-field filters-field-icon">
-              <select class="select2-model" name="model" data-placeholder="Select Model" disabled>
+              <select class="select2-model" name="model" data-placeholder="Select Model" data-search-placeholder="Введите название" data-btn-back="Назад" disabled>
                 <option disabled selected>Select Model</option>
               </select>
             </div>
           </div>
           <div class="col-md-2">
             <div class="filters-field filters-field-icon">
-              <select class="select2-year-from" name="year-from" data-placeholder="Year From" disabled>
+              <select class="select2-year-from" name="year-from" data-placeholder="Year From" data-search-placeholder="Введите год" data-btn-back="Назад" disabled>
                 <option disabled selected>Year From</option>
               </select>
             </div>
           </div>
           <div class="col-md-2">
             <div class="filters-field filters-field-icon">
-              <select class="select2-year-to" name="year-to" data-placeholder="Year To" disabled>
+              <select class="select2-year-to" name="year-to" data-placeholder="Year To" data-search-placeholder="Введите год" data-btn-back="Назад" disabled>
                 <option disabled selected>Year To</option>
               </select>
             </div>
@@ -123,78 +124,78 @@
           <div class="row">
             <div class="col-md-2">
               <div class="filters-field">
-                <input type="text" class="filter-input" placeholder="Final bid min">
+                <input type="text" class="filter-input" placeholder="Final bid min" disabled>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <input type="text" class="filter-input" placeholder="Final bid max">
+                <input type="text" class="filter-input" placeholder="Final bid max" disabled>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-auction" name="auction" multiple="multiple" data-placeholder="Auction" disabled>
+                <select class="select2-auction" name="auction" multiple="multiple" data-placeholder="Auction" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-seller-type" name="seller-type" multiple="multiple" data-placeholder="Seller Type" disabled>
+                <select class="select2-seller-type" name="seller-type" multiple="multiple" data-placeholder="Seller Type" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <input type="text" class="filter-input" placeholder="Odometr max">
+                <input type="text" class="filter-input" placeholder="Odometr min" disabled>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <input type="text" class="filter-input" placeholder="Odometr max">
+                <input type="text" class="filter-input" placeholder="Odometr max" disabled>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-engine" name="engine" multiple="multiple" data-placeholder="Engine" disabled>
+                <select class="select2-engine" name="engine" multiple="multiple" data-placeholder="Engine" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-fuel" name="fuel" multiple="multiple" data-placeholder="Fuel" disabled>
+                <select class="select2-fuel" name="fuel" multiple="multiple" data-placeholder="Fuel" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-driveline" name="driveline" multiple="multiple" data-placeholder="Driveline" disabled>
+                <select class="select2-driveline" name="driveline" multiple="multiple" data-placeholder="Driveline" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-transmission" name="transmission" multiple="multiple" data-placeholder="Transmission" disabled>
+                <select class="select2-transmission" name="transmission" multiple="multiple" data-placeholder="Transmission" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field">
-                <select class="select2-run-drive" name="run-drive" multiple="multiple" data-placeholder="Run & Drive" disabled>
+                <select class="select2-run-drive" name="run-drive" multiple="multiple" data-placeholder="Run & Drive" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
             </div>
             <div class="col-md-2">
               <div class="filters-field filters-field-bs-multiple">
-                <select class="select2-starts" name="starts" multiple="multiple" data-placeholder="Starts" disabled>
+                <select class="select2-starts" name="starts" multiple="multiple" data-placeholder="Starts" data-btn-back="Назад" data-btn-apply="Применить" disabled>
                   <option></option>
                 </select>
               </div>
@@ -469,7 +470,6 @@
 
     </div>
   </footer>
-
 
   <!-- Auth Modal -->
   <div class="modal fade modal-main" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel">

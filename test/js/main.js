@@ -65,11 +65,11 @@
         $('.add-to-fav i').removeClass('fa-heart-o').addClass('fa-heart');
 
         //Сообщение о добавлении в избранное
-        messageCreate ('Добавлено в избранное');
+        messageCreate ($('.add-to-fav').data('message-add'));
       } else {
         $('.add-to-fav i').removeClass('fa-heart').addClass('fa-heart-o');
         //Сообщение об удалении избранного
-        messageCreate ('Удалено из избранных');
+        messageCreate ($('.add-to-fav').data('message-del'));
       }
     });
 
@@ -77,7 +77,7 @@
     $('.list-box-listing-delete').click(function (event) {
       event.preventDefault();
       //Сообщение об удалении избранного
-      messageCreate ('Удалено из избранных');
+      messageCreate ($('.list-box-listing-delete').data('message'));
     });
 
 
@@ -274,6 +274,9 @@
         disabled: true,
         closeOnSelect: false
       });
+
+      $('.filter-input').val('').prop("disabled",true);
+
     });
 
 
@@ -293,6 +296,8 @@
       $('.select2-transmission').val(null).trigger('change');
       $('.select2-run-drive').val(null).trigger('change');
       $('.select2-starts').val(null).trigger('change');
+
+      $('.filter-input').val('').prop("disabled",false);
 
       //получить список фильтров модели
       $.getJSON(`https://test.amidstyle.com/?type=filters&model_id=${modelVal}`, function(data) {
@@ -405,30 +410,40 @@
     });
 
 
-    //Добавить кнопки Назад и Применить
-    function addSelect2(selector, applyBtn) {
+    //Добавить Placeholder в search input, кнопки Назад и Применить
+    function addSelect2(selector, applyBtn, searchInputPlaceholder, searchMultiPlaceholder) {
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
+
+        if(searchInputPlaceholder) {
+          $('input.select2-search__field').prop('placeholder', $(selector).data('search-placeholder'));
+        }
+
+        if(searchMultiPlaceholder) {
+          $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
+        }
+
         $('.select2-dropdown').addClass('select2-wrapper');
 
-        $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">Назад</a></div>');
+        $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">'+ $(selector).data('btn-back') +'</a></div>');
         if(applyBtn) {
-          $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">Применить</button></div>');
+          $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">'+ $(selector).data('btn-apply') +'</button></div>');
         }
         $('.select2-close-btn').on('click', function () {
+          event.preventDefault();
           $(selector).select2('close');
         });
         $('.select2-apply-btn').on('click', function () {
+          event.preventDefault();
           $(selector).select2('close');
+          $('.select2-search__field').blur();
+
         });
 
         if ( $(window).width() < 575 ) {
-          // console.log($(window).width());
           $('.select2-search__field').blur();
         }
 
-        //
-        // $('.select2-close-btn').focus();
 
       });
       $(selector).on('select2:closing', function (e) {
@@ -436,6 +451,16 @@
         if(applyBtn) {
           $('.select2-apply').remove();
         }
+
+        if( $(selector).next('.select2-container').find('.select2-selection__rendered').width() >= $(selector).next('.select2-container').find('.select2-selection--multiple').width()  ) {
+          $(selector).next('.select2-container').find('.select2-selection--multiple').addClass('too-long');
+          $(selector).next('.select2-container').find('.select2-selection__rendered').addClass('too-long');
+        } else {
+          $(selector).next('.select2-container').find('.select2-selection--multiple').removeClass('too-long');
+          $(selector).next('.select2-container').find('.select2-selection__rendered').removeClass('too-long');
+        }
+
+        console.log(  );
       });
       $(selector).on('select2:close', function (e) {
         $('body').removeClass('select2-open');
@@ -445,22 +470,22 @@
         }
       });
     }
-    addSelect2('.select2-maker', false);
-    addSelect2('.select2-model', false);
-    addSelect2('.select2-year-from', false);
-    addSelect2('.select2-year-to', false);
-    addSelect2('.select2-auction', true);
-    addSelect2('.select2-seller-type', true);
-    addSelect2('.select2-engine', true);
-    addSelect2('.select2-fuel', true);
-    addSelect2('.select2-driveline', true);
-    addSelect2('.select2-transmission', true);
-    addSelect2('.select2-run-drive', true);
-    addSelect2('.select2-starts', true);
+    addSelect2('.select2-maker', false, true, false);
+    addSelect2('.select2-model', false, true, false);
+    addSelect2('.select2-year-from', false, true, false);
+    addSelect2('.select2-year-to', false, true, false);
+    addSelect2('.select2-auction', true, false, true);
+    addSelect2('.select2-seller-type', true, false, true);
+    addSelect2('.select2-engine', true, false, true);
+    addSelect2('.select2-fuel', true, false, true);
+    addSelect2('.select2-driveline', true, false, true);
+    addSelect2('.select2-transmission', true, false, true);
+    addSelect2('.select2-run-drive', true, false, true);
+    addSelect2('.select2-starts', true, false, true);
 
 
     /*----------------------------------------------------*/
-    /*  vh
+    /*  100vh fix
     /*----------------------------------------------------*/
 
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -486,6 +511,13 @@
         $('#filters-btn>span').text('Less Filters');
       } else {
         $('#filters-btn>span').text('Other Filters');
+
+        $('html, body').animate({
+          // класс объекта к которому приезжаем
+          // scrollTop: $("#filters-btn").offset().top
+          scrollTop: $("#filters-btn").offset().top - $(window).height() + 100
+        }, 1000); // Скорость прокрутки
+
       }
 
     });
