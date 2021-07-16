@@ -447,10 +447,18 @@
           //   e.preventDefault();
           // })
 
-          $('.select2-search__field').onfocus = function () {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-          }
+          // $('.select2-search__field').onfocus = function () {
+          //   window.scrollTo(0, 0);
+          //   document.body.scrollTop = 0;
+          // }
+
+          // var oldScroll = $(window).scrollTop();
+          //
+          // $( window ).one('scroll', function() {
+          //   $(window).scrollTop( oldScroll ); //disable scroll just once
+          // });
+          //
+          // $('.select2-search__field').focus();
 
         }
 
