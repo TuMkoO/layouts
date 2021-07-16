@@ -443,14 +443,14 @@
         if ( $(window).width() < 575 ) {
           $('.select2-search__field').blur();
 
-          $('.select2-search__field').bind('focusin focus', function(e){
-            e.preventDefault();
-          })
+          // $('.select2-search__field').bind('focusin focus', function(e){
+          //   e.preventDefault();
+          // })
 
-          // $('.select2-search__field').onfocus = function () {
-          //   window.scrollTo(0, 0);
-          //   document.body.scrollTop = 0;
-          // }
+          $('.select2-search__field').onfocus = function () {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+          }
 
         }
 
