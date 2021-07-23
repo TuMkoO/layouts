@@ -122,21 +122,9 @@ input, input[type="text"], input[type="password"], input[type="email"], input[ty
   border-radius: 3px;
 }
 
-input[type="number"]:disabled {
+input[type="text"]:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 select {
@@ -343,7 +331,7 @@ main {
 }
 
 /*----------------------------------- */
-/* System message
+/* Системное сообщение
 ------------------------------------- */
 .system-message {
   -webkit-transition: all 0.5s;
@@ -1345,11 +1333,6 @@ span.blog-item-tag {
   position: relative;
 }
 
-.select2-maker + .select2-container--default .select2-selection--single,
-.select2-model + .select2-container--default .select2-selection--single {
-  padding-right: 50px;
-}
-
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0 15px;
   color: #888;
@@ -1424,11 +1407,9 @@ span.blog-item-tag {
 }
 
 .select2-container--default .select2-results__option--selected,
-.select2-container--default .select2-results__option--selectable,
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: transparent;
   color: #888;
-  margin-bottom: 2px;
 }
 
 .select2-container--default .select2-results__option--selected {
@@ -1514,7 +1495,6 @@ span.blog-item-tag {
   left: 0;
   position: relative;
   max-width: 100%;
-  min-width: 90%;
   background-color: #FFFFFF;
   z-index: 1;
   overflow: hidden;
@@ -1538,7 +1518,6 @@ span.blog-item-tag {
 .select2-container--default.select2-container--open .select2-selection--multiple .select2-search.select2-search--inline {
   z-index: 1;
   background-color: #FFFFFF;
-  width: 100%;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
@@ -1580,7 +1559,7 @@ span.blog-item-tag {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__display:after {
-  content: ',';
+  content: ' ,';
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -1593,6 +1572,7 @@ span.blog-item-tag {
   height: 49px;
   margin: 0;
   padding: 0 50px 0 15px;
+  background: transparent;
 }
 
 .select2-container--default .select2-dropdown--above .select2-search--dropdown .select2-search__field {

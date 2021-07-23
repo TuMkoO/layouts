@@ -161,8 +161,8 @@
 
     //Filters API
 
-    // var currentYearFrom = null;
-    // var currentYearTo = null;
+    var currentYearFrom = null;
+    var currentYearTo = null;
     var currentYears = [];
 
     $.getJSON('https://test.amidstyle.com/?type=brands', function(data) {
@@ -371,7 +371,43 @@
 
     });
 
+    //Range Year
+    //Смена значения начального года
+    $('.select2-year-from').on('select2:select', function (e) {
+      //Значение выбранного минимального года
+      currentYearFrom = this.value;
+      currentYearTo = $('.select2-year-to').val();
 
+      //сортируем список Year To
+      var yearsToUpdated = currentYears.filter(item => item >= currentYearFrom).map(yearToUpdated => `<option value="${yearToUpdated}">${yearToUpdated}</option>`);
+      $(".select2-year-to").html('<option></option>' + yearsToUpdated);
+      $('.select2-year-to').trigger('change');
+      if (+currentYearTo >= +currentYearFrom) {
+        $('.select2-year-to').val(currentYearTo);
+      } else if (+currentYearTo === 0) {
+        $('.select2-year-to').val(null);
+      } else {
+        $('.select2-year-to').val(currentYearFrom);
+      }
+    });
+
+    //Выбор конечно года
+    $('.select2-year-to').on('select2:select', function (e) {
+      currentYearTo = this.value;
+      currentYearFrom = $('.select2-year-from').val();
+
+      //сортируем список Year From
+      var yearsFromUpdated = currentYears.filter(item => item <= currentYearTo).map(yearFromUpdated => `<option value="${yearFromUpdated}">${yearFromUpdated}</option>`);
+      $(".select2-year-from").html('<option></option>' + yearsFromUpdated);
+      $('.select2-year-from').trigger('change');
+      if (+currentYearFrom >= +currentYearTo) {
+        $('.select2-year-from').val(currentYearTo);
+      } else if (+currentYearFrom === 0) {
+        $('.select2-year-from').val(Math.min.apply(Math, currentYears.filter(item => +item <= +currentYearTo).map(item => +item)));
+      } else {
+        $('.select2-year-from').val(currentYearFrom);
+      }
+    });
 
 
     //Добавить Placeholder в search input, кнопки Назад и Применить
@@ -407,6 +443,23 @@
         if ( $(window).width() < 575 ) {
           $('.select2-search__field').blur();
 
+          // $('.select2-search__field').bind('focusin focus', function(e){
+          //   e.preventDefault();
+          // })
+
+          // $('.select2-search__field').onfocus = function () {
+          //   window.scrollTo(0, 0);
+          //   document.body.scrollTop = 0;
+          // }
+
+          // var oldScroll = $(window).scrollTop();
+          //
+          // $( window ).one('scroll', function() {
+          //   $(window).scrollTop( oldScroll ); //disable scroll just once
+          // });
+          //
+          // $('.select2-search__field').focus();
+
         }
 
 
@@ -425,7 +478,7 @@
           $(selector).next('.select2-container').find('.select2-selection__rendered').removeClass('too-long');
         }
 
-
+        console.log(  );
       });
       $(selector).on('select2:close', function (e) {
         $('body').removeClass('select2-open');
@@ -434,22 +487,6 @@
           $('.select2-apply').remove();
         }
       });
-
-      $(selector).on('select2:select', function (e) {
-        console.log( $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder')) );
-
-        if(searchMultiPlaceholder) {
-          $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
-        }
-      });
-      $(selector).on('select2:unselect', function (e) {
-        if(searchMultiPlaceholder) {
-          $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
-        }
-      });
-
-
-
     }
     addSelect2('.select2-maker', false, true, false);
     addSelect2('.select2-model', false, true, false);
@@ -504,7 +541,64 @@
     });
 
 
+    /*----------------------------------------------------*/
+    /*  Slick Carousel
+    /*----------------------------------------------------*/
 
+
+    $('.listing-slider').slick({
+      centerMode: true,
+      centerPadding: '20%',
+      slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 1367,
+          settings: {
+            centerPadding: '15%'
+          }
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            centerPadding: '0'
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            centerPadding: '0',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+
+
+    /*----------------------------------------------------*/
+    /*  Magnific Popup
+    /*----------------------------------------------------*/
+
+    $('.mfp-gallery-container').each(function() { // the containers for all your galleries
+
+      $(this).magnificPopup({
+        type: 'image',
+        delegate: 'a.mfp-gallery',
+
+        fixedContentPos: true,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: false,
+        preloader: true,
+
+        removalDelay: 0,
+        mainClass: 'mfp-fade',
+
+        gallery:{enabled:true, tCounter: ''}
+      });
+    });
 
 
 
