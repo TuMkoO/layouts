@@ -305,9 +305,6 @@
           //обновляем списки полей года
           if (data.data.years.length > 0) {
 
-            //Массив выбранных годов
-            // currentYears = data.data.years;
-
             //разблокировать выбор года
             $('.select2-year-from').select2({
               disabled: false,
@@ -316,14 +313,12 @@
               disabled: false,
             });
 
+            var yearsList = data.data.years.map(year => `<option value="${year}">${year}</option>`);
             //формируем список Year From
-            var yearsFrom = data.data.years.map(yearFrom => `<option value="${yearFrom}">${yearFrom}</option>`);
-            $(".select2-year-from").html('<option></option>' + yearsFrom);
+            $(".select2-year-from").html('<option></option>' + yearsList);
             $('.select2-year-from').trigger('change');
-
             //формируем список Year To
-            var yearsTo = data.data.years.map(yearTo => `<option value="${yearTo}">${yearTo}</option>`);
-            $(".select2-year-to").html('<option></option>' + yearsTo);
+            $(".select2-year-to").html('<option></option>' + yearsList);
             $('.select2-year-to').trigger('change');
 
           } else {
