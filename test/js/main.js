@@ -404,9 +404,9 @@
         }
 
         //
-        // var resultsHeight = $('.select2-results').height();
+        var resultsHeight = $('.select2-results').height();
         // console.log(resultsHeight);
-        // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+        $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
 
         $('.select2-dropdown .select2-search--dropdown .select2-search__field').focus(function () {
           $('.select2-results').addClass('keyboard-open');
