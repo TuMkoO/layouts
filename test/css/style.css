@@ -5957,7 +5957,7 @@ a.btn.btn-border:hover {
     overflow-y: scroll;
   }
   .keyboard-open {
-    padding-bottom: 350px;
+    max-height: calc(100% - 300px);
   }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
