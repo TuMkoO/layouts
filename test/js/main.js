@@ -404,18 +404,23 @@
         }
 
         //
-        var resultsHeight = $('.select2-results').height();
+        // var resultsHeight = $('.select2-results').height();
         // console.log(resultsHeight);
-        $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+        // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
 
+        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focus(function () {
+          $('.select2-results').addClass('keyboard-open');
+        });
         $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusin(function () {
-          let resultsHeightFocus = $('.select2-results').height();
-          alert(resultsHeightFocus);
-          console.log(resultsHeightFocus);
-          $('.select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
+          // let resultsHeightFocus = $('.select2-results').height();
+          // alert(resultsHeightFocus);
+          // console.log(resultsHeightFocus);
+          // $('.select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
+          $('.select2-results').addClass('keyboard-open');
         });
         $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusout(function () {
-          $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+          // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+          $('.select2-results').removeClass('keyboard-open');
         });
 
       });
