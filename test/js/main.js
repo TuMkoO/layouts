@@ -422,7 +422,10 @@
         });
         $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusout(function () {
           // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
-          $('.select2-results').removeClass('keyboard-open');
+
+          setTimeout(function () {
+            $('.select2-results').removeClass('keyboard-open');
+          }, 100);
           // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
         });
 
