@@ -5840,6 +5840,12 @@ a.btn.btn-border:hover {
   }
 }
 
+@media (min-width: 576px) {
+  .select2-container--default .select2-results > .select2-results__options {
+    max-height: 200px !important;
+  }
+}
+
 @media (max-width: 575px) {
   input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
     font-size: 16px;

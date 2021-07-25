@@ -374,16 +374,16 @@
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
 
+        //add placeholders
         if(searchInputPlaceholder) {
           $('input.select2-search__field').prop('placeholder', $(selector).data('search-placeholder'));
         }
-
         if(searchMultiPlaceholder) {
           $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
         }
 
+        //кнопки Назад и Применить
         $('.select2-dropdown').addClass('select2-wrapper');
-
         $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">'+ $(selector).data('btn-back') +'</a></div>');
         if(applyBtn) {
           $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">'+ $(selector).data('btn-apply') +'</button></div>');
@@ -396,22 +396,27 @@
           event.preventDefault();
           $(selector).select2('close');
           $('.select2-search__field').blur();
-
         });
+
 
         if ( $(window).width() < 575 ) {
           $('.select2-search__field').blur();
-
         }
 
+        //
+        let resultsHeight = $('.select2-results').height();
+        console.log(resultsHeight);
+        $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
 
       });
+
       $(selector).on('select2:closing', function (e) {
         $('.select2-close-wrapper').remove();
         if(applyBtn) {
           $('.select2-apply').remove();
         }
 
+        //add class too-long
         if( $(selector).next('.select2-container').find('.select2-selection__rendered').width() >= $(selector).next('.select2-container').find('.select2-selection--multiple').width()  ) {
           $(selector).next('.select2-container').find('.select2-selection--multiple').addClass('too-long');
           $(selector).next('.select2-container').find('.select2-selection__rendered').addClass('too-long');
@@ -420,8 +425,8 @@
           $(selector).next('.select2-container').find('.select2-selection__rendered').removeClass('too-long');
         }
 
-
       });
+
       $(selector).on('select2:close', function (e) {
         $('body').removeClass('select2-open');
         $('.select2-close-wrapper').remove();
@@ -431,12 +436,12 @@
       });
 
       $(selector).on('select2:select', function (e) {
-        console.log( $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder')) );
-
+        // console.log( $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder')) );
         if(searchMultiPlaceholder) {
           $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
         }
       });
+
       $(selector).on('select2:unselect', function (e) {
         if(searchMultiPlaceholder) {
           $(selector).next('.select2-container').find('.select2-search__field').prop('placeholder', $(selector).data('placeholder'));
@@ -444,8 +449,8 @@
       });
 
 
-
     }
+
     addSelect2('.select2-maker', false, true, false);
     addSelect2('.select2-model', false, true, false);
     addSelect2('.select2-year-from', false, true, false);
