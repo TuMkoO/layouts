@@ -5913,9 +5913,6 @@ a.btn.btn-border:hover {
     padding: 20px;
     border: none;
   }
-  .select2-container--default .select2-results > .select2-results__options {
-    max-height: 100%;
-  }
   .select2-close-wrapper {
     display: block;
     width: 100%;
@@ -5951,6 +5948,7 @@ a.btn.btn-border:hover {
   .select2-container--default .select2-results > .select2-results__options {
     width: 100%;
     max-height: 100%;
+    overflow-y: scroll;
   }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
