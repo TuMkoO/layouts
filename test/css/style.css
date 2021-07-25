@@ -5943,6 +5943,7 @@ a.btn.btn-border:hover {
   }
   .select2-results {
     height: calc(100% - 120px);
+    overflow-y: scroll;
     width: 100%;
   }
   .select2-container--default .select2-results > .select2-results__options {
