@@ -406,14 +406,17 @@
         //
         var resultsHeight = $('.select2-results').height();
         // console.log(resultsHeight);
+        alert(resultsHeight);
         $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
 
         $('.select2-search__field').focus(function () {
           let resultsHeightFocus = $('.select2-results').height();
+          alert(resultsHeightFocus);
           $('.select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
         });
         $('.select2-search__field').focusout(function () {
           $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+          alert(resultsHeight);
         });
 
       });
