@@ -406,17 +406,16 @@
         //
         var resultsHeight = $('.select2-results').height();
         // console.log(resultsHeight);
-        alert(resultsHeight);
         $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
 
-        $('.select2-search__field').focus(function () {
+        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusin(function () {
           let resultsHeightFocus = $('.select2-results').height();
           alert(resultsHeightFocus);
+          console.log(resultsHeightFocus);
           $('.select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
         });
-        $('.select2-search__field').focusout(function () {
+        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusout(function () {
           $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
-          alert(resultsHeight);
         });
 
       });
