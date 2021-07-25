@@ -5956,7 +5956,7 @@ a.btn.btn-border:hover {
     max-height: 100%;
     overflow-y: scroll;
   }
-  .select2-results__option:last-child {
+  .keyboard-open .select2-results__option:last-child {
     margin-bottom: 300px;
   }
   .select2-container.select2-container--default.select2-container--open {
