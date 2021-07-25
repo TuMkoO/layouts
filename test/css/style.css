@@ -5953,7 +5953,7 @@ a.btn.btn-border:hover {
   }
   .select2-container--default .select2-results > .select2-results__options {
     width: 100%;
-    max-height: 100%;
+    max-height: inherit;
     overflow-y: scroll;
   }
   .keyboard-open {
