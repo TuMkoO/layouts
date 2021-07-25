@@ -5959,6 +5959,9 @@ a.btn.btn-border:hover {
   .keyboard-open {
     max-height: calc(100% - 30px);
   }
+  .select2-results__option:last-child {
+    margin-bottom: 300px;
+  }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
         -ms-transform: translateX(0px);
