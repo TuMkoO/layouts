@@ -373,7 +373,6 @@
     function addSelect2(selector, applyBtn, searchInputPlaceholder, searchMultiPlaceholder) {
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
-        $('.select2-results').addClass('keyboard-open');
 
         //add placeholders
         if(searchInputPlaceholder) {
@@ -404,37 +403,27 @@
 
         //
         var resultsHeight = $('.select2-results').height();
-        // console.log(resultsHeight);
         $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
-
-        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focus(function () {
-          $('.select2-results').addClass('keyboard-open');
-          // let resultsHeightFocus = $('.keyboard-open').height();
-          // $('.keyboard-open .select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
-        });
-        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusin(function () {
-          // let resultsHeightFocus = $('.select2-results').height();
-          // alert(resultsHeightFocus);
-          // console.log(resultsHeightFocus);
-          // $('.select2-results__options').css({"maxHeight": resultsHeightFocus + "px"});
-          $('.select2-results').addClass('keyboard-open');
-        });
-        $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusout(function () {
-          // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
-
-          setTimeout(function () {
-            $('.select2-results').removeClass('keyboard-open');
-          }, 100);
-          // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
-        });
+        //
+        // $('.select2-dropdown .select2-search--dropdown .select2-search__field').focus(function () {
+        //   $('.select2-results').addClass('keyboard-open');
+        // });
+        // $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusin(function () {
+        //   $('.select2-results').addClass('keyboard-open');
+        // });
+        // $('.select2-dropdown .select2-search--dropdown .select2-search__field').focusout(function () {
+        //   setTimeout(function () {
+        //     $('.select2-results').removeClass('keyboard-open');
+        //   }, 100);
+        // });
 
 
         if ( $(window).width() < 575 ) {
           // $('.select2-search__field').blur();
-          console.log('focused');
-
-          $('.select2-dropdown .select2-search--dropdown input.select2-search__field').focus();
+          // console.log('focused');
+          // $('.select2-dropdown .select2-search--dropdown input.select2-search__field').focus();
         }
+
 
       });
 
