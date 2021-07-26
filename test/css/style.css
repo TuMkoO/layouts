@@ -5957,7 +5957,7 @@ a.btn.btn-border:hover {
     overflow-y: scroll;
   }
   .select2-container--default .select2-results__option:last-child {
-    margin-bottom: 350px;
+    margin-bottom: 150px;
   }
   .select2-container--default .select2-results__options-multiselect li:last-child {
     margin-bottom: 0;
@@ -5983,7 +5983,7 @@ a.btn.btn-border:hover {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .select2-container--open .select2-dropdown--below {
+  .select2-container--open .select2-dropdown {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
