@@ -401,6 +401,7 @@
 
         if ( $(window).width() < 575 ) {
           // $('.select2-search__field').blur();
+          $('input.select2-search__field').focus();
         }
 
         //
