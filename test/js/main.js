@@ -373,6 +373,7 @@
     function addSelect2(selector, applyBtn, searchInputPlaceholder, searchMultiPlaceholder) {
       $(selector).on('select2:open', function (e) {
         $('body').addClass('select2-open');
+        $('.select2-results').addClass('keyboard-open');
 
         //add placeholders
         if(searchInputPlaceholder) {
@@ -399,10 +400,7 @@
         });
 
 
-        if ( $(window).width() < 575 ) {
-          // $('.select2-search__field').blur();
-          $('input.select2-search__field').focus();
-        }
+
 
         //
         var resultsHeight = $('.select2-results').height();
@@ -429,6 +427,14 @@
           }, 100);
           // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
         });
+
+
+        if ( $(window).width() < 575 ) {
+          // $('.select2-search__field').blur();
+          console.log('focused');
+
+          $('.select2-dropdown .select2-search--dropdown input.select2-search__field').focus();
+        }
 
       });
 
