@@ -5959,6 +5959,9 @@ a.btn.btn-border:hover {
   .select2-results__option:last-child {
     margin-bottom: 350px;
   }
+  .select2-results__options-multiselect li:last-child {
+    margin-bottom: 0;
+  }
   .select2-container.select2-container--default.select2-container--open {
     -webkit-transform: translateX(0px);
         -ms-transform: translateX(0px);

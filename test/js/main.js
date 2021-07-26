@@ -387,6 +387,7 @@
         $('.select2-wrapper').prepend('<div class="select2-close-wrapper"><a href="#" class="select2-close-btn">'+ $(selector).data('btn-back') +'</a></div>');
         if(applyBtn) {
           $('.select2-wrapper').append('<div class="select2-apply"><button class="btn select2-apply-btn">'+ $(selector).data('btn-apply') +'</button></div>');
+          $('.select2-results__options').addClass('select2-results__options-multiselect');
         }
         $('.select2-close-btn').on('click', function () {
           event.preventDefault();
@@ -402,8 +403,8 @@
 
 
         //
-        var resultsHeight = $('.select2-results').height();
-        $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
+        // var resultsHeight = $('.select2-results').height();
+        // $('.select2-results__options').css({"maxHeight": resultsHeight + "px"});
         //
         // $('.select2-dropdown .select2-search--dropdown .select2-search__field').focus(function () {
         //   $('.select2-results').addClass('keyboard-open');
