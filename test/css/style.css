@@ -5957,7 +5957,7 @@ a.btn.btn-border:hover {
     overflow-y: scroll;
   }
   .select2-container--default .select2-results__option:last-child {
-    margin-bottom: 150px;
+    margin-bottom: 180px;
   }
   .select2-container--default .select2-results__options-multiselect li:last-child {
     margin-bottom: 0;
