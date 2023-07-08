@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Youth_40*40 </title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Youth_40*40-" transform="translate(-10.000000, -9.000000)">
+            <g id="Youth_40*40">
+                <g id="Rectangle">
+                    <rect x="0" y="0" width="40" height="40"></rect>
+                </g>
+                <g id="Group" transform="translate(10.000000, 9.000000)" fill="#2A2A2F">
+                    <path d="M13.5,7.5 C13.5,5.57 11.93,4 10,4 C8.07,4 6.5,5.57 6.5,7.5 C6.5,9.43 8.07,11 10,11 C11.93,11 13.5,9.43 13.5,7.5" id="Fill-2492"></path>
+                    <path d="M3,11 L5,11 L5,7 C5,4.243 7.243,2 10,2 C12.757,2 15,4.243 15,7 L15,11 L17,11 C18.657,11 20,9.656 20,8 C20,6.343 18.657,5 17,5 L16.705,5 C15.842,2.112 13.165,0 10,0 C6.835,0 4.158,2.112 3.295,5 L3,5 C1.343,5 0,6.343 0,8 C0,9.656 1.343,11 3,11" id="Fill-2493"></path>
+                    <path d="M10,12 C7.785,12 5.851,13.21 4.812,15 L15.188,15 C14.149,13.21 12.215,12 10,12" id="Fill-2494"></path>
+                    <polygon id="Fill-2495" points="0 22 20 22 20 19 0 19"></polygon>
+                    <path d="M2,16 C1.448,16 1,16.448 1,17 L1,18 L9,18 L9,17 C9,16.448 8.552,16 8,16 L2,16 Z" id="Fill-2496"></path>
+                    <path d="M19,17 C19,16.448 18.552,16 18,16 L12,16 C11.448,16 11,16.448 11,17 L11,18 L19,18 L19,17 Z" id="Fill-2497"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

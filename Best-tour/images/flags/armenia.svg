@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Армения</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.9938125,11.9693023 C23.9938125,18.5222326 18.639375,23.8346047 12.034875,23.8346047 C5.43,23.8346047 0.0755625,18.5222326 0.0755625,11.9693023 C0.0755625,5.41637209 5.43,0.104186047 12.034875,0.104186047 C18.639375,0.104186047 23.9938125,5.41637209 23.9938125,11.9693023 L23.9938125,11.9693023 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Армения">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-924"></g>
+            <polygon id="Fill-923" fill="#FFD31E" mask="url(#mask-2)" points="-5.9038125 23.8346047 29.9731875 23.8346047 29.9731875 15.9244651 -5.9038125 15.9244651"></polygon>
+            <polygon id="Fill-925" fill="#FF1612" mask="url(#mask-2)" points="-5.9038125 8.01413953 29.9731875 8.01413953 29.9731875 0.104186047 -5.9038125 0.104186047"></polygon>
+            <polygon id="Fill-926" fill="#0440A8" mask="url(#mask-2)" points="-5.9038125 15.9244651 29.9731875 15.9244651 29.9731875 8.01432558 -5.9038125 8.01432558"></polygon>
+        </g>
+    </g>
+</svg>

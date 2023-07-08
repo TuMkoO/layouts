@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Индонезия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.993625,11.9663256 C23.993625,18.5194419 18.6395625,23.832 12.0346875,23.832 C5.43,23.832 0.0751875,18.5194419 0.0751875,11.9663256 C0.0751875,5.41302326 5.43,0.100837209 12.0346875,0.100837209 C18.6395625,0.100837209 23.993625,5.41302326 23.993625,11.9663256 L23.993625,11.9663256 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Индонезия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-7100"></g>
+            <polygon id="Fill-7099" fill="#F0F0F0" mask="url(#mask-2)" points="-5.9038125 23.832 29.973 23.832 29.973 11.9665116 -5.9038125 11.9665116"></polygon>
+            <polygon id="Fill-7101" fill="#FF1612" mask="url(#mask-2)" points="-5.9038125 11.9665116 29.973 11.9665116 29.973 0.101395349 -5.9038125 0.101395349"></polygon>
+        </g>
+    </g>
+</svg>

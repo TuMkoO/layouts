@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ОАЭ</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.9308125,11.961 C23.9308125,18.5655 18.5769375,23.9195625 11.9720625,23.9195625 C5.3675625,23.9195625 0.0135,18.5655 0.0135,11.961 C0.0135,5.3566875 5.3675625,0.002625 11.9720625,0.002625 C18.5769375,0.002625 23.9308125,5.3566875 23.9308125,11.961 L23.9308125,11.961 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ОАЭ">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-10475"></g>
+            <polygon id="Fill-10474" fill="#FF1612" mask="url(#mask-2)" points="-2.9761875 23.9195625 5.9926875 23.9195625 5.9926875 0.002625 -2.9761875 0.002625"></polygon>
+            <polygon id="Fill-10476" fill="#47B71D" mask="url(#mask-2)" points="5.9926875 7.975125 32.9000625 7.975125 32.9000625 0.002625 5.9926875 0.002625"></polygon>
+            <polygon id="Fill-10477" fill="#F0F0F0" mask="url(#mask-2)" points="5.9926875 15.9478125 32.9000625 15.9478125 32.9000625 7.975125 5.9926875 7.975125"></polygon>
+            <polygon id="Fill-10478" fill="#000000" mask="url(#mask-2)" points="5.9926875 23.9195625 32.9000625 23.9195625 32.9000625 15.9478125 5.9926875 15.9478125"></polygon>
+        </g>
+    </g>
+</svg>

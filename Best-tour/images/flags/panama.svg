@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Панама</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24,11.9997178 C24,18.6272392 18.6273852,24 12,24 C5.37242666,24 4.79422058e-13,18.6272392 4.79422058e-13,11.9997178 C4.79422058e-13,5.3721964 5.37242666,-1.26898492e-13 12,-1.26898492e-13 C18.6273852,-1.26898492e-13 24,5.3721964 24,11.9997178" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Панама">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Clip-3685" fill="#F0F0F0" xlink:href="#path-1"></use>
+            <polygon id="Star" fill="#0437A0" mask="url(#mask-2)" points="6.75 7.875 5.42748318 8.57028824 5.68006142 7.09764412 4.61012284 6.05471176 6.08874159 5.83985588 6.75 4.5 7.41125841 5.83985588 8.88987716 6.05471176 7.81993858 7.09764412 8.07251682 8.57028824"></polygon>
+            <polygon id="Star" fill="#F90805" mask="url(#mask-2)" points="17.25 18.375 15.9274832 19.0702882 16.1800614 17.5976441 15.1101228 16.5547118 16.5887416 16.3398559 17.25 15 17.9112584 16.3398559 19.3898772 16.5547118 18.3199386 17.5976441 18.5725168 19.0702882"></polygon>
+            <polygon id="Fill-3684" fill="#F90805" mask="url(#mask-2)" points="24 12 24 0 12.132093 0.032737022 12 12"></polygon>
+            <polygon id="Fill-3687" fill="#0437A0" mask="url(#mask-2)" points="-1.36513023e-12 12.0310492 -1.36513023e-12 24 11.9973583 23.9689508 12 12"></polygon>
+        </g>
+    </g>
+</svg>

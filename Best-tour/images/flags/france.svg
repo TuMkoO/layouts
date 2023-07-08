@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Франция</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8690233,11.967 C23.8690233,18.5715 18.5562791,23.925375 12.0029767,23.925375 C5.44967442,23.925375 0.137302326,18.5715 0.137302326,11.967 C0.137302326,5.3626875 5.44967442,0.0084375 12.0029767,0.0084375 C18.5562791,0.0084375 23.8690233,5.3626875 23.8690233,11.967 L23.8690233,11.967 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Франция">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-6126"></g>
+            <polygon id="Fill-6125" fill="#0456BD" mask="url(#mask-2)" points="-5.79609302 23.9251875 6.07013953 23.9251875 6.07013953 0.00825 -5.79609302 0.00825"></polygon>
+            <polygon id="Fill-6127" fill="#F0F0F0" mask="url(#mask-2)" points="6.06995349 23.925375 17.9356279 23.925375 17.9356279 0.0084375 6.06995349 0.0084375"></polygon>
+            <polygon id="Fill-6128" fill="#FF1612" mask="url(#mask-2)" points="17.935814 23.9251875 29.8016744 23.9251875 29.8016744 0.00825 17.935814 0.00825"></polygon>
+        </g>
+    </g>
+</svg>

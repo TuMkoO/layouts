@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Венгрия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.99325,11.9665116 C23.99325,18.5194419 18.6388125,23.831814 12.0343125,23.831814 C5.430375,23.831814 0.0759375,18.5194419 0.0759375,11.9665116 C0.0759375,5.41339535 5.430375,0.101023256 12.0343125,0.101023256 C18.6388125,0.101023256 23.99325,5.41339535 23.99325,11.9665116 L23.99325,11.9665116 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Венгрия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-7083"></g>
+            <polygon id="Fill-7082" fill="#47B71D" mask="url(#mask-2)" points="-5.903625 23.831814 29.9724375 23.831814 29.9724375 15.9214884 -5.903625 15.9214884"></polygon>
+            <polygon id="Fill-7084" fill="#FF1612" mask="url(#mask-2)" points="-5.903625 8.01134884 29.9724375 8.01134884 29.9724375 0.101023256 -5.903625 0.101023256"></polygon>
+            <polygon id="Fill-7085" fill="#F0F0F0" mask="url(#mask-2)" points="-5.903625 15.9214884 29.9724375 15.9214884 29.9724375 8.01153488 -5.903625 8.01153488"></polygon>
+        </g>
+    </g>
+</svg>

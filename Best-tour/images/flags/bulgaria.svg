@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Болгария</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8692093,11.9685 C23.8692093,18.5724375 18.5564651,23.9263125 12.0033488,23.9263125 C5.45004651,23.9263125 0.137488372,18.5724375 0.137488372,11.9685 C0.137488372,5.3641875 5.45004651,0.0105 12.0033488,0.0105 C18.5564651,0.0105 23.8692093,5.3641875 23.8692093,11.9685 L23.8692093,11.9685 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Болгария">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2903"></g>
+            <polygon id="Fill-2902" fill="#F90805" mask="url(#mask-2)" points="-5.79553488 23.9263125 29.8022326 23.9263125 29.8022326 15.954375 -5.79553488 15.954375"></polygon>
+            <polygon id="Fill-2904" fill="#F0F0F0" mask="url(#mask-2)" points="-5.79553488 7.9824375 29.8022326 7.9824375 29.8022326 0.0105 -5.79553488 0.0105"></polygon>
+            <polygon id="Fill-2905" fill="#47B71D" mask="url(#mask-2)" points="-5.79553488 15.954375 29.8022326 15.954375 29.8022326 7.982625 -5.79553488 7.982625"></polygon>
+        </g>
+    </g>
+</svg>

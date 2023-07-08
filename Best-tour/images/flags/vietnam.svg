@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Вьетнам</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8697674,11.9603721 C23.8697674,18.5140465 18.5572093,23.8262326 12.0037209,23.8262326 C5.4507907,23.8262326 0.137860465,18.5140465 0.137860465,11.9603721 C0.137860465,5.40725581 5.4507907,0.0950697674 12.0037209,0.0950697674 C18.5572093,0.0950697674 23.8697674,5.40725581 23.8697674,11.9603721 L23.8697674,11.9603721 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Вьетнам">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-11083"></g>
+            <polygon id="Fill-11082" fill="#FF1612" mask="url(#mask-2)" points="-5.79460465 23.8262326 29.8027907 23.8262326 29.8027907 0.0950697674 -5.79460465 0.0950697674"></polygon>
+            <polyline id="Fill-11084" fill="#FFDA1E" mask="url(#mask-2)" points="12.0037209 4.84372093 13.5946047 9.77097674 18.7722791 9.76130233 14.5774884 12.7968372 16.1869767 17.7179535 12.0037209 14.6667907 7.82065116 17.7179535 9.42995349 12.7968372 5.23534884 9.76130233 10.4135814 9.77097674 12.0037209 4.84372093"></polyline>
+        </g>
+    </g>
+</svg>

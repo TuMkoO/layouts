@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Shopping_40*40 </title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shopping_40*40-" transform="translate(-11.000000, -9.000000)">
+            <g id="Shopping_40*40">
+                <g id="Rectangle">
+                    <rect x="0" y="0" width="40" height="40"></rect>
+                </g>
+                <g id="Fill-3935-+-Fill-3936" transform="translate(11.000000, 9.000000)">
+                    <polygon id="Fill-3935" fill="#2A2A2F" points="17 6 1 6 0 20 18 20"></polygon>
+                    <polygon id="Fill-3935" fill="#EEEFF2" points="15.6980591 14 2.29824829 14 2 18 16 18"></polygon>
+                    <path d="M9,2 C10.654,2 12,3.346 12,5 L14,5 C14,2.243 11.757,0 9,0 C6.243,0 4,2.243 4,5 L6,5 C6,3.346 7.346,2 9,2" id="Fill-3936" fill="#2A2A2F"></path>
+                </g>
+                <circle id="Oval" fill="#EEEFF2" cx="24" cy="17" r="1"></circle>
+                <circle id="Oval-Copy-11" fill="#EEEFF2" cx="16" cy="17" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

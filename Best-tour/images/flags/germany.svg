@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Германия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8701395,11.9665116 C23.8701395,18.5205581 18.5583256,23.8325581 12.0042791,23.8325581 C5.45023256,23.8325581 0.137488372,18.5205581 0.137488372,11.9665116 C0.137488372,5.41265116 5.45023256,0.10027907 12.0042791,0.10027907 C18.5583256,0.10027907 23.8701395,5.41265116 23.8701395,11.9665116 L23.8701395,11.9665116 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Германия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-6153"></g>
+            <polygon id="Fill-6152" fill="#000000" mask="url(#mask-2)" points="-5.84762791 8.01134884 29.751814 8.01134884 29.751814 0.10027907 -5.84762791 0.10027907"></polygon>
+            <polygon id="Fill-6154" fill="#FF1612" mask="url(#mask-2)" points="-5.84762791 15.9227907 29.751814 15.9227907 29.751814 8.01116279 -5.84762791 8.01116279"></polygon>
+            <polygon id="Fill-6155" fill="#FEDC36" mask="url(#mask-2)" points="-5.84762791 23.8333023 29.751814 23.8333023 29.751814 15.9227907 -5.84762791 15.9227907"></polygon>
+        </g>
+    </g>
+</svg>

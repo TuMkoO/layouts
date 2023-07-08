@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Маврикий</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8697674,11.964 C23.8697674,18.5686875 18.5573953,23.9225625 12.003907,23.9225625 C5.45060465,23.9225625 0.137860465,18.5686875 0.137860465,11.964 C0.137860465,5.3593125 5.45060465,0.0054375 12.003907,0.0054375 C18.5573953,0.0054375 23.8697674,5.3593125 23.8697674,11.964 L23.8697674,11.964 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Маврикий">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-7418"></g>
+            <polygon id="Fill-7417" fill="#47B71D" mask="url(#mask-2)" points="-5.79516279 23.9225625 29.8026047 23.9225625 29.8026047 17.942625 -5.79516279 17.942625"></polygon>
+            <polygon id="Fill-7419" fill="#FF1612" mask="url(#mask-2)" points="-5.79516279 5.9844375 29.8026047 5.9844375 29.8026047 0.00525 -5.79516279 0.00525"></polygon>
+            <polygon id="Fill-7420" fill="#0440A8" mask="url(#mask-2)" points="-5.79516279 11.964 29.8026047 11.964 29.8026047 5.9840625 -5.79516279 5.9840625"></polygon>
+            <polygon id="Fill-7421" fill="#FEDC36" mask="url(#mask-2)" points="-5.79516279 17.9428125 29.8026047 17.9428125 29.8026047 11.964 -5.79516279 11.964"></polygon>
+        </g>
+    </g>
+</svg>

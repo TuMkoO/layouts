@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Россия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8697674,11.9625 C23.8697674,18.5671875 18.5568372,23.92125 12.0037209,23.92125 C5.4504186,23.92125 0.137860465,18.5671875 0.137860465,11.9625 C0.137860465,5.358 5.4504186,0.0039375 12.0037209,0.0039375 C18.5568372,0.0039375 23.8697674,5.358 23.8697674,11.9625 L23.8697674,11.9625 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Россия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-8687"></g>
+            <polygon id="Fill-8686" fill="#0456BD" mask="url(#mask-2)" points="-5.79516279 15.94875 29.8026047 15.94875 29.8026047 7.976625 -5.79516279 7.976625"></polygon>
+            <polygon id="Fill-8688" fill="#FF1612" mask="url(#mask-2)" points="-5.79516279 23.92125 29.8026047 23.92125 29.8026047 15.94875 -5.79516279 15.94875"></polygon>
+            <polygon id="Fill-8689" fill="#F0F0F0" mask="url(#mask-2)" points="-5.79516279 7.976625 29.8026047 7.976625 29.8026047 0.0039375 -5.79516279 0.0039375"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Best</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/fotorama.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header-backdrop"></div>
+  <div class="header-wrapper">
+    <div class="container-lg">
+      <nav class="navbar navbar-expand-md">
+        <div class="logo d-flex align-items-center">
+          <a href="index.html" class="logo-link"><img src="images/best-logo.svg" alt=""></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="header-container d-flex justify-content-between w-100">
+            <div class="header-col d-flex align-items-center">
+              <div class="main-nav">
+                <ul class="nav-list">
+                  <li class="nav-list-item" id="dropdown-countries-btn"><a href="#" class="nav-link">Страны</a></li>
+                  <li class="nav-list-item"><a href="contacts.html" class="nav-link">Офисы продаж</a></li>
+                  <li class="nav-list-item nav-list-item-phone"><a href="tel:88009999900" class="nav-link">8 800 999 99 00</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-col d-flex align-items-center">
+              <div class="main-nav d-flex align-items-center">
+                <ul class="nav-list nav-list-user">
+                  <li class="nav-list-item nav-list-item-agents"><a href="news.html" class="nav-link text-carbon">Агентам</a></li>
+                  <li class="nav-list-item nav-list-item-comparison"><a href="country-tours.html" class="nav-link">
+                    <span class="nav-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="bg-contain bg-center text-20 text-purple" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg></span>
+                    Сравнение</a>
+                  </li>
+                  <li class="nav-list-item nav-list-item-fav"><a href="country-tours.html" class="nav-link">
+                    <span class="nav-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="bg-contain bg-center text-16 text-purple" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></span>
+                    Избранное</a>
+                  </li>
+                  <li class="nav-list-item"><a id="dropdown-cities-btn" href="#" class="nav-link">
+                    <span class="nav-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-16 text-purple" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg></span>
+                    Москва</a>
+                  </li>
+                  <li class="nav-list-item nav-list-item-cabinet"><a href="help.html" class="nav-link">
+                    <span class="nav-icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-purple text-16" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg></span>
+                    Личный кабинет</a>
+                  </li>
+                </ul>
+                <div class="main-nav-btn text-24 dropdown-nav">
+                  <svg id="dropdown-nav-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                </div>
+                <div class="dropdown-content dropdown-content-menu">
+                  <div class="container-sm">
+                    <div class="additional-nav d-flex justify-content-md-between flex-column flex-md-row w-100">
+                      <div class="additional-nav-item">
+                        <div class="additional-nav-title additional-nav-title-mobile">Покупка и оплата</div>
+                        <ul class="additional-list additional-list-mobile">
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Как оплатить тур</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Документы</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Изменить или аннулировать тур</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Регламент взаимодействия</a></li>
+                        </ul>
+                      </div>
+                      <div class="additional-nav-item">
+                        <div class="additional-nav-title additional-nav-title-mobile">Перед поездкой</div>
+                        <ul class="additional-list additional-list-mobile">
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Виза</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Страхование</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Памятка туристу</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Безопасные путешествия</a></li>
+                          <li class="additional-list-item"><a href="help-service.html" class="additional-list-link text-16">Доплаты</a></li>
+                        </ul>
+                      </div>
+                      <div class="additional-nav-item">
+                        <div class="additional-nav-title additional-nav-title-mobile">О компании</div>
+                        <ul class="additional-list additional-list-mobile">
+                          <li class="additional-list-item"><a href="#" class="additional-list-link text-16">Общая информация</a></li>
+                          <li class="additional-list-item"><a href="news.html" class="additional-list-link text-16">Новости</a></li>
+                          <li class="additional-list-item"><a href="contacts.html" class="additional-list-link text-16">Контакты</a></li>
+                          <li class="additional-list-item"><a href="#" class="additional-list-link text-16">Соглашение о конфиденциальности</a></li>
+                          <li class="additional-list-item"><a href="help.html" class="additional-list-link text-16">Помощь и информация</a></li>
+                        </ul>
+                      </div>
+                      <div class="additional-nav-item additional-nav-item-contacts">
+                        <div class="additional-nav-title">Контакты</div>
+                        <ul class="additional-list">
+                          <li class="additional-list-item"><a href="tel:88007756000" class="additional-list-link"><strong class="text-24">8 800 775 60 00</strong></a></li>
+                        </ul>
+                        <div class="additional-nav-title">Мы в соцсетях</div>
+                        <ul class="additional-list-social d-flex">
+                          <li class="additional-list-social-item"><a href="#" class="additional-list-social-link"><img src="images/social/instagram_black.svg" alt=""></a></li>
+                          <li class="additional-list-social-item"><a href="#" class="additional-list-social-link"><img src="images/social/facebook_black.svg" alt=""></a></li>
+                          <li class="additional-list-social-item"><a href="#" class="additional-list-social-link"><img src="images/social/vk_black.svg" alt=""></a></li>
+                          <li class="additional-list-social-item"><a href="#" class="additional-list-social-link"><img src="images/social/ok_black.svg" alt=""></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-content dropdown-content-countries">
+                  <div class="container-sm">
+                    <div class="additional-nav d-flex justify-content-between w-100">
+                      <div class="dropdown-countries-item">
+                        <ul class="dropdown-names-list">
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Турция</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Абхазия</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Мальдивы</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">ОАЭ</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Россия</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Танзания</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="country-tours.html" class="dropdown-names-list-link text-carbon">Сербия</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-countries-item">
+                        <div class="countries-list-container">
+                          <ul class="countries-list">
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/abkhazia.svg" alt="" class="country-icon">
+                                <span class="country-title">Абхазия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/austria.svg" alt="" class="country-icon">
+                                <span class="country-title">Австрия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/azerbaijan.svg" alt="" class="country-icon">
+                                <span class="country-title">Азербайджан</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/andorra.svg" alt="" class="country-icon">
+                                <span class="country-title">Андорра</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/armenia.svg" alt="" class="country-icon">
+                                <span class="country-title">Армения</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/belarus.svg" alt="" class="country-icon">
+                                <span class="country-title">Беларусь</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/belgium.svg" alt="" class="country-icon">
+                                <span class="country-title">Бельгия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/bulgaria.svg" alt="" class="country-icon">
+                                <span class="country-title">Болгария</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/brazil.svg" alt="" class="country-icon">
+                                <span class="country-title">Бразилия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/hungary.svg" alt="" class="country-icon">
+                                <span class="country-title">Венгрия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/vietnam.svg" alt="" class="country-icon">
+                                <span class="country-title">Вьетнам</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/germany.svg" alt="" class="country-icon">
+                                <span class="country-title">Германия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/greece.svg" alt="" class="country-icon">
+                                <span class="country-title">Греция</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/georgia.svg" alt="" class="country-icon">
+                                <span class="country-title">Грузия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/dominican-republic.svg" alt="" class="country-icon">
+                                <span class="country-title">Доминикана</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/egypt.svg" alt="" class="country-icon">
+                                <span class="country-title">Египет</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/israel.svg" alt="" class="country-icon">
+                                <span class="country-title">Израиль</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/india.svg" alt="" class="country-icon">
+                                <span class="country-title">Индия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/indonesia.svg" alt="" class="country-icon">
+                                <span class="country-title">Индонезия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/jordan.svg" alt="" class="country-icon">
+                                <span class="country-title">Иордания</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/spain.svg" alt="" class="country-icon">
+                                <span class="country-title">Испания</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/italy.svg" alt="" class="country-icon">
+                                <span class="country-title">Италия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/qatar.svg" alt="" class="country-icon">
+                                <span class="country-title">Катар</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/cyprus.svg" alt="" class="country-icon">
+                                <span class="country-title">Кипр</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/china.svg" alt="" class="country-icon">
+                                <span class="country-title">Китай</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/cuba.svg" alt="" class="country-icon">
+                                <span class="country-title">Куба</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/mauritius.svg" alt="" class="country-icon">
+                                <span class="country-title">Маврикий</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/malaysia.svg" alt="" class="country-icon">
+                                <span class="country-title">Малайзия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/maldives.svg" alt="" class="country-icon">
+                                <span class="country-title">Мальдивы</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/malta.svg" alt="" class="country-icon">
+                                <span class="country-title">Мальта</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/morocco.svg" alt="" class="country-icon">
+                                <span class="country-title">Марокко</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/mexico.svg" alt="" class="country-icon">
+                                <span class="country-title">Мексика</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/netherlands.svg" alt="" class="country-icon">
+                                <span class="country-title">Нидерланды</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="#" class="countries-list-link locked">
+                                <img src="images/flags/norway.svg" alt="" class="country-icon">
+                                <span class="country-title">Норвегия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/uae.svg" alt="" class="country-icon">
+                                <span class="country-title">ОАЭ</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/panama.svg" alt="" class="country-icon">
+                                <span class="country-title">Панама</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/peru.svg" alt="" class="country-icon">
+                                <span class="country-title">Перу</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/portugal.svg" alt="" class="country-icon">
+                                <span class="country-title">Португалия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="#" class="countries-list-link locked">
+                                <img src="images/flags/russia.svg" alt="" class="country-icon">
+                                <span class="country-title">Россия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/seychelles.svg" alt="" class="country-icon">
+                                <span class="country-title">Сейшельские Оc-ва</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="#" class="countries-list-link locked">
+                                <img src="images/flags/serbia.svg" alt="" class="country-icon">
+                                <span class="country-title">Сербия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/singapore.svg" alt="" class="country-icon">
+                                <span class="country-title">Сингапур</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/thailand.svg" alt="" class="country-icon">
+                                <span class="country-title">Таиланд</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/tanzania.svg" alt="" class="country-icon">
+                                <span class="country-title">Танзания</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/tunisia.svg" alt="" class="country-icon">
+                                <span class="country-title">Тунис</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/turkey.svg" alt="" class="country-icon">
+                                <span class="country-title">Турция</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/france.svg" alt="" class="country-icon">
+                                <span class="country-title">Франция</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/croatia.svg" alt="" class="country-icon">
+                                <span class="country-title">Хорватия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/montenegro.svg" alt="" class="country-icon">
+                                <span class="country-title">Черногория</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/czech-republic.svg" alt="" class="country-icon">
+                                <span class="country-title">Чехия</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/switzerland.svg" alt="" class="country-icon">
+                                <span class="country-title">Швейцария</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/sri-lanka.svg" alt="" class="country-icon">
+                                <span class="country-title">Шри-Ланка</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/south-korea.svg" alt="" class="country-icon">
+                                <span class="country-title">Южная Корея</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/jamaica.svg" alt="" class="country-icon">
+                                <span class="country-title">Ямайка</span>
+                              </a>
+                            </li>
+                            <li class="countries-list-item">
+                              <a href="country-tours.html" class="countries-list-link">
+                                <img src="images/flags/japan.svg" alt="" class="country-icon">
+                                <span class="country-title">Япония</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="dropdown-countries-item">
+                        <a href="#" class="dropdown-countries-close"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-content dropdown-content-cities">
+                  <div class="container-sm">
+                    <div class="additional-nav d-flex justify-content-between w-100">
+                      <div class="dropdown-countries-item">
+                        <ul class="dropdown-names-list">
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Москва</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Казань</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Ростов-на-Дону</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Уфа</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Сыктывкар</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Архангельск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Калининград</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Санкт-Петербург</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Краснодар</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Волгоград</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Пермь</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Нижний Новгород</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Самара</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Екатеринбург</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Тюмень</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Сургут</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Челябинск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Красноярск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Иркутск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Кемерово</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Новосибирск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Омск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Оренбург</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Томск</a>
+                          </li>
+                          <li class="dropdown-names-list-item">
+                            <a href="tours.html" class="dropdown-names-list-link text-carbon">Новокузнецк</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-countries-item">
+                        <div class="cities-list-container">
+                          <div class="cities-list-title text-carbon">Россия</div>
+                          <ul class="cities-list">
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Анапа</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Архангельск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Барнаул</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Белгород</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Благовещенск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Владивосток</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Волгоград</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Воронеж</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Екатеринбург</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Иркутск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Казань</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Калининград</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Кемерово</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Краснодар</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Красноярск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Москва</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Нижний Новгород</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Новокузнецк</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Новосибирск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Омск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Оренбург</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Пермь</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Ростов-на-Дону</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Самара</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Санкт-Петербург</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Сургут</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Сыктывкар</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Томск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Тюмень</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Уфа</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Хабаровск</a></li>
+                            <li class="cities-list-item"><a href="tours.html" class="cities-list-link">Челябинск</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="dropdown-countries-item">
+                        <a href="#" class="dropdown-cities-close"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="selection">
+      <div class="container-lg">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tours-tab" data-toggle="tab" href="#tours" role="tab" aria-controls="tours" aria-selected="true">Туры</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="hotels-tab" data-toggle="tab" href="#hotels" role="tab" aria-controls="hotels" aria-selected="false">Отели</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tours" role="tabpanel" aria-labelledby="tours-tab">
+            <form action="" class="selection-search d-flex justify-content-between">
+              <div class="selection-wrapper d-flex">
+                <div class="selection-field"><select class="select-from" name="state">
+                  <option value="MSK">Москва</option>
+                  <option value="MHC">Махачкала</option>
+                  <option value="MRM">Мурманск</option>
+                  <option value="OMS">Омск</option>
+                  <option value="PER">Пермь</option>
+                </select></div>
+                <div class="selection-field"><select class="select-to" name="state">
+                  <option></option>
+                  <option value="TUR">Турция</option>
+                  <option value="ABH">Абхазия</option>
+                  <option value="EGP">Египет</option>
+                  <option value="AND">Андорра</option>
+                  <option value="BEL">Беларусь</option>
+                </select></div>
+                <div class="selection-field"><select class="select-date" name="state">
+                  <option></option>
+                  <option value="date">2021</option>
+                </select></div>
+                <div class="selection-field"><select class="select-days" name="state">
+                  <option></option>
+                  <option value="1">1 ночь</option>
+                  <option value="1">2 ночей</option>
+                  <option value="1">3 ночей</option>
+                  <option value="1">4 ночей</option>
+                  <option value="1">5 ночей</option>
+                  <option value="1">6 ночей</option>
+                  <option value="1">7 ночей</option>
+                  <option value="1">8 ночей</option>
+                  <option value="1">9 ночей</option>
+                </select></div>
+                <div class="selection-field"><select class="select-tourists" name="state">
+                  <option></option>
+                  <option value="1">1 взрослый</option>
+                  <option value="1">2 взрослых</option>
+                  <option value="1">3 взрослых</option>
+                  <option value="1">4 взрослых</option>
+                  <option value="1">5 взрослых</option>
+                </select></div>
+              </div>
+              <button class="selection-btn" type="submit">Подобрать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
+            <form action="" class="selection-search d-flex justify-content-between">
+              <div class="selection-wrapper d-flex">
+                <div class="selection-field selection-field-25"><select class="select-to" name="state">
+                  <option></option>
+                  <option value="TUR">Турция</option>
+                  <option value="ABH">Абхазия</option>
+                  <option value="EGP">Египет</option>
+                  <option value="AND">Андорра</option>
+                  <option value="BEL">Беларусь</option>
+                </select></div>
+                <div class="selection-field selection-field-25"><select class="select-date" name="state">
+                  <option></option>
+                  <option value="date">2021</option>
+                </select></div>
+                <div class="selection-field selection-field-25"><select class="select-days" name="state">
+                  <option></option>
+                  <option value="1">1 ночь</option>
+                  <option value="1">2 ночей</option>
+                  <option value="1">3 ночей</option>
+                  <option value="1">4 ночей</option>
+                  <option value="1">5 ночей</option>
+                  <option value="1">6 ночей</option>
+                  <option value="1">7 ночей</option>
+                  <option value="1">8 ночей</option>
+                  <option value="1">9 ночей</option>
+                </select></div>
+                <div class="selection-field selection-field-25"><select class="select-tourists" name="state">
+                  <option></option>
+                  <option value="1">1 взрослый</option>
+                  <option value="1">2 взрослых</option>
+                  <option value="1">3 взрослых</option>
+                  <option value="1">4 взрослых</option>
+                  <option value="1">5 взрослых</option>
+                </select></div>
+              </div>
+              <button class="selection-btn" type="submit">Подобрать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container-lg">
+        <div class="main-banner">
+          <div class="main-banner-item"><a href="news-single.html" class="banner-link"><div class="banner-slide" style="background-image: url(images/slide1.jpg)"></div></a></div>
+          <div class="main-banner-item"><a href="news-single.html" class="banner-link"><div class="banner-slide" style="background-image: url(images/slide2.jpg)"></div></a></div>
+          <div class="main-banner-item"><a href="news-single.html" class="banner-link"><div class="banner-slide" style="background-image: url(images/slide3.jpg)"></div></a></div>
+          <div class="main-banner-item"><a href="news-single.html" class="banner-link"><div class="banner-slide" style="background-image: url(images/slide4.jpg)"></div></a></div>
+          <div class="main-banner-item"><a href="news-single.html" class="banner-link"><div class="banner-slide" style="background-image: url(images/slide5.jpg)"></div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="hot-tours">
+      <div class="container-lg">
+        <h2 class="section-title">Горящие туры</h2>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="tour-wrapper">
+                <a href="hotel.html" class="tour-link">
+                  <div class="tour-pic">
+                    <div class="tour-pic-item" style="background-image: url(images/hotel1.jfif)"></div>
+                    <ul class="tour-icons d-flex">
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+                      </li>
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="tour-title">Танзания, Нунгви</h3>
+                  <div class="tour-rating">
+                    <ul class="rating d-flex">
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                    </ul>
+                  </div>
+                  <div class="tour-hotel text-carbon">Essque Zalu Zanzibar</div>
+                  <div class="tour-price">303 485 ₽</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="tour-wrapper">
+                <a href="hotel.html" class="tour-link">
+                  <div class="tour-pic">
+                    <div class="tour-pic-item" style="background-image: url(images/hotel2.jfif)"></div>
+                    <ul class="tour-icons d-flex">
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+                      </li>
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="tour-title">Танзания, Кендва</h3>
+                  <div class="tour-rating">
+                    <ul class="rating d-flex">
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                    </ul>
+                  </div>
+                  <div class="tour-hotel text-carbon">Gold Zanzibar Beach House & Spa</div>
+                  <div class="tour-price">311 485 ₽</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="tour-wrapper">
+                <a href="hotel.html" class="tour-link">
+                  <div class="tour-pic">
+                    <div class="tour-pic-item" style="background-image: url(images/hotel3.jfif)"></div>
+                    <ul class="tour-icons d-flex">
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+                      </li>
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="tour-title">Танзания, Кивенгва</h3>
+                  <div class="tour-rating">
+                    <ul class="rating d-flex">
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                    </ul>
+                  </div>
+                  <div class="tour-hotel text-carbon">Melia Zanzibar</div>
+                  <div class="tour-price">305 485 ₽</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="tour-wrapper">
+                <a href="hotel.html" class="tour-link">
+                  <div class="tour-pic">
+                    <div class="tour-pic-item" style="background-image: url(images/hotel4.jfif)"></div>
+                    <ul class="tour-icons d-flex">
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>
+                      </li>
+                      <li class="tour-icons-item d-flex align-items-center justify-content-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-8/12 h-auto text-black" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="tour-title">Танзания, Мангапвани</h3>
+                  <div class="tour-rating">
+                    <ul class="rating d-flex">
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                      <li class="rating-item"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-14 sm:h-14 text-yellow" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></li>
+                    </ul>
+                  </div>
+                  <div class="tour-hotel text-carbon">Sea Cliff Resort & Spa</div>
+                  <div class="tour-price">209 485 ₽</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="tourtypes">
+      <div class="container-lg">
+        <h2 class="section-title">У каждого свой отдых</h2>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype1.jfif)">
+                    <img src="images/tourtype-ico1.svg" alt="">
+                    <div class="tourtype-title">Горнолыжный</div>
+                    <span class="tourtype-price">от 40 485 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype2.jfif)">
+                    <img src="images/tourtype-ico2.svg" alt="">
+                    <div class="tourtype-title">Городской</div>
+                    <span class="tourtype-price">от 22 499 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype3.jfif)">
+                    <img src="images/tourtype-ico3.svg" alt="">
+                    <div class="tourtype-title">Комбинированный</div>
+                    <span class="tourtype-price">от 139 485 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype4.jfif)">
+                    <img src="images/tourtype-ico4.svg" alt="">
+                    <div class="tourtype-title">Лечебный</div>
+                    <span class="tourtype-price">от 40 485 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype5.jfif)">
+                    <img src="images/tourtype-ico5.svg" alt="">
+                    <div class="tourtype-title">Пляжный</div>
+                    <span class="tourtype-price">от 95 485 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="tourtype-wrapper">
+                <a href="country-tours.html" class="tourtype-link">
+                  <div class="tourtype-card d-flex flex-column justify-content-end align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/tourtype6.jfif)">
+                    <img src="images/tourtype-ico6.svg" alt="">
+                    <div class="tourtype-title">Экскурсионный</div>
+                    <span class="tourtype-price">от 73 485 ₽</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="choose-tour">
+      <div class="container-lg">
+        <h2 class="section-title d-flex justify-content-between">Сезонные предложения <span><a href="tours.html">Смотреть все</a></span></h2>
+        <div class="section-content">
+          <div class="tetris">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-12" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.004) 10.6%, rgba(0, 0, 0, 0.01) 20%, rgba(0, 0, 0, 0.027) 28.4%, rgba(0, 0, 0, 0.043) 36%, rgba(0, 0, 0, 0.067) 42.8%, rgba(0, 0, 0, 0.09) 49%, rgba(0, 0, 0, 0.118) 54.8%, rgba(0, 0, 0, 0.145) 60.2%, rgba(0, 0, 0, 0.176) 65.4%, rgba(0, 0, 0, 0.208) 70.5%, rgba(0, 0, 0, 0.24) 75.7%, rgba(0, 0, 0, 0.267) 81.2%, rgba(0, 0, 0, 0.298) 86.9%, rgba(0, 0, 0, 0.325) 93.2%, rgba(0, 0, 0, 0.35) 100%), url(images/tetris/tanzania-main.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-center h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/exotic.svg)" data-toggle="tooltip" data-placement="top" title="Экзотика"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/wedding.svg)" data-toggle="tooltip" data-placement="top" title="Свадьбы"></li>
+                        <li class="tetris-icons-item d-flex align-items-center justify-content-center">31°</li>
+                      </ul>
+                      <div class="tetris-item-text text-center">Чудесные пляжи и сафари-парки на берегу Индийского океана</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-6" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 8.1%, rgba(0, 0, 0, 0.04) 15.5%, rgba(0, 0, 0, 0.082) 22.5%, rgba(0, 0, 0, 0.14) 29%, rgba(0, 0, 0, 0.208) 35.3%, rgba(0, 0, 0, 0.282) 41.2%, rgba(0, 0, 0, 0.36) 47.1%, rgba(0, 0, 0, 0.44) 52.9%, rgba(0, 0, 0, 0.518) 58.8%, rgba(0, 0, 0, 0.592) 64.7%, rgba(0, 0, 0, 0.66) 71%, rgba(0, 0, 0, 0.718) 77.5%, rgba(0, 0, 0, 0.76) 84.5%, rgba(0, 0, 0, 0.79) 91.9%, rgba(0, 0, 0, 0.8) 100%), url(images/tetris/uae-main.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-start h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/shopping.svg)" data-toggle="tooltip" data-placement="top" title="Шопинг"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/architecture.svg)" data-toggle="tooltip" data-placement="top" title="Архитектура"></li>
+                      </ul>
+                      <div class="tetris-item-info">
+                        <div class="country">ОАЭ</div>
+                        <div class="tetris-item-text">Оазис роскоши и футуристической архитектуры в пустыне</div>
+                        <div class="price">от 108 548 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-6" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 8.1%, rgba(0, 0, 0, 0.04) 15.5%, rgba(0, 0, 0, 0.082) 22.5%, rgba(0, 0, 0, 0.14) 29%, rgba(0, 0, 0, 0.208) 35.3%, rgba(0, 0, 0, 0.282) 41.2%, rgba(0, 0, 0, 0.36) 47.1%, rgba(0, 0, 0, 0.44) 52.9%, rgba(0, 0, 0, 0.518) 58.8%, rgba(0, 0, 0, 0.592) 64.7%, rgba(0, 0, 0, 0.66) 71%, rgba(0, 0, 0, 0.718) 77.5%, rgba(0, 0, 0, 0.76) 84.5%, rgba(0, 0, 0, 0.79) 91.9%, rgba(0, 0, 0, 0.8) 100%), url(images/tetris/maldives-main.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-start h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/diving.svg)" data-toggle="tooltip" data-placement="top" title="Дайвинг"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/wedding.svg)" data-toggle="tooltip" data-placement="top" title="Свадьбы"></li>
+                      </ul>
+                      <div class="tetris-item-info">
+                        <ul class="tetris-icons d-flex">
+                          <li class="tetris-icons-item d-flex align-items-center justify-content-center">28°</li>
+                        </ul>
+                        <div class="country">Мальдивы</div>
+                        <div class="tetris-item-text">Райские острова с подводными отелями и ресторанами</div>
+                        <div class="price">от 222 096 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 8.1%, rgba(0, 0, 0, 0.04) 15.5%, rgba(0, 0, 0, 0.082) 22.5%, rgba(0, 0, 0, 0.14) 29%, rgba(0, 0, 0, 0.208) 35.3%, rgba(0, 0, 0, 0.282) 41.2%, rgba(0, 0, 0, 0.36) 47.1%, rgba(0, 0, 0, 0.44) 52.9%, rgba(0, 0, 0, 0.518) 58.8%, rgba(0, 0, 0, 0.592) 64.7%, rgba(0, 0, 0, 0.66) 71%, rgba(0, 0, 0, 0.718) 77.5%, rgba(0, 0, 0, 0.76) 84.5%, rgba(0, 0, 0, 0.79) 91.9%, rgba(0, 0, 0, 0.8) 100%), url(images/tetris/abkhaziya-main.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-start h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/excursion.svg)" data-toggle="tooltip" data-placement="top" title="Экскурсионный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/nature.svg)" data-toggle="tooltip" data-placement="top" title="Природа"></li>
+                      </ul>
+                      <div class="tetris-item-info">
+                        <div class="country">Абхазия</div>
+                        <div class="tetris-item-text">Прекрасные здравницы в окружении многоликой природы</div>
+                        <div class="price">от 19 238 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 8.1%, rgba(0, 0, 0, 0.04) 15.5%, rgba(0, 0, 0, 0.082) 22.5%, rgba(0, 0, 0, 0.14) 29%, rgba(0, 0, 0, 0.208) 35.3%, rgba(0, 0, 0, 0.282) 41.2%, rgba(0, 0, 0, 0.36) 47.1%, rgba(0, 0, 0, 0.44) 52.9%, rgba(0, 0, 0, 0.518) 58.8%, rgba(0, 0, 0, 0.592) 64.7%, rgba(0, 0, 0, 0.66) 71%, rgba(0, 0, 0, 0.718) 77.5%, rgba(0, 0, 0, 0.76) 84.5%, rgba(0, 0, 0, 0.79) 91.9%, rgba(0, 0, 0, 0.8) 100%), url(images/tetris/turkey-mini.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-start h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/family.svg)" data-toggle="tooltip" data-placement="top" title="Семейный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/youth.svg)" data-toggle="tooltip" data-placement="top" title="Молодежный"></li>
+                      </ul>
+                      <div class="tetris-item-info">
+                        <ul class="tetris-icons d-flex">
+                          <li class="tetris-icons-item d-flex align-items-center justify-content-center">-4°</li>
+                        </ul>
+                        <div class="country">Турция</div>
+                        <div class="tetris-item-text">Отдых на любой вкус в формате «Все включено»</div>
+                        <div class="price">от 38 298 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="country-tours.html" class="tetris-link">
+                  <div class="tetris-item tetris-item-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 8.1%, rgba(0, 0, 0, 0.04) 15.5%, rgba(0, 0, 0, 0.082) 22.5%, rgba(0, 0, 0, 0.14) 29%, rgba(0, 0, 0, 0.208) 35.3%, rgba(0, 0, 0, 0.282) 41.2%, rgba(0, 0, 0, 0.36) 47.1%, rgba(0, 0, 0, 0.44) 52.9%, rgba(0, 0, 0, 0.518) 58.8%, rgba(0, 0, 0, 0.592) 64.7%, rgba(0, 0, 0, 0.66) 71%, rgba(0, 0, 0, 0.718) 77.5%, rgba(0, 0, 0, 0.76) 84.5%, rgba(0, 0, 0, 0.79) 91.9%, rgba(0, 0, 0, 0.8) 100%), url(images/tetris/russia-main.jpg)">
+                    <div class="tetris-item-wrapper d-flex flex-column justify-content-between align-items-start h-100 w-100">
+                      <ul class="tetris-icons d-flex">
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/beach.svg)" data-toggle="tooltip" data-placement="top" title="Пляжный"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/mountains.svg)" data-toggle="tooltip" data-placement="top" title="Горы"></li>
+                        <li class="tetris-icons-item" style="background-image: url(images/icons/family.svg)" data-toggle="tooltip" data-placement="top" title="Семейный"></li>
+                      </ul>
+                      <div class="tetris-item-info">
+                        <ul class="tetris-icons d-flex">
+                          <li class="tetris-icons-item d-flex align-items-center justify-content-center">-24°</li>
+                        </ul>
+                        <div class="country">Россия</div>
+                        <div class="tetris-item-text">Величие и красота от янтарных берегов до долины гейзеров</div>
+                        <div class="price">от 20 245 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="info-center">
+      <div class="container-lg">
+        <h2 class="section-title d-flex justify-content-between">Информационный центр <span><a href="news.html">Смотреть все</a></span></h2>
+        <div class="section-content">
+          <div class="info-center-wrapper">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="news-single.html" class="info-center-link">
+                  <div class="info-center-item">
+                    <div class="info-center-item__pic">
+                      <img src="images/news/news1.jfif" alt="">
+                    </div>
+                    <div class="info-center-item__tag text-carbon">Услуги • 12 февраля 2021</div>
+                    <h3 class="info-center-item__title">Минус 10% на ПЦР-тест в лабораториях Гемотест</h3>
+                    <div class="info-center-item__desc">Спецпредложение действует при бронировании тура BEST Tour</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="news-single.html" class="info-center-link">
+                  <div class="info-center-item">
+                    <div class="info-center-item__pic">
+                      <img src="images/news/news2.jfif" alt="">
+                    </div>
+                    <div class="info-center-item__tag text-carbon">Услуги • 12 февраля 2021</div>
+                    <h3 class="info-center-item__title">Минус 10% на ПЦР-тест в лабораториях Гемотест</h3>
+                    <div class="info-center-item__desc">Спецпредложение действует при бронировании тура BEST Tour</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="news-single.html" class="info-center-link">
+                  <div class="info-center-item">
+                    <div class="info-center-item__pic">
+                      <img src="images/news/news3.jfif" alt="">
+                    </div>
+                    <div class="info-center-item__tag text-carbon">Услуги • 12 февраля 2021</div>
+                    <h3 class="info-center-item__title">Минус 10% на ПЦР-тест в лабораториях Гемотест</h3>
+                    <div class="info-center-item__desc">Спецпредложение действует при бронировании тура BEST Tour</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tours-online">
+      <div class="container-lg">
+        <div class="tours-online-wrapper">
+          <h2 class="section-title">Туры онлайн из Москвы</h2>
+          <div class="section-content">
+            <p class="tours-online-text">
+              BEST Tour — динамично развивающаяся глобальная компания, которая существует на туристическом рынке уже более 20 лет. Сегодня она объединяет представительства в пяти странах, собственные принимающие офисы по всему миру и десятки тысяч сотрудников, стремящихся сделать отдых клиентов компании идеальным. С BEST Tour вам доступны более пяти десятков открытых направлений и множество концепций того, как можно провести отпуск — от беззаботного пляжного отдыха до уникальных оздоровительных программ на лучших мировых курортах.
+            </p>
+            <a href="tours.html" class="tours-online-link btn-main btn-red d-flex justify-content-center align-items-center">Выбрать страну</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container-lg">
+      <div class="footer-content">
+        <div class="footer-content-top d-flex justify-content-between align-items-center">
+          <a href="news.html" class="agency-link">
+            Агенствам
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ml-8 text-16 block text-gray" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg>
+          </a>
+          <a href="help.html" class="cabinet-link">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-white text-20 block" as="span" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+            Личный кабинет
+          </a>
+        </div>
+        <div class="footer-content-mid">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-links">
+                <li class="list-links-item"><a href="help.html" class="list-links-lnk">Помощь и информация</a></li>
+                <li class="list-links-item"><a href="contacts.html" class="list-links-lnk">Где купить</a></li>
+                <li class="list-links-item"><a href="tours.html" class="list-links-lnk">Страны</a></li>
+                <li class="list-links-item"><a href="news.html" class="list-links-lnk">Новости</a></li>
+                <li class="list-links-item"><a href="country-tours.html" class="list-links-lnk">Отдых без границ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <div class="footer-menu d-flex justify-content-between">
+                <div class="footer-menu-item">
+                  <div class="footer-menu-title text-20">Информация</div>
+                  <ul class="footer-nav">
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Виза</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Страхование</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Памятки туристам</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Доплаты</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Как оплатить тур</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Изменить или аннулировать тур</a></li>
+                    <li class="footer-nav-item"><a href="help-service.html" class="footer-nav-link text-16">Документы</a></li>
+                  </ul>
+                </div>
+                <div class="footer-menu-item">
+                  <div class="footer-menu-title text-20">О компании</div>
+                  <ul class="footer-nav">
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link text-16">Общая информация</a></li>
+                    <li class="footer-nav-item"><a href="contacts.html" class="footer-nav-link text-16">Контакты</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link text-16">Соглашение о конфиденциальности</a></li>
+                  </ul>
+                </div>
+                <div class="footer-menu-item">
+                  <div class="footer-menu-title text-20">Контакты</div>
+                  <ul class="footer-nav">
+                    <li class="footer-nav-item"><a href="tel:88009999900" class="footer-nav-link text-24"><strong>8 800 999 99 00</strong></a></li>
+                  </ul>
+                  <div class="footer-menu-title text-20">Мы в соцсетях</div>
+                  <ul class="footer-nav-social d-flex">
+                    <li class="footer-nav-social-item"><a href="#" class="footer-nav-social-link"><img src="images/social/instagram_white.svg" alt=""></a></li>
+                    <li class="footer-nav-social-item"><a href="#" class="footer-nav-social-link"><img src="images/social/facebook_white.svg" alt=""></a></li>
+                    <li class="footer-nav-social-item"><a href="#" class="footer-nav-social-link"><img src="images/social/vk_white.svg" alt=""></a></li>
+                    <li class="footer-nav-social-item"><a href="#" class="footer-nav-social-link"><img src="images/social/ok_white.svg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-bottom">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="partners d-flex">
+                <div class="partners-item">
+                  <a href="#" class="partners-link"><img src="images/partners/azur-air-logo_88.svg" alt=""></a>
+                </div>
+                <div class="partners-item">
+                  <a href="#" class="partners-link"><img src="images/partners/atorus-logo_88.svg" alt=""></a>
+                </div>
+                <div class="partners-item">
+                  <a href="#" class="partners-link"><img src="images/partners/rst-logo_88.svg" alt=""></a>
+                </div>
+                <div class="partners-item">
+                  <a href="#" class="partners-link"><img src="images/partners/tch-logo_88.svg" alt=""></a>
+                </div>
+                <div class="partners-item">
+                  <a href="#" class="partners-link"><img src="images/partners/iata-logo_88.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="partners registry d-flex">
+                <div class="partners-item registry-item">
+                  <img src="images/partners/russiatourism.svg" alt="">
+                </div>
+                <div class="partners-item registry-item">
+                  <p class="registry-item-text">Мы в реестре туроператоров
+                    <span>ООО «Бэст Туризм» РТО 022481</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="copy text-16 text-left">© 2020 Best Tour | Все права защищены.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/fotorama.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Италия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.931,11.9655 C23.931,18.57 18.577125,23.9240625 11.9724375,23.9240625 C5.36775,23.9240625 0.013875,18.57 0.013875,11.9655 C0.013875,5.3608125 5.36775,0.00675 11.9724375,0.00675 C18.577125,0.00675 23.931,5.3608125 23.931,11.9655 L23.931,11.9655 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Италия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-7129"></g>
+            <polygon id="Fill-7128" fill="#FF1612" mask="url(#mask-2)" points="17.9521875 23.9240625 29.911125 23.9240625 29.911125 0.00675 17.9521875 0.00675"></polygon>
+            <polygon id="Fill-7130" fill="#F0F0F0" mask="url(#mask-2)" points="5.993625 23.9240625 17.952 23.9240625 17.952 0.00675 5.993625 0.00675"></polygon>
+            <polygon id="Fill-7131" fill="#47B71D" mask="url(#mask-2)" points="-5.9649375 23.9240625 5.993625 23.9240625 5.993625 0.00675 -5.9649375 0.00675"></polygon>
+        </g>
+    </g>
+</svg>

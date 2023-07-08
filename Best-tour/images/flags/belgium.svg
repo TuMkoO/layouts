@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Бельгия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8697674,11.9683125 C23.8697674,18.5728125 18.5568372,23.926875 12.0037209,23.926875 C5.45060465,23.926875 0.137860465,18.5728125 0.137860465,11.9683125 C0.137860465,5.3638125 5.45060465,0.00975 12.0037209,0.00975 C18.5568372,0.00975 23.8697674,5.3638125 23.8697674,11.9683125 L23.8697674,11.9683125 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Бельгия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-990"></g>
+            <polygon id="Fill-989" fill="#111111" mask="url(#mask-2)" points="-5.79516279 23.926875 6.07069767 23.926875 6.07069767 0.00975 -5.79516279 0.00975"></polygon>
+            <polygon id="Fill-991" fill="#FDDE2D" mask="url(#mask-2)" points="6.07088372 23.926875 17.9367442 23.926875 17.9367442 0.00975 6.07088372 0.00975"></polygon>
+            <polygon id="Fill-992" fill="#F90805" mask="url(#mask-2)" points="17.9367442 23.926875 29.8027907 23.926875 29.8027907 0.00975 17.9367442 0.00975"></polygon>
+        </g>
+    </g>
+</svg>

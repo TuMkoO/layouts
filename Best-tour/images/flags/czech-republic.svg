@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Чехия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8690233,11.9676279 C23.8690233,18.5211163 18.5564651,23.8338605 12.0031628,23.8338605 C5.44967442,23.8338605 0.137302326,18.5211163 0.137302326,11.9676279 C0.137302326,5.41413953 5.44967442,0.101953488 12.0031628,0.101953488 C18.5564651,0.101953488 23.8690233,5.41413953 23.8690233,11.9676279" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Чехия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-3685"></g>
+            <polyline id="Fill-3684" fill="#F90805" mask="url(#mask-2)" points="-5.79609302 23.8338605 29.8018605 23.8338605 29.8018605 11.9676279 12.0027907 11.9676279 -5.79609302 23.8338605"></polyline>
+            <polyline id="Fill-3686" fill="#F0F0F0" mask="url(#mask-2)" points="12.0027907 11.967814 29.8018605 11.967814 29.8018605 0.101953488 -5.79609302 0.101953488 12.0027907 11.967814"></polyline>
+            <polyline id="Fill-3687" fill="#0437A0" mask="url(#mask-2)" points="12.0026047 11.967814 -5.79609302 0.101953488 -5.79609302 23.8338605 12.0026047 11.967814"></polyline>
+        </g>
+    </g>
+</svg>

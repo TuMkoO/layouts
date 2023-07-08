@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Австрия</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8695814,11.9691163 C23.8695814,18.5226047 18.5572093,23.8351628 12.0035349,23.8351628 C5.45004651,23.8351628 0.137116279,18.5226047 0.137116279,11.9691163 C0.137116279,5.41581395 5.45004651,0.103627907 12.0035349,0.103627907 C18.5572093,0.103627907 23.8695814,5.41581395 23.8695814,11.9691163 L23.8695814,11.9691163 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Австрия">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-940"></g>
+            <path d="M-5.79590698,8.01395349 L29.8031628,8.01395349 L29.8031628,0.103627907 L-5.79590698,0.103627907 L-5.79590698,8.01395349 Z M-5.79590698,23.8351628 L29.8031628,23.8351628 L29.8031628,15.9244651 L-5.79590698,15.9244651 L-5.79590698,23.8351628 Z" id="Fill-939" fill="#FF1612" mask="url(#mask-2)"></path>
+            <polygon id="Fill-941" fill="#F0F0F0" mask="url(#mask-2)" points="-5.79590698 15.9244651 29.8031628 15.9244651 29.8031628 8.01395349 -5.79590698 8.01395349"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Нидерланды</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.9930625,11.963625 C23.9930625,18.5686875 18.639,23.9225625 12.0345,23.9225625 C5.430375,23.9225625 0.07575,18.5686875 0.07575,11.963625 C0.07575,5.3593125 5.430375,0.0054375 12.0345,0.0054375 C18.639,0.0054375 23.9930625,5.3593125 23.9930625,11.963625 L23.9930625,11.963625 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Нидерланды">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-8024"></g>
+            <polygon id="Fill-8023" fill="#F0F0F0" mask="url(#mask-2)" points="-5.902875 15.95025 29.9720625 15.95025 29.9720625 7.97775 -5.902875 7.97775"></polygon>
+            <polygon id="Fill-8025" fill="#1971E4" mask="url(#mask-2)" points="-5.902875 23.9225625 29.9720625 23.9225625 29.9720625 15.9500625 -5.902875 15.9500625"></polygon>
+            <polygon id="Fill-8026" fill="#FF1612" mask="url(#mask-2)" points="-5.902875 7.97775 29.9720625 7.97775 29.9720625 0.00525 -5.902875 0.00525"></polygon>
+        </g>
+    </g>
+</svg>

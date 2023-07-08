@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Excursion_40*40 </title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Excursion_40*40-" transform="translate(-8.000000, -7.000000)">
+            <g id="Excursion_40*40">
+                <g id="Rectangle">
+                    <rect x="0" y="0" width="40" height="40"></rect>
+                </g>
+                <g id="Group-2" transform="translate(8.000000, 7.000000)" fill="#2A2A2F">
+                    <g id="Fill-1774-+-Fill-1775-+-Fill-1776" transform="translate(12.000000, 15.000000) scale(-1, 1) translate(-12.000000, -15.000000) translate(0.000000, 7.000000)">
+                        <path d="M18,12 C16.896,12 16,12.896 16,14 C16,15.104 16.896,16 18,16 C19.104,16 20,15.104 20,14 C20,12.896 19.104,12 18,12" id="Fill-1774"></path>
+                        <path d="M6,12 C4.896,12 4,12.896 4,14 C4,15.104 4.896,16 6,16 C7.104,16 8,15.104 8,14 C8,12.896 7.104,12 6,12" id="Fill-1775"></path>
+                        <path d="M22,7 L17,7 L17,3 L22,3 L22,7 Z M15,7 L10,7 L10,3 L15,3 L15,7 Z M8,6.99975586 L2,9 L2,3 L8,3 L8,6.99975586 Z M2,0 C0.896,0 0,0.896 0,2 L0,13 C0,13.552 0.448,14 1,14 L3,14 C3,12.344 4.344,11 6,11 C7.656,11 9,12.344 9,14 L15,14 C15,12.344 16.344,11 18,11 C19.656,11 21,12.344 21,14 L23,14 C23.552,14 24,13.552 24,13 L24,2 C24,0.896 23.104,0 22,0 L2,0 Z" id="Fill-1776"></path>
+                    </g>
+                    <path d="M15,0 L16,0 L16,6 L14,6 L13.9998094,4 L10.7242641,4 C10.5585786,4 10.4242641,3.86568542 10.4242641,3.7 C10.4242641,3.62043505 10.4558711,3.54412888 10.512132,3.48786797 L12,2 L10.512132,0.512132034 C10.3949747,0.394974747 10.3949747,0.205025253 10.512132,0.0878679656 C10.5683929,0.0316070521 10.6446991,-4.08953076e-17 10.7242641,0 L15,0 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Швейцария</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.99325,11.9616744 C23.99325,18.5149767 18.6388125,23.827907 12.0345,23.827907 C5.4298125,23.827907 0.0759375,18.5149767 0.0759375,11.9616744 C0.0759375,5.40855814 5.4298125,0.096372093 12.0345,0.096372093 C18.6388125,0.096372093 23.99325,5.40855814 23.99325,11.9616744 L23.99325,11.9616744 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Швейцария">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-9895"></g>
+            <polygon id="Fill-9894" fill="#FF1612" mask="url(#mask-2)" points="0.0751875 23.8282791 23.992125 23.8282791 23.992125 0.096372093 0.0751875 0.096372093"></polygon>
+            <polyline id="Fill-9896" fill="#FAFAFB" mask="url(#mask-2)" points="9.657 4.10139535 14.41125 4.10139535 14.41125 9.60446512 19.9569375 9.60446512 19.9569375 14.3205581 14.41125 14.3205581 14.41125 19.823814 9.657 19.823814 9.657 14.3205581 4.1113125 14.3205581 4.1113125 9.60446512 9.657 9.60446512 9.657 4.10139535"></polyline>
+        </g>
+    </g>
+</svg>
