@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Company Page 2022</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main>
+    <header class="header navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl g-0">
+        <div class="row header-wrapper gx-3">
+          <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3 col-3">
+            <div class="logo">
+              <a href="index.html" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+              <a href="index.html" class="logo-link logo-mobile">A<span>A</span>H</a>
+            </div>
+          </div>
+          <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6 col-5">
+            <div class="search">
+              <form class="search-form">
+                <input type="search" class="search-input fs-8" id="hsearch-input" placeholder="Поиск по VIN, Lot #, Stock #" autocomplete="off">
+                <button type="submit" class="search-btn" value=""></button>
+              </form>
+            </div>
+          </div>
+          <div id="hnav" class="col-md-3 col-sm-3 col-xs-3 col-4">
+            <div class="user-nav">
+              <div class="nav__lang">
+                <select class="selectpicker" data-width="fit" data-style="btn-light">
+                  <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                </select>
+              </div>
+              <div class="nav__fav">
+                <div class="dropdown">
+                  <a href="#" class="fav-link" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span class="aah-icon fav-icon fs-4"></span>
+                    <span class="count" id="fav-count">0</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-container">
+                      <div class="drop__car">
+                        <div class="car-container">
+                          <div class="car-card">
+                            <div class="car-card-container">
+                              <div class="car-card-fav">
+                                <span class="favme"></span>
+                              </div>
+                              <a href="car.html" class="car-card-link">
+                                <div class="car-card-wrapper">
+                                  <div class="car-card-img">
+                                    <img src="img/car1.jpg" alt="">
+                                  </div>
+                                  <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                                  <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                                  <div class="car-card__info fs-9 d-flex">
+                                    <div class="info-item text-dark-blue">Copart</div>
+                                    <div class="info-item text-grey">33888707</div>
+                                    <div class="info-item text-dark-green">Sold</div>
+                                  </div>
+                                  <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                                  <div class="car-card__desc">
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Make</div>
+                                      <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Model</div>
+                                      <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Year</div>
+                                      <div class="desc-item__name fs-9 text-grey">2004</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="drop__link">
+                        <a href="cabinet-favorites.html" class="link-all">Просмотреть все избранные авто</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__reports">
+                <div class="dropdown">
+                  <a href="#" class="reports-link" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span class="aah-icon reports-icon fs-4"></span>
+                    <span class="count" id="rep-count">99</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-container">
+                      <div class="drop__car">
+                        <div class="car-container">
+                          <div class="car-card">
+                            <div class="car-card-container">
+                              <div class="car-card-fav">
+                                <span class="favme"></span>
+                              </div>
+                              <a href="car.html" class="car-card-link">
+                                <div class="car-card-wrapper">
+                                  <div class="car-card-img">
+                                    <img src="img/car1.jpg" alt="">
+                                  </div>
+                                  <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                                  <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                                  <div class="car-card__info fs-9 d-flex">
+                                    <div class="info-item text-dark-blue">Copart</div>
+                                    <div class="info-item text-grey">33888707</div>
+                                    <div class="info-item text-dark-green">Sold</div>
+                                  </div>
+                                  <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                                  <div class="car-card__desc">
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Make</div>
+                                      <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Model</div>
+                                      <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Year</div>
+                                      <div class="desc-item__name fs-9 text-grey">2004</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="drop__link">
+                        <a href="cabinet-reports.html" class="link-all">Просмотреть все Ваши отчёты</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__profile">
+                <a class="profile-link" data-bs-toggle="offcanvas" href="#sidebarBackdrop" role="button" aria-controls="sidebarBackdrop">
+                  <span class="aah-icon profile-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <section class="catalog company">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="content-header">
+            <ul class="breadcrumbs-list fs-8">
+              <li class="breadcrumbs-list-item"><a href="index.html">AutoSiteDealer</a></li>
+              <li class="breadcrumbs-list-item"><a href="company-catalog.html">Компании</a></li>
+              <li class="breadcrumbs-list-item">Premium Cars Miami</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-9">
+          <div class="company-container">
+            <div class="company-header">
+              <div class="company-title-wrapper d-flex justify-content-between align-items-sm-center">
+                <div class="d-flex flex-column align-items-start flex-sm-row align-items-sm-center">
+                  <h1 class="company-title display-6 fw-bold m-0">Premium Cars Miami</h1>
+                  <div class="company-status position-static">
+                    <span class="text-white fw-semibold">Verified</span>
+                  </div>
+                </div>
+                <div class="ms-2"><span class="badge badge-main fs-8 fw-bold">$400-$500</span></div>
+              </div>
+              <div class="company-contacts">
+                <div class="address d-flex align-items-start fs-8 fw-normal text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+              </div>
+              <div class="company-rating d-flex align-items-center">
+                <div class="rating-value fw-semibold fs-10 d-flex justify-content-center align-items-center">4.7</div>
+                <div class="rating-stars">
+                  <ul class="d-flex">
+                    <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                    <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                    <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                    <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                    <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="rating-count fs-8 fw-normal text-black">16 Reviews</div>
+              </div>
+            </div>
+            <div class="company-body row">
+              <div class="company-content col-12">
+                <div class="company-content__title fs-4 fw-semibold text-black">Overview</div>
+                <div class="company-content__desc">
+                  <p class="text-justify fw-normal text-black m-0">Do not buy a car here! Bought a car the same day, drove it off the lot and the engine was smoking. The car was a new car and low miles. They keep trying to fix the car but more problems are incurring every time they give me back the car same day. I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2</p>
+                </div>
+              </div>
+              <div class="company-content col-12">
+                <div class="company-content__title fs-4 fw-semibold text-black">Services</div>
+                <div class="company-content__desc">
+                  <div class="row services">
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black "><img src="img/icons/companies/check-icon.svg" alt="">Buying a car at auction</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black "><img src="img/icons/companies/check-icon.svg" alt="">Buying a car at auction</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black "><img src="img/icons/companies/check-icon.svg" alt="">Buying a car at auction</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black "><img src="img/icons/companies/check-icon.svg" alt="">Buying a car at auction</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black mb-lg-0"><img src="img/icons/companies/check-icon.svg" alt="">Car selection</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black mb-lg-0"><img src="img/icons/companies/check-icon.svg" alt="">Car selection</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black mb-sm-0"><img src="img/icons/companies/check-icon.svg" alt="">Car selection</div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 services__item d-flex align-items-center fw-normal text-black mb-0 mb-sm-0"><img src="img/icons/companies/check-icon.svg" alt="">Car selection</div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-12">
+                <div class="company-content__title fs-4 fw-semibold text-black">Photos</div>
+                <div class="company-content__desc">
+                  <div class="photos">
+                    <div class="photo d-flex justify-content-center">
+                      <div class="photo-container d-flex flex-column">
+                        <div class="photo__img"><a href="#"><img src="img/company/photo.jpg" alt=""></a></div>
+                        <div class="photo__title fw-bold text-black text-uppercase">2017 FORD ESCAPE SE</div>
+                        <div class="photo__description fs-8 fw-normal">Оставь номер телефона – мы свяжемся с тобой через несколько минут, подробно расскажем как можно сэкономить на покупке автомобиля из США и подберем подходящие варианты</div>
+                      </div>
+                    </div>
+                    <div class="photo d-flex justify-content-center">
+                      <div class="photo-container d-flex flex-column">
+                        <div class="photo__img"><a href="#"><img src="img/company/photo.jpg" alt=""></a></div>
+                        <div class="photo__title fw-bold text-black text-uppercase">2017 FORD ESCAPE SE</div>
+                        <div class="photo__description fs-8 fw-normal">Оставь номер телефона – мы свяжемся с тобой через несколько минут, подробно расскажем как можно сэкономить на покупке автомобиля из США и подберем подходящие варианты</div>
+                      </div>
+                    </div>
+                    <div class="photo d-flex justify-content-center">
+                      <div class="photo-container d-flex flex-column">
+                        <div class="photo__img"><a href="#"><img src="img/company/photo.jpg" alt=""></a></div>
+                        <div class="photo__title fw-bold text-black text-uppercase">2017 FORD ESCAPE SE</div>
+                        <div class="photo__description fs-8 fw-normal">Оставь номер телефона – мы свяжемся с тобой через несколько минут, подробно расскажем как можно сэкономить на покупке автомобиля из США и подберем подходящие варианты</div>
+                      </div>
+                    </div>
+                    <div class="photo d-flex justify-content-center">
+                      <div class="photo-container d-flex flex-column">
+                        <div class="photo__img"><a href="#"><img src="img/company/photo.jpg" alt=""></a></div>
+                        <div class="photo__title fw-bold text-black text-uppercase">2017 FORD ESCAPE SE</div>
+                        <div class="photo__description fs-8 fw-normal">Оставь номер телефона – мы свяжемся с тобой через несколько минут, подробно расскажем как можно сэкономить на покупке автомобиля из США и подберем подходящие варианты</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-md-6">
+                <div class="company-content__title fs-4 fw-semibold text-black">Pricing</div>
+                <div class="company-content__desc">
+                  <div class="pricing">
+                    <div class="table-responsive">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody class="fw-normal text-black">
+                          <tr>
+                            <td>Buying a car at auction</td>
+                            <td>$1250</td>
+                          </tr>
+                          <tr>
+                            <td>Car selection</td>
+                            <td>$25</td>
+                          </tr>
+                          <tr>
+                            <td>Car selection  a car at auction</td>
+                            <td>$500</td>
+                          </tr>
+                          <tr>
+                            <td>Car</td>
+                            <td>$5</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-md-6">
+                <div class="company-content__title fs-4 fw-semibold text-black">Video</div>
+                <div class="company-content__desc">
+                  <div class="video">
+                    <iframe width="100%" height="282" src="https://www.youtube.com/embed/5cdqC6iukbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-12">
+                <div class="company-content__title fs-4 fw-semibold text-black">Location</div>
+                <div class="company-content__desc">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-5">
+                      <div class="location">
+                        <div class="address d-flex align-items-start fw-bold text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                        <p class="fw-normal">Monday – CLOSED, Tuesday – 11.30am – 10pm, Wednesday – 11.30am – 10pm, Thursday – 11.30am – 10pm, Friday – 11.30am – 10pm
+                          Saturday – 11.30am – 10pm, Sunday – CLOSED</p>
+                        <div class="address d-flex align-items-start fw-bold text-black mb-4"><img src="img/icons/companies/address-grey-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                        <div class="address d-flex align-items-start fw-bold text-black"><img src="img/icons/companies/address-grey-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7">
+                      <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325233.9057619921!2d-80.33883074162351!3d25.758639012902734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2z0JzQsNC50LDQvNC4LCDQpNC70L7RgNC40LTQsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1688997127024!5m2!1sru!2sru" width="100%" height="305" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-12">
+                <div id="customer-feedback" class="company-content__title fs-4 fw-semibold text-black">Customer Feedback</div>
+                <div class="company-content__desc">
+                  <div class="row feedback">
+                    <div class="col-md-2">
+                      <div class="company-rating d-flex flex-column align-items-center">
+                        <div class="rating-value fw-semibold fs-5 d-flex justify-content-center align-items-center m-0">4.7</div>
+                        <div class="rating-stars">
+                          <ul class="d-flex">
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="rating-count fs-8 fw-normal text-black m-0">16 Reviews</div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="stars-bar">
+                        <div class="stars-bar-item d-flex">
+                          <div class="stars-bar-item__title fs-8 fw-normal text-black">5 stars</div>
+                          <div class="stars-bar-item__bar flex-grow-1">
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                              <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                          </div>
+                          <div class="stars-bar-item__value fs-8 fw-normal text-black">65%</div>
+                        </div>
+                        <div class="stars-bar-item d-flex">
+                          <div class="stars-bar-item__title fs-8 fw-normal text-black">4 stars</div>
+                          <div class="stars-bar-item__bar flex-grow-1">
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                              <div class="progress-bar" style="width: 15%"></div>
+                            </div>
+                          </div>
+                          <div class="stars-bar-item__value fs-8 fw-normal text-black">15%</div>
+                        </div>
+                        <div class="stars-bar-item d-flex">
+                          <div class="stars-bar-item__title fs-8 fw-normal text-black">3 stars</div>
+                          <div class="stars-bar-item__bar flex-grow-1">
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                              <div class="progress-bar" style="width: 10%"></div>
+                            </div>
+                          </div>
+                          <div class="stars-bar-item__value fs-8 fw-normal text-black">10%</div>
+                        </div>
+                        <div class="stars-bar-item d-flex">
+                          <div class="stars-bar-item__title fs-8 fw-normal text-black">2 stars</div>
+                          <div class="stars-bar-item__bar flex-grow-1">
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                              <div class="progress-bar" style="width: 5%"></div>
+                            </div>
+                          </div>
+                          <div class="stars-bar-item__value fs-8 fw-normal text-black">5%</div>
+                        </div>
+                        <div class="stars-bar-item d-flex">
+                          <div class="stars-bar-item__title fs-8 fw-normal text-black">1 stars</div>
+                          <div class="stars-bar-item__bar flex-grow-1">
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                              <div class="progress-bar" style="width: 0%"></div>
+                            </div>
+                          </div>
+                          <div class="stars-bar-item__value fs-8 fw-normal text-black">0%</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="d-flex justify-content-end align-items-end h-100">
+                        <button class="company-btn btn-blue-main fw-bold text-white" type="button" data-bs-toggle="modal" data-bs-target="#reviewModal">Add feedback</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-content col-12">
+                <div class="company-content__title fs-4 fw-semibold text-black">7 Reviews</div>
+                <div class="company-content__desc">
+                  <div class="reviews">
+                    <div class="reviews-item">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="reviews-name fw-semibold text-black">Mary Smith</div>
+                        <div class="reviews-rating">
+                          <div class="rating-stars">
+                            <ul class="d-flex">
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviews-date fs-10">Jan 25 2023</div>
+                      <div class="reviews-content">
+                        <p class="reviews-content__text fw-normal text-black m-0">Do not buy a car here! Bought a car the same day, drove it off the lot and the engine was smoking. The car was a new car and low miles. They keep trying to fix the car but more problems are incurring every time they give me back the car same day. I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2</p>
+                        <div class="reviews-content__photos d-flex">
+                          <div class="photo"><img src="img/company/reviews-mini.png" alt=""></div>
+                          <div class="photo"><img src="img/company/reviews-mini.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews-item">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="reviews-name fw-semibold text-black">Mary Smith</div>
+                        <div class="reviews-rating">
+                          <div class="rating-stars">
+                            <ul class="d-flex">
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                              <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviews-date fs-10">Jan 25 2023</div>
+                      <div class="reviews-content">
+                        <p class="reviews-content__text fw-normal text-black m-0">Do not buy a car here! Bought a car the same day, drove it off the lot and the engine was smoking. The car was a new car and low miles. They keep trying to fix the car but more problems are incurring every time they give me back the car same day. I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2 months!!   I’ve made payments on my vehicle that I only drove twice in 2</p>
+                        <div class="reviews-content__photos d-flex">
+                          <div class="photo"><img src="img/company/reviews-mini.png" alt=""></div>
+                          <div class="photo"><img src="img/company/reviews-mini.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="company-sidebar">
+            <div class="company-content">
+              <div class="company-content__title fs-4 fw-semibold text-black">Contact</div>
+              <div class="company-content__desc">
+                <div class="contact">
+                  <div class="contact-logo d-flex">
+                    <img class="contact__photo" src="img/company/user.png" alt="">
+                    <div class="contact__info">
+                      <div class="name fw-semibold text-black mb-2">Mary Smith</div>
+                      <div class="status fs-10 fw-normal">Online 3 days ago </div>
+                    </div>
+                  </div>
+                  <div class="contact-desc text-black fw-normal"><img src="img/icons/companies/phone-icon.svg" alt=""><a href="tel:+1954-999-9907" class="text-black fw-normal">+1 954-999-9907</a></div>
+                  <div class="contact-desc text-black fw-normal"><img src="img/icons/companies/web-icon.svg" alt=""><a href="#" class="text-black fw-normal text-decoration-underline">google.com</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="company-content">
+              <div class="company-content__title fs-4 fw-semibold text-black">Contacts</div>
+              <div class="company-content__desc">
+                <form class="contact-form form-primary row needs-validation" novalidate>
+                  <div class="col-12 mb-4">
+                    <input type="text" class="form-control fs-8 fw-normal" placeholder="Name">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="text" class="form-control fs-8 fw-normal" placeholder="Surname">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="email" class="form-control fs-8 fw-normal" placeholder="Email">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <textarea name="text" class="form-control fs-8 fw-normal" placeholder="Text"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="fw-bold text-white">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="company-content">
+              <div class="company-content__title fs-4 fw-semibold text-black">Other company</div>
+              <div class="company-content__desc">
+                <div class="company-list d-flex justify-content-center flex-row flex-wrap flex-md-nowrap flex-xl-column">
+                  <div class="company-list-item">
+                    <div class="company-title mb-2"><a href="#" class="fw-bold text-uppercase text-black">Premium Cars Miami</a></div>
+                    <div class="company-body">
+                      <div class="position-relative">
+                        <div class="company-status">
+                          <span class="text-white fw-semibold">Verified</span>
+                        </div>
+                        <a href="#" class="company-link">
+                          <div class="company-img">
+                            <img src="img/company/company1.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company-rating d-flex align-items-center">
+                        <div class="rating-value fw-semibold fs-10 d-flex justify-content-center align-items-center">4.7</div>
+                        <div class="rating-stars">
+                          <ul class="d-flex">
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="company-address d-flex align-items-start fs-8 fw-normal text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                    </div>
+                  </div>
+                  <div class="company-list-item">
+                    <div class="company-title mb-2"><a href="#" class="fw-bold text-uppercase text-black">Premium Cars Miami</a></div>
+                    <div class="company-body">
+                      <div class="position-relative">
+                        <div class="company-status">
+                          <span class="text-white fw-semibold">Verified</span>
+                        </div>
+                        <a href="#" class="company-link">
+                          <div class="company-img">
+                            <img src="img/company/company1.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company-rating d-flex align-items-center">
+                        <div class="rating-value fw-semibold fs-10 d-flex justify-content-center align-items-center">4.7</div>
+                        <div class="rating-stars">
+                          <ul class="d-flex">
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="company-address d-flex align-items-start fs-8 fw-normal text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                    </div>
+                  </div>
+                  <div class="company-list-item">
+                    <div class="company-title mb-2"><a href="#" class="fw-bold text-uppercase text-black">Premium Cars Miami</a></div>
+                    <div class="company-body">
+                      <div class="position-relative">
+                        <div class="company-status">
+                          <span class="text-white fw-semibold">Verified</span>
+                        </div>
+                        <a href="#" class="company-link">
+                          <div class="company-img">
+                            <img src="img/company/company1.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company-rating d-flex align-items-center">
+                        <div class="rating-value fw-semibold fs-10 d-flex justify-content-center align-items-center">4.7</div>
+                        <div class="rating-stars">
+                          <ul class="d-flex">
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="company-address d-flex align-items-start fs-8 fw-normal text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                    </div>
+                  </div>
+                  <div class="company-list-item">
+                    <div class="company-title mb-2"><a href="#" class="fw-bold text-uppercase text-black">Premium Cars Miami</a></div>
+                    <div class="company-body">
+                      <div class="position-relative">
+                        <div class="company-status">
+                          <span class="text-white fw-semibold">Verified</span>
+                        </div>
+                        <a href="#" class="company-link">
+                          <div class="company-img">
+                            <img src="img/company/company1.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company-rating d-flex align-items-center">
+                        <div class="rating-value fw-semibold fs-10 d-flex justify-content-center align-items-center">4.7</div>
+                        <div class="rating-stars">
+                          <ul class="d-flex">
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-fill-icon.svg" alt=""></li>
+                            <li><img src="img/icons/companies/star-icon.svg" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="company-address d-flex align-items-start fs-8 fw-normal text-black"><img src="img/icons/companies/address-icon.svg" alt="">10801 NW 7th Ave, Miami, FL 33168, USA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="footer">
+
+      <div class="container-xxl">
+
+        <div class="footer-wrapper">
+
+          <div class="row overflow-hidden">
+
+            <div class="col-md-6">
+
+              <div class="footer-section">
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Follow Us</div>
+
+                <ul class="footer-section__social d-flex">
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-tg"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-fb"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-youtube"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-instagram"></span></a></li>
+
+                </ul>
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Information</div>
+
+                <div class="footer-section__info row mb-5 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+
+                  <div class="col-4"><a href="catalog.html" class="info-item">Catalog</a></div>
+
+                  <div class="col-4"><a href="cabinet-billing-buy.html" class="info-item">Buy</a></div>
+
+                  <div class="col-4"><a href="cabinet-invite.html" class="info-item">Invite</a></div>
+
+                  <div class="col-4"><a href="company-catalog.html" class="info-item">Companies</a></div>
+
+                  <div class="col-4"><a href="cabinet-billing-subscription.html" class="info-item">Subscription</a></div>
+
+                  <div class="col-4"><a href="cabinet-settings.html" class="info-item">Profile</a></div>
+
+                  <div class="col-4"><a href="cabinet-company-add.html" class="info-item">Add company</a></div>
+
+                  <div class="col-4"><a href="cabinet-reports.html" class="info-item">Reports</a></div>
+
+                  <div class="col-4"><a href="404.html" class="info-item">404 Page</a></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="footer-section">
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Contact Us</div>
+
+                <div class="footer-section__email fw-bold fs-4 text-white">
+
+                  Email: <a href="mailto:info@site.com">info@site.com</a>
+
+                </div>
+
+                <div class="footer-section__message d-none">
+
+                  <img src="img/icons/footer/send.svg" alt="">
+
+                  <div class="fs-1 fw-bold text-white mb-3">Message is sent</div>
+
+                  <div class="fs-5 fw-bolder text-white">Our online representatives will catch you very soon.</div>
+
+                </div>
+
+                <form id="contact-form" action="https://autovinapi.com/apiselect.php" method="post" class="footer-section__contact-form needs-validation row g-2 g-md-2 g-lg-5" novalidate>
+
+                  <div class="col-lg-6">
+
+                    <input id="contact-name" class="form-control fw-bolder" type="text" name="name" placeholder="Your name" required>
+
+                    <div class="invalid-feedback">Please choose a username.</div>
+
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <input id="contact-email" class="form-control fw-bolder" type="email" name="email" placeholder="Email" required>
+
+                    <div class="invalid-feedback">Please choose a email.</div>
+
+                  </div>
+
+                  <div class="col-lg-8">
+
+                    <textarea name="message" class="form-control fw-bolder" id="contact-text" placeholder="Leave your message" required></textarea>
+
+                    <div class="invalid-feedback">Please choose a text.</div>
+
+                  </div>
+
+                  <div class="col-lg-4">
+
+                    <button id="contact-btn" class="text-white text-uppercase fs-6 fw-bold" type="submit">Send</button>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    
+
+    <div class="sidebar-auth profile offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="sidebarBackdrop">
+      <div class="offcanvas-header flex justify-content-end">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 text-start">
+        <div class="sidebar-auth-header__info fs-8">
+          <a href="cabinet-settings.html" class="user-logo d-flex">
+            <span class="icon-user aah-icon"></span>
+          </a>
+          <div class="user-info">
+            <h4 class="user-name">Игорь Шувалов</h4>
+            <span class="user-id">ID: 13807351</span>
+          </div>
+        </div>
+
+        <div class="invite fs-7">
+          <div class="invite__text">Приглашай друзей и получай до 45% от их платежей</div>
+          <a href="cabinet-invite.html" class="btn-invite btn-main">Пригласить друзей</a>
+        </div>
+
+        <div class="profile-menu">
+          <ul class="menu">
+            <li class="menu-item__item">
+              <a href="cabinet-billing-buy.html" class="menu-item__link fs-8 item-buy">
+                <span class="aah-icon buy-icon fs-4"></span>Купить подписку
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-billing-subscription.html" class="menu-item__link fs-8">
+                <span class="aah-icon battery-icon fs-4"></span>Подписка до 12.04.2020
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-favorites.html" class="menu-item__link fs-8">
+                <span class="aah-icon fav-icon fs-4"></span>Избранные авто <span class="count fs-10">(0)</span>
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-reports.html" class="menu-item__link fs-8">
+                <span class="aah-icon pay-icon fs-4"></span>Мои отчеты <span class="count fs-10">(0)</span>
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-settings.html" class="menu-item__link fs-8">
+                <span class="aah-icon settings-icon fs-4"></span>Мой профиль
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-invite.html" class="menu-item__link fs-8">
+                <span class="aah-icon reports-icon fs-4"></span>Реферальная программа
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="company-catalog.html" class="menu-item__link fs-8">
+                <span class="aah-icon companies-icon fs-4"></span>Компании
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-company-add.html" class="menu-item__link fs-8">
+                <span class="aah-icon company-add-icon fs-4"></span>Добавить компанию
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="index-guest.html" class="menu-item__link fs-8">
+                <span class="aah-icon exit-icon fs-4"></span>Выход
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal modal-primary fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content cabinet-box">
+          <div class="modal-header">
+            <div class="modal-title company-content__title fs-4 fw-semibold text-black m-0">Add review</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="rating d-flex flex-column flex-sm-row justify-content-between">
+              <div class="rating-review">
+                <div class="rating-review-text fw-normal fs-8">Your rating fo this person</div>
+                <div class="rating-stars d-flex align-items-center">
+                  <ul class="stars d-flex fs-0">
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul>
+                  <div class="rating-stars-count fs-8 fw-normal text-black"><span id="stars-count">0</span>/5</div>
+                </div>
+              </div>
+              <div class="d-flex mt-4 mt-sm-0 justify-content-center justify-content-sm-end align-items-end">
+                <label class="modal-review-btn fw-normal d-flex align-items-center" for="upload">Upload Photos</label>
+                <input id="upload" class="d-none" type="file" accept="image/*" multiple>
+              </div>
+            </div>
+            <div class="images d-flex flex-wrap"></div>
+            <div class="company-content m-0">
+              <form class="contact-form form-primary row needs-validation" novalidate>
+                <div class="col-12 mb-4">
+                  <input type="text" class="form-control fs-8 fw-normal" placeholder="Name">
+                </div>
+                <div class="col-12 mb-4">
+                  <input type="text" class="form-control fs-8 fw-normal" placeholder="Surname">
+                </div>
+                <div class="col-12 mb-4">
+                  <input type="email" class="form-control fs-8 fw-normal" placeholder="Email">
+                </div>
+                <div class="col-12 mb-4">
+                  <textarea name="text" class="form-control fs-8 fw-normal" placeholder="Review"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="fw-bold text-white">Submit Review</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+  <script>
+    const favUrl = "http://localhost:3000/";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/bootstrap-datepicker.ru.min.js"></script>
+  <script src="js/bootstrap-datepicker-init.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-init.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
