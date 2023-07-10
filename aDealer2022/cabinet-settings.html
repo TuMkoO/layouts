@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cabinet Settings 2022</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main>
+    <header class="header navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl g-0">
+        <div class="row header-wrapper gx-3">
+          <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3 col-3">
+            <div class="logo">
+              <a href="index.html" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+              <a href="index.html" class="logo-link logo-mobile">A<span>A</span>H</a>
+            </div>
+          </div>
+          <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6 col-5">
+            <div class="search">
+              <form class="search-form">
+                <input type="search" class="search-input fs-8" id="hsearch-input" placeholder="Поиск по VIN, Lot #, Stock #" autocomplete="off">
+                <button type="submit" class="search-btn" value=""></button>
+              </form>
+            </div>
+          </div>
+          <div id="hnav" class="col-md-3 col-sm-3 col-xs-3 col-4">
+            <div class="user-nav">
+              <div class="nav__lang">
+                <select class="selectpicker" data-width="fit" data-style="btn-light">
+                  <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                </select>
+              </div>
+              <div class="nav__fav">
+                <div class="dropdown">
+                  <a href="#" class="fav-link" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span class="aah-icon fav-icon fs-4"></span>
+                    <span class="count" id="fav-count">0</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-container">
+                      <div class="drop__car">
+                        <div class="car-container">
+                          <div class="car-card">
+                            <div class="car-card-container">
+                              <div class="car-card-fav">
+                                <span class="favme"></span>
+                              </div>
+                              <a href="car.html" class="car-card-link">
+                                <div class="car-card-wrapper">
+                                  <div class="car-card-img">
+                                    <img src="img/car1.jpg" alt="">
+                                  </div>
+                                  <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                                  <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                                  <div class="car-card__info fs-9 d-flex">
+                                    <div class="info-item text-dark-blue">Copart</div>
+                                    <div class="info-item text-grey">33888707</div>
+                                    <div class="info-item text-dark-green">Sold</div>
+                                  </div>
+                                  <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                                  <div class="car-card__desc">
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Make</div>
+                                      <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Model</div>
+                                      <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Year</div>
+                                      <div class="desc-item__name fs-9 text-grey">2004</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="drop__link">
+                        <a href="cabinet-favorites.html" class="link-all">Просмотреть все избранные авто</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__reports">
+                <div class="dropdown">
+                  <a href="#" class="reports-link" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span class="aah-icon reports-icon fs-4"></span>
+                    <span class="count" id="rep-count">99</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-container">
+                      <div class="drop__car">
+                        <div class="car-container">
+                          <div class="car-card">
+                            <div class="car-card-container">
+                              <div class="car-card-fav">
+                                <span class="favme"></span>
+                              </div>
+                              <a href="car.html" class="car-card-link">
+                                <div class="car-card-wrapper">
+                                  <div class="car-card-img">
+                                    <img src="img/car1.jpg" alt="">
+                                  </div>
+                                  <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                                  <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                                  <div class="car-card__info fs-9 d-flex">
+                                    <div class="info-item text-dark-blue">Copart</div>
+                                    <div class="info-item text-grey">33888707</div>
+                                    <div class="info-item text-dark-green">Sold</div>
+                                  </div>
+                                  <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                                  <div class="car-card__desc">
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Make</div>
+                                      <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Model</div>
+                                      <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                                    </div>
+                                    <div class="desc-item d-flex justify-content-between">
+                                      <div class="desc-item__title fs-9">Year</div>
+                                      <div class="desc-item__name fs-9 text-grey">2004</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="drop__link">
+                        <a href="cabinet-reports.html" class="link-all">Просмотреть все Ваши отчёты</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__profile">
+                <a class="profile-link" data-bs-toggle="offcanvas" href="#sidebarBackdrop" role="button" aria-controls="sidebarBackdrop">
+                  <span class="aah-icon profile-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <section class="cabinet">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="content-header">
+              <ul class="breadcrumbs-list fs-8">
+                <li class="breadcrumbs-list-item"><a href="index.html">AutoSiteDealer</a></li>
+                <li class="breadcrumbs-list-item"><a href="cabinet-billing-buy.html">Кабинет</a></li>
+                <li class="breadcrumbs-list-item">Мой профиль</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 d-none d-xl-block">
+            <div class="cabinet-profile profile">
+              <div class="profile-header">
+                <div class="profile-header__info fs-8">
+                  <a href="cabinet-settings.html" class="user-logo">
+                    <span class="icon-user aah-icon"></span>
+                  </a>
+                  <div class="user-info">
+                    <h4 class="user-name fs-8">Игорь Шувалов</h4>
+                    <span class="user-id">ID: 13807351</span>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-body">
+                <div class="invite-wrapper">
+                  <div class="d-flex justify-content-end">
+                    <button id="close-invite" type="button" class="btn btn-close"></button>
+                  </div>
+                  <div class="invite fs-7">
+                    <div class="invite__text">Приглашай друзей и получай до 45% от их платежей</div>
+                    <a href="cabinet-invite.html" class="btn-invite btn-main">Пригласить друзей</a>
+                  </div>
+                </div>
+                <div class="profile-menu">
+                  <ul class="menu">
+                    <li class="menu-item__item">
+                      <a href="cabinet-billing-buy.html" class="menu-item__link fs-8 item-buy">
+                        <span class="aah-icon buy-icon fs-4"></span>Купить подписку
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-billing-subscription.html" class="menu-item__link fs-8">
+                        <span class="aah-icon battery-icon fs-4"></span>Подписка до 12.04.2020
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-favorites.html" class="menu-item__link fs-8">
+                        <span class="aah-icon fav-icon fs-4"></span>Избранные авто <span class="count fs-10">(0)</span>
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-reports.html" class="menu-item__link fs-8">
+                        <span class="aah-icon pay-icon fs-4"></span>Мои отчеты <span class="count fs-10">(0)</span>
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-settings.html" class="menu-item__link fs-8 active">
+                        <span class="aah-icon settings-icon fs-4"></span>Мой профиль
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-invite.html" class="menu-item__link fs-8">
+                        <span class="aah-icon reports-icon fs-4"></span>Реферальная программа
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="company-catalog.html" class="menu-item__link fs-8">
+                        <span class="aah-icon companies-icon fs-4"></span>Компании
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="cabinet-company-add.html" class="menu-item__link fs-8">
+                        <span class="aah-icon company-add-icon fs-4"></span>Добавить компанию
+                      </a>
+                    </li>
+                    <li class="menu-item__item">
+                      <a href="index-guest.html" class="menu-item__link fs-8">
+                        <span class="aah-icon exit-icon fs-4"></span>Выход
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9">
+            <div class="cabinet-container">
+              <div class="cabinet-title fs-3 fw-bold">Настройка профиля</div>
+              <div class="cabinet-content">
+                <div class="row gy-5 g-md-5 cabinet-settings">
+                  <div class="col-md-6">
+                    <div class="settings cabinet-box h-100">
+                      <div class="settings-wrapper d-flex flex-column">
+                        <div class="settings-header cabinet-box-header fs-5 fw-normal">Personal Data</div>
+                        <div class="settings-content">
+                          <form class="settings-form form-primary row gy-4 needs-validation" novalidate>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Email</label>
+                              <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Name<span>*</span></label>
+                              <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Surname<span>*</span></label>
+                              <input type="text" class="form-control" placeholder="Surname">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                              <button class="cabinet-box-btn fw-semibold" type="submit">Save Changes</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="settings cabinet-box h-100">
+                      <div class="settings-wrapper d-flex flex-column">
+                        <div class="settings-header cabinet-box-header fs-5 fw-normal">Change Password</div>
+                        <div class="settings-content">
+                          <form class="settings-form form-primary row gy-4 needs-validation" novalidate>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Current Password<span>*</span></label>
+                              <input type="password" class="form-control">
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">New password<span>*</span></label>
+                              <input type="password" class="form-control">
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Repeat new password<span>*</span></label>
+                              <input type="password" class="form-control">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                              <div>
+                                <button id="change-password" class="cabinet-box-btn fw-semibold" type="submit">Change Password</button>
+                                <div id="password-msg" class="valid-feedback fw-normal">Your password changed</div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="settings cabinet-box h-100">
+                      <div class="settings-wrapper d-flex flex-column">
+                        <div class="settings-header cabinet-box-header fs-5 fw-normal">My Settings</div>
+                        <div class="settings-content">
+                          <form class="settings-form form-primary row gy-4 needs-validation" novalidate>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Country</label>
+                              <select class="form-select">
+                                <option value="ru" selected>Russia</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="bel">Belarus</option>
+                                <option value="ch">China</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Language</label>
+                              <select class="form-select">
+                                <option value="en" selected>English</option>
+                                <option value="ru">Russian</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <label class="form-label fs-6 fw-normal">Show odometer value in</label>
+                              <div>
+                                <label class="cabinet-box-radio">
+                                  <input name="rd" class="radio-box" type="radio" checked>
+                                  <span class="radio-style"></span>
+                                  Miles
+                                </label>
+                              </div>
+                              <div>
+                                <label class="cabinet-box-radio">
+                                  <input name="rd" class="radio-box" type="radio">
+                                  <span class="radio-style"></span>
+                                  Kilometers
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                              <button class="cabinet-box-btn fw-semibold" type="button">Save Changes</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="settings cabinet-box h-100">
+                      <div class="settings-wrapper h-100 d-flex flex-column">
+                        <div class="settings-header cabinet-box-header fs-5 fw-normal">Delete My Profile</div>
+                        <div class="settings-content">
+                          <form class="settings-form h-100 d-flex flex-column justify-content-between">
+                            <div class="settings-form-field">
+                              <label class="sidebar-checkbox fs-6">
+                                <input type="checkbox" name="delete" value="true">
+                                I want to delete my account (profile)
+                              </label>
+                            </div>
+                            <div class="settings-form-field d-flex justify-content-end mt-4 mt-md-0">
+                              <button class="cabinet-box-btn fw-semibold" type="button">Delete Account</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="container-xxl">
+
+        <div class="footer-wrapper">
+
+          <div class="row overflow-hidden">
+
+            <div class="col-md-6">
+
+              <div class="footer-section">
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Follow Us</div>
+
+                <ul class="footer-section__social d-flex">
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-tg"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-fb"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-youtube"></span></a></li>
+
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-instagram"></span></a></li>
+
+                </ul>
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Information</div>
+
+                <div class="footer-section__info row mb-5 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+
+                  <div class="col-4"><a href="catalog.html" class="info-item">Catalog</a></div>
+
+                  <div class="col-4"><a href="cabinet-billing-buy.html" class="info-item">Buy</a></div>
+
+                  <div class="col-4"><a href="cabinet-invite.html" class="info-item">Invite</a></div>
+
+                  <div class="col-4"><a href="company-catalog.html" class="info-item">Companies</a></div>
+
+                  <div class="col-4"><a href="cabinet-billing-subscription.html" class="info-item">Subscription</a></div>
+
+                  <div class="col-4"><a href="cabinet-settings.html" class="info-item">Profile</a></div>
+
+                  <div class="col-4"><a href="cabinet-company-add.html" class="info-item">Add company</a></div>
+
+                  <div class="col-4"><a href="cabinet-reports.html" class="info-item">Reports</a></div>
+
+                  <div class="col-4"><a href="404.html" class="info-item">404 Page</a></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="footer-section">
+
+                <div class="footer-section__title text-uppercase fw-bold text-white">Contact Us</div>
+
+                <div class="footer-section__email fw-bold fs-4 text-white">
+
+                  Email: <a href="mailto:info@site.com">info@site.com</a>
+
+                </div>
+
+                <div class="footer-section__message d-none">
+
+                  <img src="img/icons/footer/send.svg" alt="">
+
+                  <div class="fs-1 fw-bold text-white mb-3">Message is sent</div>
+
+                  <div class="fs-5 fw-bolder text-white">Our online representatives will catch you very soon.</div>
+
+                </div>
+
+                <form id="contact-form" action="https://autovinapi.com/apiselect.php" method="post" class="footer-section__contact-form needs-validation row g-2 g-md-2 g-lg-5" novalidate>
+
+                  <div class="col-lg-6">
+
+                    <input id="contact-name" class="form-control fw-bolder" type="text" name="name" placeholder="Your name" required>
+
+                    <div class="invalid-feedback">Please choose a username.</div>
+
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <input id="contact-email" class="form-control fw-bolder" type="email" name="email" placeholder="Email" required>
+
+                    <div class="invalid-feedback">Please choose a email.</div>
+
+                  </div>
+
+                  <div class="col-lg-8">
+
+                    <textarea name="message" class="form-control fw-bolder" id="contact-text" placeholder="Leave your message" required></textarea>
+
+                    <div class="invalid-feedback">Please choose a text.</div>
+
+                  </div>
+
+                  <div class="col-lg-4">
+
+                    <button id="contact-btn" class="text-white text-uppercase fs-6 fw-bold" type="submit">Send</button>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    
+
+    <div class="sidebar-auth profile offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="sidebarBackdrop">
+      <div class="offcanvas-header flex justify-content-end">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 text-start">
+        <div class="sidebar-auth-header__info fs-8">
+          <a href="cabinet-settings.html" class="user-logo d-flex">
+            <span class="icon-user aah-icon"></span>
+          </a>
+          <div class="user-info">
+            <h4 class="user-name">Игорь Шувалов</h4>
+            <span class="user-id">ID: 13807351</span>
+          </div>
+        </div>
+
+        <div class="invite fs-7">
+          <div class="invite__text">Приглашай друзей и получай до 45% от их платежей</div>
+          <a href="cabinet-invite.html" class="btn-invite btn-main">Пригласить друзей</a>
+        </div>
+
+        <div class="profile-menu">
+          <ul class="menu">
+            <li class="menu-item__item">
+              <a href="cabinet-billing-buy.html" class="menu-item__link fs-8 item-buy">
+                <span class="aah-icon buy-icon fs-4"></span>Купить подписку
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-billing-subscription.html" class="menu-item__link fs-8">
+                <span class="aah-icon battery-icon fs-4"></span>Подписка до 12.04.2020
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-favorites.html" class="menu-item__link fs-8">
+                <span class="aah-icon fav-icon fs-4"></span>Избранные авто <span class="count fs-10">(0)</span>
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-reports.html" class="menu-item__link fs-8">
+                <span class="aah-icon pay-icon fs-4"></span>Мои отчеты <span class="count fs-10">(0)</span>
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-settings.html" class="menu-item__link fs-8 active">
+                <span class="aah-icon settings-icon fs-4"></span>Мой профиль
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-invite.html" class="menu-item__link fs-8">
+                <span class="aah-icon reports-icon fs-4"></span>Реферальная программа
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="company-catalog.html" class="menu-item__link fs-8">
+                <span class="aah-icon companies-icon fs-4"></span>Компании
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="cabinet-company-add.html" class="menu-item__link fs-8">
+                <span class="aah-icon company-add-icon fs-4"></span>Добавить компанию
+              </a>
+            </li>
+            <li class="menu-item__item">
+              <a href="index-guest.html" class="menu-item__link fs-8">
+                <span class="aah-icon exit-icon fs-4"></span>Выход
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <script>
+    const favUrl = "http://localhost:3000/";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

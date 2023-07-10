@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AutoSiteDealer 2022</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main>
+    <header class="header navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl g-0">
+        <div class="row header-wrapper gx-3">
+          <div id="hlogo" class="col-md-3 col-sm-3 col-xs-3 col-3">
+            <div class="logo">
+              <a href="index-alternative.html" class="logo-link logo-desctop">Auto<span>Site</span>Dealer</a>
+              <a href="index-alternative.html" class="logo-link logo-mobile">A<span>A</span>H</a>
+            </div>
+          </div>
+          <div id="hsearch" class="col-md-6 col-sm-6 col-xs-6 col-5">
+            <div class="search">
+              <form class="search-form">
+                <input type="search" class="search-input fs-8" id="hsearch-input" placeholder="Поиск по VIN, Lot #, Stock #" autocomplete="off">
+                <button type="submit" class="search-btn" value=""></button>
+              </form>
+            </div>
+          </div>
+          <div id="hnav" class="col-md-3 col-sm-3 col-xs-3 col-4">
+            <div class="user-nav">
+              <div class="nav__lang">
+                <select class="selectpicker" data-width="fit" data-style="btn-light">
+                  <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                </select>
+              </div>
+
+              <div class="nav__auth">
+                <a class="auth-link" data-bs-toggle="offcanvas" href="#sidebarBackdrop" role="button" aria-controls="sidebarBackdrop">Вход</a>
+                <a class="auth-link" data-bs-toggle="offcanvas" href="#sidebarBackdrop" role="button" aria-controls="sidebarBackdrop">Регистрация</a>
+                <a class="auth-link-mobile" data-bs-toggle="offcanvas" href="#sidebarBackdrop" role="button" aria-controls="sidebarBackdrop">
+                  <span class="aah-icon auth-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <div class="search-title d-sm-none display-6 fw-bold">Research Vehicle</div>
+            <div class="search-auto">
+              <form id="search" action="index.html" class="search-auto__form">
+                <div class="form-field form-field-type" >
+                  <div class="maker-container">
+                    <select class="search-select type" data-value="" data-width="fit" name="type"></select>
+                  </div>
+                </div>
+                <div class="form-field form-field-maker" >
+                  <div class="maker-container">
+                    <select class="search-select maker" data-value="" data-width="fit" name="maker"></select>
+                  </div>
+                </div>
+                <div class="form-field form-field-rogue">
+                  <div class="rogue-container">
+                    <select class="search-select rogue" data-value="" data-width="fit" name="rogue"></select>
+                  </div>
+                </div>
+                <div class="form-field form-field-year">
+                  <div class="dropdown range-year">
+                    <a class="range-year-container placeholdered dropdown-toggle" id="dropdownYear" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                      <div class="calendar-icon aah-icon"></div>
+                      <div class="range-year__value" id="valYear">Year</div>
+                      <span class="caret aah-icon"></span>
+                    </a>
+
+                    <div class="dropdown-menu range-year-dropdown">
+                      <div class="year-change">
+                        <div class="year-list" data-bound="min">
+                          <label>От</label>
+                          <input type="number" id="val-year1" value="" style="display: none" name="min">
+                          <ul class="years" id="sel1">
+                            <li class="years-item min-year not-found">No results found</li>
+                          </ul>
+                        </div>
+                        <div class="year-list" data-bound="max">
+                          <label>До</label>
+                          <input type="number" id="val-year2" value="" style="display: none" name="max">
+                          <ul class="years" id="sel2">
+                            <li class="years-item min-year not-found">No results found</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="year-btn-wrapper">
+                        <button class="auth-btn" id="year-submit" type="button" disabled="disabled">Выбрать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-field form-field-checkbox">
+                  <label class="form-field-checkbox__label">
+                    <input class="check-box" type="checkbox" name="iaai1">
+                    <span class="check-style"></span>
+                    IAAI
+                  </label>
+                  <label class="form-field-checkbox__label">
+                    <input class="check-box" type="checkbox" name="iaai2">
+                    <span class="check-style"></span>
+                    IAAI
+                  </label>
+                </div>
+                <button type="submit" class="btn-search btn-blue-main"><span class="aah-icon fs-4"></span> Search from 19 523 214 vehicles</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="about-info">
+              <h1 class="about-title display-6 fw-bold">Info About site</h1>
+              <p class="about-text">The Potamkin Automotive Group is one of the largest automotive retailers in America. In our 75 years of experience, we’ve had over 100 dealerships across the country… ranging from Ferrari and Porsche in Los Angeles to the world’s largest Cadillac dealership in Manhattan, to the nation’s largest chain of Hyundai dealerships. We and our operating partners believe in satisfying customers through high value, low prices,</p>
+              <h2 class="about-title display-6 fw-bolder">Welcome To Potamkin SHSFSJ Automotive
+                Group</h2>
+              <p class="about-text">The Potamkin Automotive Group is one of the largest automotive retailers in America. In our 75 years of experience, we’ve had over 100 dealerships across the country… ranging from Ferrari and Porsche in Los Angeles to the world’s largest Cadillac dealership in Manhattan, to the nation’s largest chain of Hyundai dealerships. We and our operating partners believe in satisfying customers through high value, low prices,</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section class="vehicles">
+          <div class="container-xxl">
+              <h2 class="section-title display-6 fw-bolder">New Vehicles from Copart & IAAI</h2>
+          </div>
+          <div class="container-xxl">
+            <div class="car-list">
+            <div class="row gy-4">
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car1.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car2.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-brightly-red">IAAI</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-yellow">Pending</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car3.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-red">Not Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car4.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car5.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car1.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car2.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-brightly-red">IAAI</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-yellow">Pending</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car3.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-red">Not Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car4.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xxl">
+                <div class="car-card">
+                  <div class="car-card-container">
+                    <div class="car-card-fav">
+                      <span class="favme"></span>
+                    </div>
+                    <a href="#" class="car-card-link">
+                      <div class="car-card-wrapper">
+                        <div class="car-card-img">
+                          <img src="img/car5.jpg" alt="">
+                        </div>
+                        <div class="car-card__vin fs-8 fw-semibold text-dark-blue">1C4RJFBG7MC699245</div>
+                        <div class="car-card__title fw-bold text-uppercase">JEEP GRAND CHEROKEE LIMITED</div>
+                        <div class="car-card__info fw-normal fs-9 d-flex">
+                          <div class="info-item text-dark-blue">Copart</div>
+                          <div class="info-item text-grey">33888707</div>
+                          <div class="info-item text-dark-green">Sold</div>
+                        </div>
+                        <div class="car-card__price fw-bold text-dark-blue">$750.00</div>
+                        <div class="car-card__desc">
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Make</div>
+                            <div class="desc-item__name fs-9 text-grey">Jeep</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Model</div>
+                            <div class="desc-item__name fs-9 text-grey">Grand Cherokee Limited</div>
+                          </div>
+                          <div class="desc-item d-flex justify-content-between">
+                            <div class="desc-item__title fs-9">Year</div>
+                            <div class="desc-item__name fs-9 text-grey">2004</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="topmakes">
+      <div class="container-xxl">
+        <h2 class="section-title display-6 fw-bolder">Top Makes</h2>
+        <div class="section-tabs">
+          <ul class="nav nav-pills d-flex justify-content-center fs-5 mt-3 mb-5" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-semibold text-black active" id="pills-makes-tab" data-bs-toggle="pill" data-bs-target="#pills-makes" type="button" role="tab" aria-controls="pills-makes" aria-selected="true">Makes</button>
+            </li>
+            <li class="nav-item mx-3" role="presentation">
+              <button class="nav-link fw-semibold text-black" id="pills-models-tab" data-bs-toggle="pill" data-bs-target="#pills-models" type="button" role="tab" aria-controls="pills-models" aria-selected="false">Models</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-semibold text-black" id="pills-types-tab" data-bs-toggle="pill" data-bs-target="#pills-types" type="button" role="tab" aria-controls="pills-types" aria-selected="false">Types</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-makes" role="tabpanel" aria-labelledby="pills-makes-tab" tabindex="0">
+              <div class="main-list">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#" class="btn-main-list">All Makes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-models" role="tabpanel" aria-labelledby="pills-models-tab" tabindex="0">
+              <div class="main-list">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#" class="btn-main-list">All Makes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-types" role="tabpanel" aria-labelledby="pills-types-tab" tabindex="0">
+              <div class="main-list">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">Ford</a>
+                      <div class="main-list-item__count">56354657</div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#" class="btn-main-list">All Makes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section class="vincodes">
+          <div class="container-xxl">
+              <h2 class="section-title display-6 fw-bolder">New VIN Codes</h2>
+              <div class="main-list">
+                <div class="row">
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="main-list-item d-flex justify-content-between">
+                      <a href="#" class="main-list-item__name">0dgh9548gidhj97</a>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <a href="#" class="btn-main-list">All New Vehicles</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+    <footer class="footer">
+      <div class="container-xxl">
+        <div class="footer-wrapper">
+          <div class="row overflow-hidden">
+            <div class="col-md-6">
+              <div class="footer-section">
+                <div class="footer-section__title text-uppercase fw-bold text-white">Follow Us</div>
+                <ul class="footer-section__social d-flex">
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-tg"></span></a></li>
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-fb"></span></a></li>
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-youtube"></span></a></li>
+                  <li><a href="#" class="social-item"><span class="social-icon social-icon-instagram"></span></a></li>
+                </ul>
+                <div class="footer-section__title text-uppercase fw-bold text-white">Information</div>
+                <div class="footer-section__info row mb-5 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                  <div class="col-4"><a href="#" class="info-item">Catalog</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-section">
+                <div class="footer-section__title text-uppercase fw-bold text-white">Contact Us</div>
+                <div class="footer-section__email fw-bold fs-4 text-white">
+                  Email: <a href="mailto:info@site.com">info@site.com</a>
+                </div>
+                <div class="footer-section__message d-none">
+                  <img src="img/icons/footer/send.svg" alt="">
+                  <div class="fs-1 fw-bold text-white mb-3">Message is sent</div>
+                  <div class="fs-5 fw-bolder text-white">Our online representatives will catch you very soon.</div>
+                </div>
+                <form id="contact-form" action="https://autovinapi.com/apiselect.php" method="post" class="footer-section__contact-form needs-validation row g-2 g-md-2 g-lg-5" novalidate>
+                  <div class="col-lg-6">
+                    <input id="contact-name" class="form-control fw-bolder" type="text" name="name" placeholder="Your name" required>
+                    <div class="invalid-feedback">Please choose a username.</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <input id="contact-email" class="form-control fw-bolder" type="email" name="email" placeholder="Email" required>
+                    <div class="invalid-feedback">Please choose a email.</div>
+                  </div>
+                  <div class="col-lg-8">
+                    <textarea name="message" class="form-control fw-bolder" id="contact-text" placeholder="Leave your message" required></textarea>
+                    <div class="invalid-feedback">Please choose a text.</div>
+                  </div>
+                  <div class="col-lg-4">
+                    <button id="contact-btn" class="text-white text-uppercase fs-6 fw-bold" type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sidebar-auth offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="sidebarBackdrop">
+      <div class="offcanvas-header flex justify-content-end">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="code-container">
+          <form class="code-form row needs-validation" novalidate>
+            <div class="fw-semibold text-black mb-4">Введите код из письма balala@gmail.com</div>
+            <div class="col-12">
+              <div class="mb-2 d-flex">
+                <input type="tel" maxlength="1" class="fs-4">
+                <input type="tel" maxlength="1" class="fs-4">
+                <input type="tel" maxlength="1" class="fs-4">
+                <input type="tel" maxlength="1" class="fs-4">
+              </div>
+              <div class="invalid-feedback fs-10 d-block">Вы ввели неверный код</div>
+            </div>
+            <div class="col-12">
+              <button type="submit">Продолжить</button>
+            </div>
+            <div class="col-12">
+              <a href="#">Отправить сюда</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script>
+    const favUrl = "http://localhost:3000/";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/select2.init.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
