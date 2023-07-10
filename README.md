@@ -3,7 +3,7 @@ html, css, scss , bootstrap, javascript, jquery, adaptive, responsive
 <br>
 https://tumkoo.github.io/layouts/
 <br>
-https://tumkoo.github.io/layouts/AutoSiteDealer
+https://tumkoo.github.io/layouts/aDealer2022
 <br>
 https://tumkoo.github.io/layouts/Best-tour
 <br>
@@ -18,3 +18,5 @@ https://tumkoo.github.io/layouts/Shoes-Ecommerce
 https://tumkoo.github.io/layouts/Travel
 <br>
 https://tumkoo.github.io/layouts/Doors-mark
+<br>
+https://tumkoo.github.io/layouts/aDealer
