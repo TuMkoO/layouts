@@ -3,6 +3,8 @@ html, css, scss , bootstrap, javascript, jquery, adaptive, responsive
 <br>
 https://tumkoo.github.io/layouts/
 <br>
+https://tumkoo.github.io/layouts/Hotel-resort
+<br>
 https://tumkoo.github.io/layouts/aDealer2022
 <br>
 https://tumkoo.github.io/layouts/Best-tour
