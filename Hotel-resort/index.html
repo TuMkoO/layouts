@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Resort</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="container-xl">
+          <div class="row">
+            <nav class="navbar-main navbar navbar-expand-lg px-3 px-xl-0">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="logo" href="/">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 1486.1 971.9" style="enable-background:new 0 0 1486.1 971.9;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:#FFFFFF;}
+                      .st1{font-family:'PerpetuaTitlingMT-Light';}
+                      .st2{font-size:65.7382px;}
+                      .st3{font-family:'SitkaBanner-Bold';}
+                      .st4{font-size:244.7141px;}
+                    </style>
+                                      <g>
+                      <text transform="matrix(1 0 0 1 544.2689 961.9947)" class="st0 st1 st2">RESORT &amp; SPA</text>
+                    </g>
+                                      <g>
+                      <text transform="matrix(1 0 0 1 405.5693 876.7483)" class="st0 st3 st4">HOTEL</text>
+                    </g>
+                                      <g>
+                      <polygon class="st0" points="1118.8,282.4 771.7,487.5 424.5,282.4 307.5,386 307.5,317.6 326.1,317.6 326.1,282.4 307.5,282.4
+                        183.7,282.4 165.1,282.4 165.1,317.6 183.7,317.6 183.7,495.6 4.3,654.4 424.5,440.8 771.7,645.9 1118.8,440.8 1486.1,627.5 	"/>
+                                        <path class="st0" d="M677.3,383.5L512,196.3l187.2,165.3L588.1,138l138.1,208.1l-49.5-244.8L756.1,338l15.5-249.3L787.2,338
+                        l79.5-236.8l-49.5,244.8L955.2,138L844.1,361.6l187.2-165.3L866,383.5l247-129.3C1069.2,107.2,933,0,771.7,0
+                        C610.4,0,474.2,107.2,430.3,254.2L677.3,383.5z"/>
+                    </g>
+                  </svg>
+                </a>
+
+                <button id="btn-menu" class="btn-menu d-block d-lg-none" aria-label="Main Menu">
+                  <svg width="70" height="70" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                  </svg>
+                </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                  <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-flex w-100 justify-content-center justify-content-lg-end">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Restaurants & Bars</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Meetings & Events</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item important">
+                          <a class="nav-link" href="#">Booking</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <section class="banner">
+      <div class="banner__filter"></div>
+      <div id="layers" class="layers">
+        <div class="layers__container">
+          <div class="layers__item layer-1" style="background-image: url(./images/layer-1.jpg)"></div>
+          <div class="layers__item layer-2" style="background-image: url(./images/layer-2.png)"></div>
+          <div class="layers__item layer-3">
+            <div class="banner-content">
+              <h1 class="banner-content__title">Grand Hotel <span>Resort & SPA</span></h1>
+              <div class="banner-content__text">The raw elegance of the mountains</div>
+              <a href="#" class="button-main">Booking</a>
+            </div>
+          </div>
+          <div class="layers__item layer-5" style="background-image: url(./images/layer-5.png)"></div>
+          <div class="layers__item layer-6" style="background-image: url(./images/layer-6.png)"></div>
+          <div class="layers__item layer-7" style="background-image: url(./images/layer-7.png)"></div>
+        </div>
+      </div>
+    </section>
+    <section class="facilities">
+      <div class="container">
+        <h2 class="section-title fw-bold text-center">Our Facilities</h2>
+        <p class="section-subtitle text-center mb-5">We offer modern (5 star) hotel facilities for your comfort.</p>
+      </div>
+      <div class="container-lg">
+        <div class="row gy-4">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facilities__item d-flex align-items-center">
+              <div class="item-icon me-3 d-flex align-items-center justify-content-center">
+                <svg width="32" height="39" viewBox="0 0 32 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.43599 25.4659H26.7871M5.0917 21.4482H27.1315M27.8657 12.884L26.2581 31.6398C26.0803 33.7142 25.9913 34.7512 25.5303 35.5361C25.1243 36.2272 24.5216 36.7811 23.7983 37.1266C22.977 37.5189 21.936 37.519 19.8539 37.519H12.3708C10.2888 37.519 9.24705 37.5189 8.42571 37.1266C7.70241 36.7811 7.09935 36.2272 6.69338 35.536C6.23237 34.7512 6.14345 33.7142 5.96564 31.6398L4.358 12.884C4.25423 11.6733 4.2024 11.0678 4.40618 10.6007C4.58522 10.1903 4.89625 9.85158 5.28984 9.63815C5.73782 9.39522 6.34547 9.39522 7.56057 9.39522H24.6638C25.8789 9.39522 26.4868 9.39522 26.9348 9.63815C27.3284 9.85158 27.6386 10.1903 27.8177 10.6007C28.0214 11.0678 27.9695 11.6733 27.8657 12.884ZM26.6528 9.39522H5.57135C3.76016 9.39522 2.85459 9.39515 2.32857 9.01611C1.86475 8.68189 1.56555 8.16594 1.50549 7.59742C1.43737 6.95264 1.88706 6.16642 2.78566 4.59387C3.45696 3.41909 3.79262 2.83169 4.26368 2.40376C4.68482 2.02119 5.18228 1.73239 5.72339 1.55655C6.32865 1.35986 7.00496 1.35986 8.35802 1.35986H23.8667C25.2198 1.35986 25.8963 1.35986 26.5015 1.55655C27.0427 1.73239 27.5397 2.02119 27.9609 2.40376C28.4319 2.83169 28.7676 3.41909 29.4389 4.59387C30.3375 6.16642 30.787 6.95265 30.7188 7.59742C30.6588 8.16594 30.36 8.68189 29.8962 9.01611C29.3701 9.39515 28.4639 9.39522 26.6528 9.39522Z" stroke="#e0b973" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="item-text">Welcome Drinks</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facilities__item d-flex align-items-center">
+              <div class="item-icon me-3 d-flex align-items-center justify-content-center">
+                <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13H37M35 25V14.3582C35 13.8511 35.0002 13.5977 34.9688 13.3484C34.9408 13.127 34.8941 12.9081 34.8297 12.6944C34.7571 12.4538 34.6539 12.2223 34.448 11.759L31.3555 4.80078C30.744 3.42506 30.4383 2.73705 29.9551 2.23267C29.5279 1.78683 29.0041 1.44601 28.4232 1.23674C27.766 1 27.0126 1 25.5071 1H12.4922C10.9867 1 10.2343 1 9.57715 1.23674C8.99625 1.44601 8.47207 1.78683 8.04492 2.23267C7.56168 2.73705 7.25571 3.42507 6.64428 4.80078L3.55176 11.759C3.34582 12.2223 3.24244 12.4538 3.16992 12.6944C3.10551 12.9081 3.05937 13.127 3.03144 13.3484C3 13.5977 3 13.8511 3 14.3582V25M35 25L3 25M35 25V27C35 29.2091 33.2091 31 31 31C28.7909 31 27 29.2091 27 27V25M3 25V27C3 29.2091 4.79086 31 7 31C9.20914 31 11 29.2091 11 27V25" stroke="#e0b973" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="item-text">Car Rental</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facilities__item d-flex align-items-center">
+              <div class="item-icon me-3 d-flex align-items-center justify-content-center">
+                <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8302 0.79021C17.5925 0.555933 18.4075 0.555932 19.1698 0.79021L25.1412 2.62555C28.2565 3.58303 31.2151 4.99075 33.9232 6.80407C36.0295 8.21445 35.0311 11.4999 32.4962 11.4999H3.50381C0.968913 11.4999 -0.0294828 8.21445 2.07682 6.80407C4.78489 4.99076 7.74347 3.58303 10.8588 2.62555L16.8302 0.79021ZM18.2884 3.65782C18.1005 3.60006 17.8995 3.60006 17.7116 3.65782L11.7401 5.49316C9.37851 6.219 7.11582 7.22908 5.00138 8.49993H30.9986C28.8842 7.22908 26.6215 6.219 24.2599 5.49316L18.2884 3.65782Z" fill="#e0b973"/>
+                  <path d="M2.5 37.9999C2.5 37.1715 3.17157 36.4999 4 36.4999H32C32.8284 36.4999 33.5 37.1715 33.5 37.9999C33.5 38.8284 32.8284 39.4999 32 39.4999H4C3.17157 39.4999 2.5 38.8284 2.5 37.9999Z" fill="#e0b973"/>
+                  <path d="M6.5 29.9999C6.5 30.8284 7.17157 31.4999 8 31.4999C8.82843 31.4999 9.5 30.8284 9.5 29.9999L9.5 17.9999C9.5 17.1715 8.82843 16.4999 8 16.4999C7.17157 16.4999 6.5 17.1715 6.5 17.9999L6.5 29.9999Z" fill="#e0b973"/>
+                  <path d="M18 31.4999C17.1716 31.4999 16.5 30.8284 16.5 29.9999L16.5 17.9999C16.5 17.1715 17.1716 16.4999 18 16.4999C18.8284 16.4999 19.5 17.1715 19.5 17.9999V29.9999C19.5 30.8284 18.8284 31.4999 18 31.4999Z" fill="#e0b973"/>
+                  <path d="M26.5 29.9999C26.5 30.8284 27.1716 31.4999 28 31.4999C28.8284 31.4999 29.5 30.8284 29.5 29.9999V17.9999C29.5 17.1715 28.8284 16.4999 28 16.4999C27.1716 16.4999 26.5 17.1715 26.5 17.9999V29.9999Z" fill="#e0b973"/>
+                </svg>
+              </div>
+              <div class="item-text">Resort & Spa</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="facilities__item d-flex align-items-center">
+              <div class="item-icon me-3 d-flex align-items-center justify-content-center">
+                <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.6865 20.1801C12.6182 19.181 13.7447 18.3834 14.9966 17.8365C16.2484 17.2895 17.5986 17.0048 18.9647 17C20.3308 16.9953 21.6835 17.2705 22.9392 17.8087C24.1948 18.3468 25.3271 19.1365 26.2658 20.1291M7.29883 14.0881C8.78952 12.4895 10.5919 11.2134 12.5949 10.3383C14.5979 9.46321 16.7587 9.00778 18.9445 9.00015C21.1302 8.99252 23.2942 9.43279 25.3033 10.2939C27.3123 11.1549 29.124 12.4185 30.6258 14.0066M1.44727 8.63209C3.6833 6.23423 6.38694 4.31996 9.39138 3.00735C12.3958 1.69474 15.6376 1.01159 18.9162 1.00015C22.1948 0.988701 25.4409 1.64917 28.4544 2.94077C31.4679 4.23237 34.1846 6.12778 36.4373 8.50996M19 29C17.8954 29 17 28.1046 17 27C17 25.8955 17.8954 25 19 25C20.1046 25 21 25.8955 21 27C21 28.1046 20.1046 29 19 29Z" stroke="#e0b973" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="item-text">Free WIFI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="welcome">
+      <div class="parallax position-relative">
+        <div class="welcome-banner d-flex justify-content-center align-items-center position-absolute">
+          <p class="text-white fw-bold fs-1 text-center">Welcome to Grand Hotel alpin_lifestyle_hotel Grindelwald</p>
+        </div>
+      </div>
+      <div class="time-out">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row h-100 time-out-banner"></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row time-out-content">
+                <div>
+                  <h2 class="time-out-title fw-bold">Time-out in the mountains</h2>
+                  <ul class="time-out-list">
+                    <li class="time-out-list__item">2 nights in chosen room category for two person</li>
+                    <li class="time-out-list__item">For her: 1.5 hour SPA-treatment</li>
+                    <li class="time-out-list__item">For him: a glass of our Aspen Gin with view to the Eiger</li>
+                    <li class="time-out-list__item">Welcome present in your room</li>
+                    <li class="time-out-list__item">Coffee and cake from 3 to 4.5 p.m.</li>
+                    <li class="time-out-list__item">Every evening a romantic 4-course dinner excl. drinks</li>
+                    <li class="time-out-list__item">Rich breakfast buffet with local products until 11 a.m.</li>
+                    <li class="time-out-list__item">Free access to our ASPEN SPA (from 14y.) with sauna, brine steam bath, herb bath and external whirlpool</li>
+                    <li class="time-out-list__item">Bathrobe and slippers</li>
+                    <li class="time-out-list__item">Visitor’s tax of CHF 4.75 per night per person are not included</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <div class="row">
+          <div class="review-content text-center fs-2">
+            The raw elegance of the mountains. The fascinating nature, the wildlife of the Alps and the charm of the chalet. All this and much more influences the alpine-chic style of the Grand Hotel. Sophia Loren says, «charm is the invisible part of beauty, without which no one can be really beautiful.» Charm makes your stay in Grindelwald even more unforgettable.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="rooms">
+        <div class="container-fluid px-0">
+          <div class="row gx-0">
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-1.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Deluxe Room</h3>
+                    <p class="room__description">Deluxe Rooms at The Chedi Andermatt provide everything you need for a cosy and comfortable stay in Andermatt, on 52 to 55 square metres, with traditional Alpine woods, warm fireplaces, and natural-stone touches.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-2.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Grand Deluxe Room</h3>
+                    <p class="room__description">Measuring 55 square metres each, Grand Deluxe Rooms at The Chedi Andermatt in Switzerland are located on the top floors and offer beautiful views of the Alpine surroundings.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-3.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Family Deluxe Room</h3>
+                    <p class="room__description">Measuring 55 square metres each, Grand Deluxe Rooms at The Chedi Andermatt in Switzerland are located on the top floors and offer beautiful views of the Alpine surroundings.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-4.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Junior Deluxe Suite</h3>
+                    <p class="room__description">The beautiful Junior Deluxe Suites measure 90 square metres each and feature gorgeous views of either the Swiss Urseren valley or Nätschen mountain.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-5.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Deluxe Suite</h3>
+                    <p class="room__description">The exquisite Deluxe Suites at The Chedi Andermatt, on 110 square metres each, are perfect for families and anyone who prefers extra space.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-6.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Grand Deluxe Suite</h3>
+                    <p class="room__description">Grand Deluxe Suites offer all the charm and luxury of a private ski chalet in Andermatt, with two bedrooms, two bathrooms, a spacious balcony, a comfortable living area, an elegant dining table, and 190 square metres of space.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-7.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Gemsstock Suite</h3>
+                    <p class="room__description">The Gemsstock Suite is a tranquil, serene space, with soft leather armchairs, 134 square metres of space, and inspiring views of the Gemsstock mountain.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-8.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Furka Suite</h3>
+                    <p class="room__description">Offering three spacious bedrooms and 330 square metres of space, the Furka Suite is a lavish private residence in a luxury hotel in Switzerland. It provides everything you need to escape and unwind — including a private spa.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="room">
+                <a href="#" class="room-link text-white text-decoration-none" style="background-image: url(./images/room-cover-9.jpg)">
+                  <div class="room-content">
+                    <h3 class="room__title fw-bold mb-4">Gotthard Suite</h3>
+                    <p class="room__description">The Gotthard Suite is the most lavish accommodation of our 5-star hotel in Switzerland. The suite has five bedrooms, five bathrooms, and 350 square metres of space spread across two floors.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax position-relative">
+        <div class="restaurant-banner position-absolute">
+          <div class="container-fluid h-100">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+              <p class="text-white text-center">All over the Grand Hotel as here in the Deluxe Room, truthfulness and authenticity have top priority. Leave the everyday behind for a moment and enjoy the stylish, candlelight ambience. Typical delicious meals with other palatable delights and fine wines grown in the best regions are offered by our service team in the Deluxe Room. Our chef, Sebastian Schuster, selects with his staff, as much as possible, products of the region which means that the origin of all products is known.
+                The Deluxe Room can be easily partitioned from the restaurant area and can be offered as a small seminar room for a maximum of 25 people. The latest technical equipment, e.g. 80” flat screen for presentations, also workshop rooms, can be made available. Please contact us to help organize your meeting.
+              </p>
+              <a href="#" class="button-main">Online restaurant reservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spa">
+      <div class="container-fluid px-0">
+        <div class="row gx-0">
+          <div class="col-md-4 overflow-hidden">
+            <div class="spa-content h-100" style="background-image: url(./images/spa-cover-5.jpg)"></div>
+          </div>
+          <div class="col-md-8">
+            <div class="row gx-0">
+              <div class="col-12 overflow-hidden">
+                <div class="spa-content h-30vh" style="background-image: url(./images/spa-cover-2.jpg)"></div>
+              </div>
+              <div class="col-md-6 overflow-hidden">
+                <div class="spa-content h-30vh d-flex align-items-center justify-content-center text-white p-4 text-center" style="background-image: url(./images/spa-cover-3.jpg)">
+                  <div class="spa-content__text">
+                    In the SPA - Lounge for a relaxing moment with friends located right at the ski slope is our Aspen Forest Relax Room. Lie on a large, temperate waterbed or lounge chair, with panorama views of the imposing mountains with outdoor summer terrace to relax or sunbathe.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 overflow-hidden"><div class="spa-content h-30vh" style="background-image: url(./images/spa-cover-4.jpg)"></div></div>
+            </div>
+          </div>
+          <div class="col-12 overflow-hidden"><div class="spa-content h-30vh" style="background-image: url(./images/spa-cover-1.jpg)"></div></div>
+        </div>
+      </div>
+      <div class="parallax position-relative">
+        <div class="spa-banner position-absolute">
+          <div class="container-fluid h-100">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+              <p class="text-white text-center">
+                Welcome to the heart of a sensory symphony, marked with a bright world consisted of water, scents and fumes, but above all with relaxation. Everything is here to guide body, soul and spirit, at the boundaries of the well-being …
+                In an enchanting universe, fluctuating between peace and movement, activity and relaxation, the spectacular and modern new Spa of 300 m ² offers to everyone a regenerating haven.
+                With its sober architectural lines, the place improves softened atmospheres thanks to colored beams of light.
+              </p>
+              <a href="#" class="button-main">Online SPA reservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="fw-bold text-center mb-5">Getting Social @ Grand Hotel</h2>
+          </div>
+          <div class="col-12">
+            <ul class="social__list d-flex justify-content-center">
+              <li class="list-item mx-3 mx-md-4">
+                <a href="#" class="list-item-link d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                </a>
+              </li>
+              <li class="list-item mx-3 mx-md-4">
+                <a href="#" class="list-item-link d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+              </li>
+              <li class="list-item mx-3 mx-md-4">
+                <a href="#" class="list-item-link d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+              </li>
+              <li class="list-item mx-3 mx-md-4">
+                <a href="#" class="list-item-link d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="row gx-0">
+          <div class="col-lg-5">
+            <div class="d-flex flex-column h-100 justify-content-center">
+              <div class="footer__logo d-flex justify-content-center mb-4">
+                <a class="logo d-block" href="/">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 1486.1 971.9" style="enable-background:new 0 0 1486.1 971.9;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:#FFFFFF;}
+                      .st1{font-family:'PerpetuaTitlingMT-Light';}
+                      .st2{font-size:65.7382px;}
+                      .st3{font-family:'SitkaBanner-Bold';}
+                      .st4{font-size:244.7141px;}
+                    </style>
+                    <g>
+                      <text transform="matrix(1 0 0 1 544.2689 961.9947)" class="st0 st1 st2">RESORT &amp; SPA</text>
+                    </g>
+                    <g>
+                      <text transform="matrix(1 0 0 1 405.5693 876.7483)" class="st0 st3 st4">HOTEL</text>
+                    </g>
+                    <g>
+                      <polygon class="st0" points="1118.8,282.4 771.7,487.5 424.5,282.4 307.5,386 307.5,317.6 326.1,317.6 326.1,282.4 307.5,282.4
+                        183.7,282.4 165.1,282.4 165.1,317.6 183.7,317.6 183.7,495.6 4.3,654.4 424.5,440.8 771.7,645.9 1118.8,440.8 1486.1,627.5 	"/>
+                      <path class="st0" d="M677.3,383.5L512,196.3l187.2,165.3L588.1,138l138.1,208.1l-49.5-244.8L756.1,338l15.5-249.3L787.2,338
+                        l79.5-236.8l-49.5,244.8L955.2,138L844.1,361.6l187.2-165.3L866,383.5l247-129.3C1069.2,107.2,933,0,771.7,0
+                        C610.4,0,474.2,107.2,430.3,254.2L677.3,383.5z"/>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer__contact text-white text-center">
+                <div class="contact-item mb-4">
+                  <p class="mb-0">Gotthardstrasse 4  •  CH-6490 Andermatt</p>
+                  <p class="mb-0">P +41 41 888 74 88  •  F +41 41 888 74 99</p>
+                </div>
+                <div class="contact-item mb-4">
+                  <p class="mb-0"><strong>Reservation:</strong> <a href="mailto:reservations@hotel.com" class="text-white text-decoration-none">reservations@hotel.com</a></p>
+                  <p class="mb-0"><strong>General Info:</strong> <a href="mailto:info@hotel.com" class="text-white text-decoration-none">info@hotel.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footer__links">
+              <div class="row">
+                <div class="col-6 col-sm-3 text-center">
+                  <ul class="links-list">
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Careers</a>
+                    </li>
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Media Hub</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                  <ul class="links-list">
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">FAQ</a>
+                    </li>
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Privacy</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                  <ul class="links-list">
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Offers</a>
+                    </li>
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">GTCB</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                  <ul class="links-list">
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Site Map</a>
+                    </li>
+                    <li class="links-list-item">
+                      <a href="#" class="links-list-link text-white text-decoration-none">Est. 2018</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__links">
+              <div class="row">
+                <div class="links-logo d-flex flex-wrap justify-content-around justify-content-sm-between align-items-center">
+                  <div class="links-logo-item">
+                    <a href="#" class="links-logo-link">
+                      <svg width="107" height="38">
+                        <path d="m36.382 9.244v7.187c-1.438.677-3.434 1.183-5.673 1.183-5.045 0-9.209-3.7-9.209-8.803 0-5.153 4.119-8.811 9.209-8.811 1.752 0 3.383.291 4.847.852v2.489c-.656-1.646-2.46-2.403-4.486-2.403-3.993 0-7.084 3.54-7.084 7.871 0 4.302 3.138 7.809 7.084 7.809 1.245 0 2.217-.239 3.022-.501v-6.873c0-.508-.194-.92-.609-1.211h3.507c-.414.291-.608.702-.608 1.211"/>
+                        <path d="m51.601 17.251c.415-.29.608-.702.608-1.243v-7.007h-9.742v7.007c0 .541.196.953.631 1.243h-3.53c.415-.29.61-.702.61-1.243v-14.436c0-.53-.195-.913-.61-1.208h3.53c-.436.294-.631.678-.631 1.208v6.461h9.742v-6.461c0-.53-.193-.913-.608-1.208h3.506c-.415.294-.608.678-.608 1.208v14.437c0 .541.193.953.608 1.243h-3.506z"/>
+                        <path d="m72.987 17.251c.417-.29.607-.702.607-1.243v-12.449l-7.057 14.363-7.04-14.322v12.408c0 .541.194.953.606 1.243h-2.479c.415-.29.609-.702.609-1.243v-14.436c0-.53-.194-.913-.609-1.208h2.821l6.772 13.767 6.793-13.767h2.486c-.415.294-.608.678-.608 1.208v14.437c0 .541.193.953.608 1.243h-3.509z"/>
+                        <path d="m66.299 34.787c.133-.086.19-.219.19-.385v-3.873l-2.2 4.471-2.186-4.459v3.861c0 .166.061.299.187.385h-.769c.126-.086.187-.219.187-.385v-4.486c0-.172-.061-.287-.187-.381h.877l2.107 4.283 2.111-4.283h.776c-.129.094-.194.209-.194.381v4.486c0 .166.065.299.194.385z"/>
+                        <path d="m79.578 34.787c.13-.086.189-.219.189-.385v-3.873l-2.198 4.471-2.187-4.459v3.861c0 .166.062.299.188.385h-.773c.129-.086.191-.219.191-.385v-4.486c0-.172-.063-.287-.191-.381h.878l2.109 4.283 2.112-4.283h.772c-.128.094-.19.209-.19.381v4.486c0 .166.063.299.19.385z"/>
+                        <path d="m4.185 34.768c-.23 0-.467-.141-.563-.373l-.471-1.129h-1.988l-.544 1.293c-.006.02-.013.053-.013.074 0 .049.013.096.063.135h-.669c.088-.068.145-.129.181-.223l2.207-5.262 2.287 5.484h-.49zm-2.024-3.875-.841 1.996h1.674z"/>
+                        <path d="m9.6 34.889c-.293 0-.688-.064-.991-.156v-.805c.181.428.537.594.971.594.642 0 1.034-.385 1.034-.934 0-.455-.35-.799-1.015-1.209-.688-.422-1.165-.893-1.165-1.592 0-.951.733-1.367 1.728-1.367.323 0 .678.084.936.186v.732c-.15-.301-.461-.545-.968-.545-.606 0-.984.307-.984.76 0 .467.469.771.965 1.09.836.553 1.283 1.004 1.283 1.83 0 .75-.629 1.416-1.794 1.416"/>
+                        <path d="m16.053 29.932h-1.012v4.455c0 .162.06.291.188.383h-1.203c.129-.092.186-.221.186-.383v-4.455h-1.002c-.349 0-.565.15-.667.398v-.809h4.173v.809c-.088-.248-.311-.398-.663-.398"/>
+                        <path d="m20.519 32.311v2.074c0 .164.06.293.194.383h-1.208c.128-.09.191-.219.191-.383v-1.803l-2.035-3.057h.613c.273 0 .46.119.606.338l1.382 2.07 1.374-2.08c.049-.076.075-.139.075-.215 0-.039-.006-.074-.026-.113h.679z"/>
+                        <path d="m23.606 34.768c.134-.086.197-.215.197-.383v-4.482c0-.166-.063-.287-.197-.377h1.211c-.125.09-.191.211-.191.377v4.453h1.801c.31 0 .543-.115.682-.361v.773z"/>
+                        <path d="m28.537 34.768v-4.865c0-.166-.09-.287-.214-.383h3.158v.814c-.1-.254-.321-.402-.673-.402h-1.451v1.916h1.349c.139 0 .251-.07.314-.186v.773c-.063-.111-.175-.176-.314-.176h-1.349v2.098h1.647c.315 0 .546-.117.688-.363v.773h-3.155z"/>
+                        <path d="m38.946 29.932h-1.018v4.455c0 .162.063.291.191.383h-1.199c.128-.092.187-.221.187-.383v-4.455h-1.004c-.352 0-.565.15-.664.398v-.809h4.171v.809c-.092-.248-.318-.398-.664-.398"/>
+                        <path d="m43.339 34.879c-1.549 0-2.749-1.225-2.749-2.73 0-1.512 1.2-2.738 2.749-2.738s2.762 1.227 2.762 2.738c0 1.505-1.213 2.73-2.762 2.73m-.107-5.098c-.955 0-1.718.955-1.718 2.232 0 1.066.672 2.498 1.929 2.498.953 0 1.719-.963 1.719-2.23 0-1.066-.671-2.5-1.93-2.5"/>
+                        <path d="m56.435 34.768v-4.865c0-.166-.092-.287-.22-.383h3.157v.814c-.096-.254-.313-.402-.673-.402h-1.452v1.916h1.352c.141 0 .254-.07.315-.186v.773c-.062-.111-.175-.176-.315-.176h-1.352v2.098h1.65c.317 0 .544-.117.688-.363v.773h-3.15z"/>
+                        <path d="m69.688 34.768v-4.865c0-.166-.094-.287-.222-.383h3.164v.814c-.1-.254-.318-.402-.676-.402h-1.45v1.916h1.354c.136 0 .249-.07.309-.186v.773c-.06-.111-.173-.176-.309-.176h-1.354v2.098h1.646c.318 0 .547-.117.691-.363v.773h-3.153z"/>
+                        <path d="m84.676 34.768h-1.649v-4.865c0-.166-.069-.287-.19-.377h1.746c.859 0 1.411.598 1.411 1.287 0 .547-.412.959-1.025 1.141.941.057 1.501.678 1.501 1.438-.001.838-.756 1.376-1.794 1.376m-.438-4.866h-.508v1.922h.508c.534 0 1.013-.344 1.013-.961 0-.705-.461-.961-1.013-.961m.192 2.303h-.7v2.178h.699c.629 0 1.253-.268 1.253-1.092.001-.73-.614-1.086-1.252-1.086"/>
+                        <path d="m88.623 34.768v-4.865c0-.166-.087-.287-.218-.383h3.16v.814c-.099-.254-.317-.402-.672-.402h-1.454v1.916h1.355c.137 0 .248-.07.308-.186v.773c-.06-.111-.171-.176-.308-.176h-1.355v2.098h1.651c.317 0 .543-.117.687-.363v.773h-3.154z"/>
+                        <path d="m97.606 34.768c-.369 0-.642-.18-.851-.48l-1.581-2.283h.352c.534 0 1.092-.463 1.092-1.051 0-.648-.507-1.051-1.039-1.051h-.921v4.482c0 .168.063.297.19.383h-1.131c.134-.086.191-.215.191-.383v-4.482c0-.166-.058-.287-.191-.377h2.044c.935 0 1.602.623 1.602 1.383 0 .613-.479 1.135-1.136 1.297l1.773 2.562z"/>
+                        <path d="m54.063 34.768c-.368 0-.644-.18-.853-.48l-1.58-2.283h.353c.532 0 1.089-.463 1.089-1.051 0-.648-.507-1.051-1.038-1.051h-.918v4.482c0 .168.061.297.189.383h-1.134c.135-.086.194-.215.194-.383v-4.482c0-.166-.06-.287-.194-.377h2.046c.941 0 1.602.623 1.602 1.383 0 .613-.482 1.135-1.131 1.297l1.766 2.563h-.391z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="links-logo-item">
+                    <a href="#" class="links-logo-link">
+                      <svg width="160" height="48">
+                        <path d="m15.782 29.947s-4.065 12.767-4.165 13.087c-.349-1.209-2.512-9.142-2.859-10.309-.168-.601-.297-1.502-.306-1.854-.03-.488.086-.823.153-.949l.064-.143s-1.011.127-1.691.236c-.566.087-1.627.277-1.627.277l.112.116c.385.439.497.828.981 2.41l4.486 15.182h.281s4.123-12.663 4.213-12.944c.096.281 4.355 12.944 4.355 12.944h.258l4.558-15.148c.49-1.576.787-2.103 1.083-2.465l.081-.084c-.136-.046-.604-.158-1.177-.287-.603-.139-1.151-.221-1.151-.221l.071.166c.003.006.132.245.136.697.006.369-.136 1.306-.381 2.154 0 0-2.827 9.964-2.92 10.263-.099-.299-4.393-13.128-4.393-13.128zm10.218-20.65.036.077c.557 1.208.863 2.456.863 5.542 0 0-.187 9.274-.187 9.403-.611-.116-6.104-1.137-11.281-1.137-5.345 0-10.653 1.008-11.266 1.137 0-.135.003-9.406.003-9.406 0-3.038.41-4.258.951-5.545l.048-.071h-5.085l.028.077c.562 1.208.86 2.456.86 5.542l-.004 23.507c0 3.107-.45 4.277-.937 5.521l-.029.082h5.061l-.039-.069c-.555-1.215-.863-2.454-.863-5.538 0 0 .006-11.635.006-11.723.393-.104 4.921-1.18 11.266-1.18 6.227 0 10.873 1.079 11.281 1.18 0 .092.181 11.727.181 11.727 0 3.107-.334 4.277-.832 5.521l-.03.082h4.952l-.039-.069c-.55-1.215-.86-2.454-.86-5.538l.006-23.506c0-3.038.417-4.258.958-5.545l.042-.068zm-11.736-9.297-.042.074c-.307.666-.516 1.351-.516 3.001 0 0-.039 14.215-.039 14.335.729-.036 2.008-.027 2.421-.027 2.357 0 4.845.35 5.912-.72l.077.016-.882 2.337c-1.351-.149-3.199-.306-5.107-.306-1.692 0-3.013.041-5.35.213l-.104.012.036-.084c.258-.678.5-1.311.5-2.988l.006-12.787c0-1.673-.164-2.346-.468-3.001l-.032-.075z"/>
+                        <path d="m105.341 20.599h-3.997v-10.01h3.979c3.581 0 5.173 1.728 5.173 4.924-.001 2.915-1.509 5.086-5.155 5.086m.019-11.396h-6.885c.267.455.405.911.405 2.051l-.003 8.741c0 1.16-.212 1.609-.438 2.064h6.92c3.983 0 7.585-2.106 7.585-6.579.001-5.324-4.248-6.277-7.584-6.277m34.832 2.042c0-1.144.146-1.612.394-2.064h-2.211c.202.456.39.901.39 2.064v7.852l-8.33-9.93s-3.064-.003-3.059-.003c.223.456.413.905.413 2.075l.007 8.73c0 1.144-.133 1.615-.384 2.067h2.204c-.209-.455-.416-.904-.416-2.067v-8.531l8.83 10.637h2.162zm-79.847 8.792c-.909.691-3.407.601-5.599.588-.661-.004-2.285-.032-2.285-.032l.029-9.365c0-1.163.209-1.608.445-2.064h-3.165c.263.456.402.917.402 2.072l-.003 8.728c0 1.166-.216 1.608-.436 2.064h10.192zm60.488-8.783c0-1.16.202-1.61.444-2.064h-3.162c.262.452.403.924.403 2.064v8.741c0 1.16-.219 1.609-.441 2.064h3.158c-.261-.455-.405-.917-.405-2.068zm-50.44 9.332c-.716-.01-3.697-.032-3.797-.058l-.007-4.731c1.45-.016 6.317-.026 7.102.404v-2.19c-.583.497-5.283.423-7.102.397v-3.824s6.618-.142 8.059.201c.419.097.718.305.718.305 0-.039.016-1.91.016-1.91h-11.51c.261.45.402.92.402 2.064l-.003 8.738c0 1.16-.174 1.563-.418 2.061l11.717-.007.417-2.042c-.915.689-3.409.605-5.594.592m89.606-10.362c-1.378-.743-3.66-1.196-5.643-1.196-3.143 0-5.184.896-6.521 1.906-1.511 1.15-2.389 2.776-2.354 4.556.029 1.745.92 3.478 2.296 4.574 1.702 1.35 3.849 2.148 6.582 2.148 2.234 0 3.916-.475 5.635-1.516v-5.235l-2.789-.009c.203.245.455.692.455 1.768l-.039 2.892c-.931.527-1.976.669-3.265.669-2.25 0-3.959-.653-5.032-1.82-1.009-1.089-1.457-2.123-1.457-3.471 0-1.344.597-2.494 1.548-3.379 1.354-1.254 2.959-1.696 4.941-1.696 1.812 0 3.61.453 4.857 1.264.313.193.593.394.785.546v-2.001zm-76.874 6.905h5.567l-2.74-5.419zm4.081-7.93 6.27 11.516c.384.637.771 1.064 1.132 1.328-.119-.003-3.962 0-3.962 0 .204-.342.219-.798-.081-1.454l-1.17-2.165h-6.937l-1.241 2.443c-.257.533-.187.912.013 1.173h-2.723c.396-.278.685-.765.925-1.144l6.25-11.701z"/>
+                        <path d="m137.785 42.217c-.919.691-3.407.607-5.6.592-.668-.01-2.291-.033-2.291-.033l.031-9.364c0-1.163.207-1.609.451-2.068 0-.003-3.165 0-3.165 0 .258.456.396.924.396 2.068v8.733c0 1.17-.223 1.609-.438 2.069l10.195-.004zm9.031-10.977c-3.043-.068-5.663.782-5.912 3.222-.074.639.088 1.34.539 1.89 1.653 1.996 6.012 2.133 7.745 3.461.5.384.769.94.71 1.454-.154 1.457-2.002 1.842-4.281 1.79-3.101-.078-4.561-1.234-5.031-1.655 0 .074.074 2.072.074 2.072.941.359 2.739.904 4.954.946 3.433.077 6.464-.817 6.718-3.59.052-.579-.07-1.502-.561-2.087-1.051-1.241-3.072-1.693-4.994-2.324-1.82-.607-3.445-.904-3.416-2.203.025-1.131 1.818-1.593 3.4-1.563 1.276.021 2.728.216 3.707.668.48.213.883.34 1.309.775v-1.978c-1.305-.484-3.393-.846-4.961-.878m-71.047 6.455c0 1.717.525 3.083 1.873 4.246.678.582 1.893 1.131 3.665 1.131 1.748 0 2.828-.362 3.717-1.138 1.254-1.099 1.867-2.651 1.867-4.229 0-1.765-.584-3.225-1.974-4.185-.915-.634-1.995-1.001-3.578-1.001-1.759 0-2.849.427-3.593.963-1.189.86-1.977 2.332-1.977 4.213m5.509-6.532c2.63 0 5.028.843 6.438 2.309.989 1.028 1.589 2.535 1.589 4.246 0 1.231-.6 2.967-1.573 4.063-1.699 1.929-3.794 2.704-6.415 2.704-2.666 0-5.048-.946-6.501-2.688-.944-1.139-1.534-2.65-1.502-4.117.033-1.673.674-3.051 1.787-4.185 1.575-1.596 3.711-2.332 6.177-2.332m-13.648 2.264c0-1.166.204-1.611.445-2.061.007-.007-3.166 0-3.166 0 .262.445.41.917.41 2.063l-.003 3.194h-8.087v-3.197c0-1.166.21-1.611.458-2.061 0-.007-3.172 0-3.172 0 .262.445.399.917.399 2.063v8.735c0 1.162-.215 1.608-.441 2.064h3.162c-.265-.456-.409-.915-.409-2.064v-4.113h8.09l-.003 4.113c0 1.162-.219 1.608-.441 2.064h3.158c-.26-.456-.399-.915-.399-2.064v-8.736zm48.326 9.345c-.72-.011-3.7-.036-3.801-.063v-4.729c1.441-.016 6.312-.025 7.089.4v-2.184c-.578.494-5.274.423-7.091.394v-3.829s6.623-.139 8.061.207c.409.097.712.3.712.3.003-.028.022-1.902.022-1.902h-11.514c.258.445.4.917.4 2.063v8.735c0 1.159-.178 1.566-.42 2.064l11.714-.013.42-2.039c-.915.69-3.409.606-5.592.596m-16.229-10.02 2.771-.003c1.083 0 1.922.077 2.282.51v-1.88h-12.39v1.88c.352-.433 1.283-.51 2.266-.51l2.75.003v9.413c0 1.159-.22 1.608-.441 2.064.032-.016 3.161 0 3.161 0-.258-.456-.398-.915-.398-2.064v-9.413z"/>
+                        <path d="m156.835 32.729h.471c.2 0 .345.016.419.044.078.03.133.075.175.137s.064.133.064.207c0 .115-.046.217-.133.283-.087.071-.251.107-.49.107h-.506zm0 2.237v-1.099h.241c.146 0 .258.028.336.09.112.077.255.278.436.601l.226.408h.509l-.316-.511c-.144-.239-.27-.408-.376-.518-.056-.045-.126-.09-.22-.129.223-.02.403-.094.535-.232.132-.14.199-.311.199-.497 0-.133-.035-.256-.119-.379-.08-.119-.187-.2-.325-.248-.135-.046-.354-.071-.658-.071h-.879v2.585zm1.618-3.073c.319.175.563.416.742.739.181.327.27.656.27 1.009 0 .349-.089.676-.26.988-.181.32-.427.563-.742.746-.315.176-.645.263-.993.263-.342 0-.676-.087-.993-.263-.315-.184-.566-.426-.74-.746-.175-.313-.265-.64-.265-.988 0-.353.09-.682.271-1.009.177-.323.428-.564.744-.739.315-.174.647-.263.982-.263.337 0 .662.089.984.263m-2.163-.35c-.38.214-.683.505-.899.89-.209.387-.319.788-.319 1.208 0 .406.11.808.319 1.192.217.378.51.679.887.882.381.213.777.317 1.192.317.413 0 .809-.104 1.193-.317.38-.203.674-.504.879-.882.21-.385.319-.786.319-1.192 0-.42-.109-.821-.322-1.208-.215-.385-.515-.676-.893-.89-.387-.203-.773-.306-1.177-.306-.402 0-.791.103-1.179.306"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="links-logo-item">
+                    <a href="#" class="links-logo-link">
+                      <svg width="128" height="57">
+                        <clipPath id="a">
+                          <path d="m0 0h128v57h-128z"/>
+                        </clipPath>
+                        <clipPath id="b">
+                          <path d="m0 0h128v57h-128z"/>
+                        </clipPath>
+                        <clipPath id="c">
+                          <path d="m0 0h128v57h-128z"/>
+                        </clipPath>
+                        <clipPath id="d">
+                          <path d="m0 0h128v57h-128z"/>
+                        </clipPath>
+                        <clipPath id="e">
+                          <path d="m0 0h128v57h-128z"/>
+                        </clipPath>
+                        <g>
+                          <path clip-path="url(#a)" d="m4.646 51.486h-.808c-.077-.826-.583-1.289-1.424-1.289-.77 0-1.345.471-1.345 1.104 0 .307.156.578.442.773.143.1.321.188.518.285.056.021.32.141.795.348 1.09.494 1.466.732 1.741 1.16.188.295.3.674.3 1.068.001 1.235-.971 2.065-2.404 2.065-1.523 0-2.383-.809-2.461-2.336h.804c.065 1.049.663 1.627 1.677 1.627.892 0 1.521-.525 1.521-1.256 0-.359-.144-.668-.44-.906-.242-.199-.407-.285-1.135-.613-.972-.426-1.423-.676-1.698-.949-.321-.326-.488-.742-.488-1.199 0-1.104.928-1.891 2.21-1.891 1.323 0 2.127.732 2.195 2.009"/>
+                          <path d="m14.184 49.598-1.444 6.199-1.525-6.199h-.716l-1.521 6.199-1.424-6.199h-.784l1.746 7.326h.894l1.441-5.69 1.457 5.69h.892l1.757-7.326z"/>
+                          <path d="m17.185 49.598h.838v7.281h-.838z"/>
+                          <path clip-path="url(#b)" d="m25.269 51.486h-.806c-.077-.826-.584-1.289-1.422-1.289-.773 0-1.348.471-1.348 1.104 0 .307.157.578.443.773.144.1.319.188.516.285.058.021.321.141.796.348 1.091.494 1.467.732 1.743 1.16.188.295.299.674.299 1.068 0 1.234-.972 2.064-2.405 2.064-1.522 0-2.384-.809-2.46-2.336h.806c.065 1.049.662 1.627 1.675 1.627.892 0 1.524-.525 1.524-1.256 0-.359-.145-.668-.442-.906-.244-.199-.409-.285-1.138-.613-.97-.426-1.423-.676-1.698-.949-.319-.326-.485-.742-.485-1.199 0-1.104.925-1.891 2.207-1.891 1.323.001 2.128.733 2.195 2.01"/>
+                          <path clip-path="url(#b)" d="m32.404 51.486h-.807c-.078-.826-.583-1.289-1.425-1.289-.772 0-1.344.471-1.344 1.104 0 .307.155.578.441.773.144.1.32.188.521.285.052.021.317.141.792.348 1.093.494 1.468.732 1.745 1.16.187.295.294.674.294 1.068 0 1.234-.968 2.064-2.402 2.064-1.524 0-2.383-.809-2.46-2.336h.804c.066 1.049.665 1.627 1.677 1.627.894 0 1.522-.525 1.522-1.256 0-.359-.142-.668-.439-.906-.244-.199-.408-.285-1.138-.613-.972-.426-1.421-.676-1.699-.949-.32-.326-.486-.742-.486-1.199 0-1.104.928-1.891 2.207-1.891 1.326.001 2.13.733 2.197 2.01"/>
+                          <path clip-path="url(#b)" d="m41.137 56.17h.539c1.179 0 1.5-.055 2.007-.361.75-.471 1.16-1.375 1.16-2.574 0-1.246-.466-2.195-1.29-2.631-.474-.254-.774-.295-2.076-.295h-.34zm-.818-6.572h1.148c.759 0 1.059.023 1.466.076.42.043.794.166 1.115.338 1.025.57 1.665 1.791 1.665 3.223 0 1.482-.64 2.693-1.721 3.25-.619.33-1.091.396-2.614.396h-1.06v-7.283z"/>
+                          <path d="m48.338 49.598v7.281h4.103v-.709h-3.287v-2.709h2.988v-.709h-2.988v-2.445h3.221v-.709z"/>
+                          <path d="m54.978 49.598v7.281h3.992v-.711h-3.144v-6.57z"/>
+                          <path clip-path="url(#c)" d="m61.219 49.598h.816v4.289c0 1.289.064 1.584.432 1.932.307.297.803.473 1.344.473.916 0 1.575-.447 1.711-1.158.064-.316.064-.471.064-1.246v-4.289h.825v4.301.535c0 .895-.163 1.398-.583 1.834-.473.493-1.158.731-2.017.731-1.182 0-2.074-.492-2.415-1.355-.121-.307-.177-.674-.177-1.211v-.535z"/>
+                          <path d="m73.086 49.598-1.724 2.793-1.694-2.793h-.95l2.173 3.47-2.306 3.811h.938l1.839-3.047 1.844 3.047h.94l-2.294-3.811 2.181-3.47z"/>
+                          <path d="m76.404 49.598v7.281h4.106v-.709h-3.287v-2.709h2.989v-.709h-2.989v-2.445h3.218v-.709z"/>
+                          <path d="m92.68 49.598v3.132h-3.462v-3.132h-.817v7.281h.817v-3.473h3.462v3.473h.824v-7.281z"/>
+                          <path clip-path="url(#d)" d="m96.985 53.242c0 1.836.84 3.047 2.119 3.047s2.117-1.211 2.117-3.047c0-1.844-.838-3.045-2.117-3.045s-2.119 1.201-2.119 3.045m-.88 0c0-2.236 1.223-3.766 2.999-3.766 1.786 0 2.997 1.529 2.997 3.766 0 2.24-1.211 3.758-2.997 3.758-1.776 0-2.999-1.518-2.999-3.758"/>
+                          <path d="m103.717 49.598v.709h1.904v6.572h.828v-6.572h1.908v-.709z"/>
+                          <path d="m110.639 49.598v7.281h4.099v-.709h-3.285v-2.709h2.988v-.709h-2.988v-2.445h3.22v-.709z"/>
+                          <path d="m117.273 49.598v7.281h3.991v-.711h-3.143v-6.57z"/>
+                          <path clip-path="url(#e)" d="m127.777 51.486h-.802c-.08-.826-.586-1.289-1.426-1.289-.771 0-1.344.471-1.344 1.104 0 .307.152.578.438.773.145.1.32.188.52.285.057.021.319.141.794.348 1.093.494 1.467.732 1.743 1.16.188.295.298.674.298 1.068 0 1.234-.973 2.064-2.405 2.064-1.52 0-2.382-.809-2.456-2.336h.804c.064 1.049.66 1.627 1.674 1.627.891 0 1.523-.525 1.523-1.256 0-.359-.145-.668-.441-.906-.245-.199-.407-.285-1.134-.613-.977-.426-1.425-.676-1.699-.949-.32-.326-.486-.742-.486-1.199 0-1.104.925-1.891 2.205-1.891 1.323.001 2.128.733 2.194 2.01"/>
+                          <path d="m66.481 1.043h15.044v3.009h-3.12-1.055v1.043 29.393 1.041h1.055 3.123v3.01h-15.047v-3.01h2.869 1.051v-1.041-9.967-1.043h-1.051-10.688-1.052v1.043 9.967 1.041h1.052 2.866v3.01h-15.056v-3.01h3.134 1.053v-1.041-29.38-1.043h-1.053-3.102v-3.022h15.023v3.022h-2.866-1.052v1.043 9.687 1.042h1.052 10.689 1.051v-1.042-9.687-1.043h-1.051-2.869zm-1.055-1.043v5.108h3.925v9.687h-10.689v-9.687h3.919v-5.108h-17.13v5.108h4.155v29.38h-4.188v5.094h17.162v-5.094h-3.919v-9.967h10.689v9.967h-3.925v5.094h17.155v-5.094h-4.176v-29.393h4.172v-5.095z"/>
+                          <path d="m54.536 16.041.907 2.586 2.766.056-2.205 1.655.804 2.623-2.272-1.566-2.272 1.566.803-2.623-2.205-1.655 2.766-.056z"/>
+                          <path d="m64 16.041.91 2.586 2.764.056-2.205 1.655.802 2.623-2.271-1.566-2.27 1.566.799-2.623-2.202-1.655 2.765-.056z"/>
+                          <path d="m73.463 16.041.907 2.586 2.77.056-2.208 1.655.803 2.623-2.272-1.566-2.272 1.566.802-2.623-2.205-1.655 2.768-.056z"/>
+                          <path d="m82.928 16.041.908 2.586 2.768.056-2.207 1.655.801 2.623-2.27-1.566-2.272 1.566.801-2.623-2.206-1.655 2.769-.056z"/>
+                          <path d="m45.072 16.041.907 2.586 2.768.056-2.207 1.655.803 2.623-2.271-1.566-2.272 1.566.803-2.623-2.204-1.655 2.763-.056z"/>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/snowfall.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
+
